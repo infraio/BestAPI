@@ -7,10 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="login.jsp">LOGIN</a><br>
-	<form action="SearchServlet" method="post" onSubmit="return true">
-		<input type="text" name="keywords">
-		<input type="submit" value="SEARCH">
+	<form action="LoginServlet" method="post" onSubmit="return true">
+		USERNAME: <input type="text" name="username"><br>
+		PASSWORD: <input type="password" name="password"><br>
+		<input type="submit" value="LOGIN">
+		<input type="reset" value="RESET">
 	</form>
 </body>
 </html>
