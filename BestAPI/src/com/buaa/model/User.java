@@ -1,8 +1,12 @@
 package com.buaa.model;
 
 public class User {
-
-	public static void main(String[] args) {
-		System.out.println("Hello User!");
+	
+	private String username;
+	private String password;
+	
+	public User(String username, String password) {
+		this.username = username;
+		this.password = password;
 	}
 }
