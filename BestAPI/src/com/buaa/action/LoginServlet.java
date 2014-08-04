@@ -1,6 +1,7 @@
-package com.buaa.model;
+package com.buaa.action;
 
 import java.io.IOException;
+import com.buaa.model.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
