@@ -1,4 +1,4 @@
-package com.buaa.model;
+package com.buaa.action;
 
 import java.io.IOException;
 
@@ -21,4 +21,5 @@ public class SearchServlet extends HttpServlet {
 			throws ServletException, IOException {
 		doPost(req, resp);
 	}
+	
 }
