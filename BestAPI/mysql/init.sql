@@ -1,8 +1,8 @@
 
-drop database if exists userbase;
-create database userbase;
+drop database if exists bestapi;
+create database bestapi;
 
-use userbase;
+use bestapi;
 
 drop table if exists user;
 create table user(
