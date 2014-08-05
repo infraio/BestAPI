@@ -21,5 +21,4 @@ public class SearchServlet extends HttpServlet {
 			throws ServletException, IOException {
 		doPost(req, resp);
 	}
-	
 }
