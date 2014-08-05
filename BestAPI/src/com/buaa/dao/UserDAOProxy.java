@@ -13,17 +13,17 @@ public class UserDAOProxy implements UserDAOInterface {
 		this.dao = new UserDAOImplement(this.dbc.getConnection());
 	}
 	
-	public boolean login(User user) throws Exception {
+	public boolean findUser(User user) throws Exception {
 		boolean flag = false;
-		try { flag = this.dao.login(user);
+		try { flag = this.dao.findUser(user);
 		} catch(Exception e) { e.printStackTrace();
 		} finally { this.dbc.close(); }
 		return flag;
 	}
 	
-	public boolean signUp(User user) throws Exception {
+	public boolean addUser(User user) throws Exception {
 		boolean flag = false;
-		try { flag = this.dao.signUp(user);
+		try { flag = this.dao.addUser(user);
 		} catch(Exception e) { e.printStackTrace();
 		} finally { this.dbc.close(); }
 		return flag;

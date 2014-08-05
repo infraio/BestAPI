@@ -12,7 +12,7 @@ public class UserDAOImplement implements UserDAOInterface {
 		this.connect = connect;
 	}
 	
-	public boolean login(User user) throws Exception {
+	public boolean findUser(User user) throws Exception {
 		boolean flag = false;
 		try {
 			String sql = "SELECT username FROM user WHERE email=? AND password=?";
@@ -34,7 +34,7 @@ public class UserDAOImplement implements UserDAOInterface {
 		return flag;
 	}
 	
-	public boolean signUp(User user) throws Exception {
+	public boolean addUser(User user) throws Exception {
 		boolean flag = false;
 		try {
 			String sql = "INSERT INTO user VALUE(?,?,?)";

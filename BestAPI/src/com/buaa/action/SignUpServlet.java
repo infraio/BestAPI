@@ -45,7 +45,7 @@ public class SignUpServlet extends HttpServlet {
 		if(info.isEmpty()) {
 			User user = new User(email, username, password);
 			try {
-				if(UserDAOFactory.getIUserDAOInstance().signUp(user))
+				if(UserDAOFactory.getIUserDAOInstance().addUser(user))
 					info.add("sign up success!");
 				else
 					info.add("sign up fail!");
