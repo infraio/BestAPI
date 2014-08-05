@@ -28,4 +28,12 @@ public class UserDAOProxy implements UserDAOInterface {
 		} finally { this.dbc.close(); }
 		return flag;
 	}
+	
+	public boolean removeUser(User user) throws Exception {
+		boolean flag = false;
+		try { flag = this.dao.removeUser(user);
+		} catch(Exception e) { e.printStackTrace();
+		} finally { this.dbc.close(); }
+		return flag;
+	}
 }

@@ -6,4 +6,5 @@ public interface UserDAOInterface {
 	
 	public boolean findUser(User user) throws Exception;
 	public boolean addUser(User user) throws Exception;
+	public boolean removeUser(User user) throws Exception;
 }

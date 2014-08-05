@@ -1,6 +1,7 @@
 package com.buaa.dao;
 
 import java.sql.*;
+
 import com.buaa.model.User;
 
 public class UserDAOImplement implements UserDAOInterface {
@@ -51,6 +52,11 @@ public class UserDAOImplement implements UserDAOInterface {
 				} catch(Exception e) { e.printStackTrace(); }
 			}
 		}
+		return flag;
+	}
+	
+	public boolean removeUser(User user) throws Exception {
+		boolean flag = false;
 		return flag;
 	}
 }
