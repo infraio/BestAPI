@@ -4,6 +4,6 @@ import com.buaa.model.User;
 
 public interface UserDAOInterface {
 	
-	public boolean login(User user) throws Exception;
-	public boolean signUp(User user) throws Exception;
+	public boolean findUser(User user) throws Exception;
+	public boolean addUser(User user) throws Exception;
 }
