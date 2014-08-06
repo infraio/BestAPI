@@ -2,17 +2,24 @@ package com.buaa.model;
 
 public class WebService {
 	
+	private String APIName;
 	private String APIProvider;
 	private String APIEndpoint;
 	private String APIHomepage;
 	private String PrimaryCategory;
 	private String SecondaryCategories;
 	private String ProtocolFormats;
-	private String APIHubURL;
+	private String APIhubURL;
 	private String SSLSupport;
 	private String TwiterURL;
 	private String AuthenticationMode;
 	
+	public String getAPIName() {
+		return APIName;
+	}
+	public void setAPIName(String aPIName) {
+		APIName = aPIName;
+	}
 	public String getAPIProvider() {
 		return APIProvider;
 	}
@@ -49,11 +56,11 @@ public class WebService {
 	public void setProtocolFormats(String protocolFormats) {
 		ProtocolFormats = protocolFormats;
 	}
-	public String getAPIHubURL() {
-		return APIHubURL;
+	public String getAPIhubURL() {
+		return APIhubURL;
 	}
-	public void setAPIHubURL(String aPIHubURL) {
-		APIHubURL = aPIHubURL;
+	public void setAPIhubURL(String aPIHubURL) {
+		APIhubURL = aPIHubURL;
 	}
 	public String getSSLSupport() {
 		return SSLSupport;
