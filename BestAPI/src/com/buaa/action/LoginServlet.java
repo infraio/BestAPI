@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 		if(info.isEmpty()) {
 			User user = new User(email, password);
 			try {
-				if(UserDAOFactory.getIUserDAOInstance().findUser(user))
+				if(UserDAOFactory.getUserDAOInstance().findUser(user))
 					info.add("login success! welcom, " + user.getUsername());
 				else
 					info.add("login fail! wrong email or password!");
