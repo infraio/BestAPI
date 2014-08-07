@@ -23,9 +23,9 @@
 	
 	<div class="container">
 		<div class="site-intro-register">
-			<form action="SearchServlet" method="post" onSubmit="return true">
+			<form action="index" method="post" onSubmit="return true">
 				<div class="input-group fn-auto">
-					<input name="keywords" class="form-control input-lg" placeholder="api name" type="text">
+					<input name="keyword" class="form-control input-lg" placeholder="api name" type="text">
 			        <span class="input-group-btn">
 			        	<button class="btn btn-success" type="submit">搜索</button>
 			      	</span>
