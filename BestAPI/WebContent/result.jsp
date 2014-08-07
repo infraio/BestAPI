@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+    import="java.util.List" 
+    import="java.util.Iterator"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,11 +9,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="login" method="post" onSubmit="return true">
-		USERNAME: <input type="text" name="username"><br>
-		PASSWORD: <input type="password" name="password"><br>
-		<input type="submit" value="LOGIN">
-		<input type="reset" value="RESET">
-	</form>
+<%
+	List<String> info = (List<String>)request.getAttribute("info");
+	if(info != null) {
+		Iterator<String> iter = info.iterator();
+		while(iter.hasNext()) {
+			String s = iter.next();
+%>
+				<h4><%=s%></h4>
+<%
+		}
+}
+%>	
 </body>
 </html>
