@@ -2,92 +2,94 @@ package com.buaa.model;
 
 public class WebService {
 	
-	private WebServiceAttribute name;
-	private WebServiceAttribute provider;
-	private WebServiceAttribute endpoint;
-	private WebServiceAttribute homepage;
-	private WebServiceAttribute email;
-	private WebServiceAttribute primaryCategory;
-	private WebServiceAttribute secondaryCategories;
-	private WebServiceAttribute protocolFormats;
-	private WebServiceAttribute hubURL;
-	private WebServiceAttribute SSLSupport;
-	private WebServiceAttribute twiterURL;
-	private WebServiceAttribute authenticationMode;
+	private String owner;
+	private String name;
+	private String provider;
+	private String endpoint;
+	private String homepage;
+	private String email;
+	private String primaryCategory;
+	private String secondaryCategories;
+	private String protocolFormats;
+	private String hubURL;
+	private String SSLSupport;
+	private String twiterURL;
+	private String authenticationMode;
 	
-	public WebService() {
-		name = WebServiceAttribute.API_NAME;
-		provider = WebServiceAttribute.API_PROVIDER;
-		endpoint = WebServiceAttribute.API_ENDPOINT;
-		homepage = WebServiceAttribute.API_HOMEPAGE;
-		email = WebServiceAttribute.CONTACT_EMAIL;
-		primaryCategory = WebServiceAttribute.PRIMARY_CATEGORY;
-		secondaryCategories = WebServiceAttribute.SECONDARY_CATEGORIES;
-		protocolFormats = WebServiceAttribute.PROTOCOL_FORMATS;
-		hubURL = WebServiceAttribute.APIHUB_URL;
-		SSLSupport = WebServiceAttribute.SSL_SUPPORT;
-		twiterURL = WebServiceAttribute.TWITER_URL;
-		authenticationMode = WebServiceAttribute.AUTHENTICATION_MODE;
-	}
+	public WebService() {}
 	
 	public void setAttributeContent(WebServiceAttribute wsa, String content) {
 		switch(wsa) {
+			case API_OWNER:
+				owner = content; break;
 			case API_NAME: 
-				name.setContent(content); break;
+				name = content; break;
 			case API_PROVIDER: 
-				provider.setContent(content); break;
+				provider = content; break;
 			case API_ENDPOINT: 
-				endpoint.setContent(content); break;
+				endpoint = content; break;
 			case API_HOMEPAGE: 
-				homepage.setContent(content); break;
+				homepage = content; break;
 			case CONTACT_EMAIL: 
-				email.setContent(content); break;
+				email = content; break;
 			case PRIMARY_CATEGORY: 
-				primaryCategory.setContent(content); break;
+				primaryCategory = content; break;
 			case SECONDARY_CATEGORIES: 
-				secondaryCategories.setContent(content); break;
+				secondaryCategories = content; break;
 			case PROTOCOL_FORMATS: 
-				protocolFormats.setContent(content); break;
+				protocolFormats = content; break;
 			case APIHUB_URL : 
-				hubURL.setContent(content); break;
+				hubURL = content; break;
 			case SSL_SUPPORT: 
-				SSLSupport.setContent(content); break;
+				SSLSupport = content; break;
 			case TWITER_URL: 
-				twiterURL.setContent(content); break;
+				twiterURL = content; break;
 			case AUTHENTICATION_MODE : 
-				authenticationMode.setContent(content); break;
+				authenticationMode = content; break;
 		}
 	}
 	
 	public String getAttributeContent(WebServiceAttribute wsa) {
 		switch(wsa) {
+			case API_OWNER:
+				return owner;
 			case API_NAME: 
-				return name.getContent();
+				return name;
 			case API_PROVIDER: 
-				return provider.getContent();
+				return provider;
 			case API_ENDPOINT: 
-				return endpoint.getContent();
+				return endpoint;
 			case API_HOMEPAGE: 
-				return homepage.getContent();
+				return homepage;
 			case CONTACT_EMAIL:
-				return email.getContent();
+				return email;
 			case PRIMARY_CATEGORY: 
-				return primaryCategory.getContent();
+				return primaryCategory;
 			case SECONDARY_CATEGORIES: 
-				return secondaryCategories.getContent();
+				return secondaryCategories;
 			case PROTOCOL_FORMATS: 
-				return protocolFormats.getContent();
+				return protocolFormats;
 			case APIHUB_URL : 
-				return hubURL.getContent();
+				return hubURL;
 			case SSL_SUPPORT: 
-				return SSLSupport.getContent();
+				return SSLSupport;
 			case TWITER_URL: 
-				return twiterURL.getContent();
+				return twiterURL;
 			case AUTHENTICATION_MODE : 
-				return authenticationMode.getContent();
+				return authenticationMode;
 			default : return "";
 		}
 	}
-	
+
+//	@Override
+//	public boolean equals(Object obj) {
+//		return obj instanceof WebService && 
+//				((WebService)obj).getAttributeContent(WebServiceAttribute.API_NAME).equals(this.getAttributeContent(WebServiceAttribute.API_NAME));
+//	}
+//
+//	@Override
+//	public int hashCode() {
+//		return 37;
+//	}
 	
 }

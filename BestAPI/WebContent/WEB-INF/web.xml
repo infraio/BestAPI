@@ -33,4 +33,20 @@
     <servlet-name>register</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>submit</servlet-name>
+    <servlet-class>com.buaa.action.SubmitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>submit</servlet-name>
+    <url-pattern>/submit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>update</servlet-name>
+    <servlet-class>com.buaa.action.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
 </web-app>

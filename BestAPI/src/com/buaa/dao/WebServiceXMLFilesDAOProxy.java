@@ -1,5 +1,7 @@
 package com.buaa.dao;
 
+import java.util.HashSet;
+
 import com.buaa.model.WebService;
 
 public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
@@ -18,9 +20,15 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean addWebService(WebService api) throws Exception {
+	public boolean submitWebService(WebService api) throws Exception {
 		boolean flag = false;
-		flag = this.dao.addWebService(api);
+		flag = this.dao.submitWebService(api);
+		return flag;
+	}
+	
+	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
+		boolean flag = false;
+		flag = this.dao.findWebServicesByOwner(null, apis);
 		return flag;
 	}
 }

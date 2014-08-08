@@ -1,6 +1,7 @@
 package com.buaa.dao;
 
 import java.io.File;
+import java.util.HashSet;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
@@ -40,7 +41,7 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean addWebService(WebService api) throws Exception {
+	public boolean submitWebService(WebService api) throws Exception {
 		boolean flag = false;
 		File target = new File(directory + api.getAttributeContent(WebServiceAttribute.API_NAME) + ".xml");
 		if(!target.exists()) {
@@ -63,6 +64,12 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 			trans.transform(source, result);
 			flag = true;
 		}
+		return flag;
+	}
+	
+	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
+		boolean flag = false;
+		
 		return flag;
 	}
 }
