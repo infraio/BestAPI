@@ -1,5 +1,7 @@
 package com.buaa.dao;
 
+import java.util.HashSet;
+
 import com.buaa.model.WebService;
 
 public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
@@ -21,9 +23,17 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean addWebService(WebService api) throws Exception {
+	public boolean submitWebService(WebService api) throws Exception {
 		boolean flag = false;
-		try { flag = this.dao.addWebService(api);
+		try { flag = this.dao.submitWebService(api);
+		} catch(Exception e) { e.printStackTrace();
+		} finally { this.dbc.close(); }
+		return flag;
+	}
+	
+	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
+		boolean flag = false;
+		try { flag = this.dao.findWebServicesByOwner(owner, apis);
 		} catch(Exception e) { e.printStackTrace();
 		} finally { this.dbc.close(); }
 		return flag;

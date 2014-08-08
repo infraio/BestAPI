@@ -1,9 +1,12 @@
 package com.buaa.dao;
 
+import java.util.HashSet;
+
 import com.buaa.model.WebService;
 
 public interface WebServiceDAOInterface {
 
-	public boolean addWebService(WebService api) throws Exception;
+	public boolean submitWebService(WebService api) throws Exception;
 	public boolean findWebServiceByName(WebService api) throws Exception;
+	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception;
 }
