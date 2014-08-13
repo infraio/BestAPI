@@ -10,21 +10,22 @@ public class DatabaseConnector {
 	private static final String DBPASSWORD = "root";						// 用户对应的密码
 	private Connection connect = null;
 	
-	public DatabaseConnector() {
-		try {
-			Class.forName(DBDRIVER);
-			this.connect = DriverManager.getConnection(DBURL, DBUSER, DBPASSWORD);
-		} catch(Exception e) { e.printStackTrace(); return; }
+	public DatabaseConnector() throws Exception {
+		Class.forName(DBDRIVER);
+		this.connect = DriverManager.getConnection(DBURL, DBUSER, DBPASSWORD);
 	}
 	
 	public Connection getConnection() {
 		return this.connect;
 	}
 	
-	public void close() throws Exception {
-		if(this.connect != null)
-			try { this.connect.close();
-			} catch(Exception e) { e.printStackTrace(); return;	}
+	public void close() {
+		if(this.connect != null) {
+			try { 
+				this.connect.close();
+			} catch(Exception e) { 
+				e.printStackTrace(); return;	
+			}
+		}
 	}
-	
 }

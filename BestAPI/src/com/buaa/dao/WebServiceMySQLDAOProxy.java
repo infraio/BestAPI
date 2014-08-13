@@ -10,12 +10,15 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 	private WebServiceDAOInterface dao = null;
 	
 	public WebServiceMySQLDAOProxy() {
-		try { this.dbc = new DatabaseConnector();
-		} catch(Exception e) { e.printStackTrace(); return; }
+		try {
+			this.dbc = new DatabaseConnector();
+		} catch (Exception e) {
+			e.printStackTrace(); return;
+		}
 		this.dao = new WebServiceMySQLDAOImplement(this.dbc.getConnection());
 	}
 	
-	public boolean findWebServiceByName(WebService api) throws Exception {
+	public boolean findWebServiceByName(WebService api) {
 		boolean flag = false;
 		try { flag = this.dao.findWebServiceByName(api);
 		} catch(Exception e) { e.printStackTrace();
@@ -23,7 +26,7 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean submitWebService(WebService api) throws Exception {
+	public boolean submitWebService(WebService api) {
 		boolean flag = false;
 		try { flag = this.dao.submitWebService(api);
 		} catch(Exception e) { e.printStackTrace();
@@ -31,7 +34,7 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
+	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) {
 		boolean flag = false;
 		try { flag = this.dao.findWebServicesByOwner(owner, apis);
 		} catch(Exception e) { e.printStackTrace();

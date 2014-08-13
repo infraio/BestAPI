@@ -10,7 +10,11 @@ public class DatabaseConnectorTest {
 	public DatabaseConnector dbc;
 	
 	public DatabaseConnectorTest() {
-		dbc = new DatabaseConnector();
+		try {
+			dbc = new DatabaseConnector();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Test
