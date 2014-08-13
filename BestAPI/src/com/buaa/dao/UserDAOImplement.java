@@ -13,7 +13,7 @@ public class UserDAOImplement implements UserDAOInterface {
 		this.connect = connect;
 	}
 	
-	public boolean findUser(User user) {
+	public boolean findUser(User user) throws Exception {
 		boolean flag = false;
 		try {
 			String sql = "SELECT username FROM user WHERE email=? AND password=?";
@@ -25,17 +25,17 @@ public class UserDAOImplement implements UserDAOInterface {
 				user.setUsername(rs.getString(1));
 				flag = true;
 			}
-		} catch(Exception e) { e.printStackTrace();
+		} catch(Exception e) {
+			throw e;
 		} finally {
 			if(this.pstmt != null) {
-				try { this.pstmt.close();
-				} catch(Exception e) { e.printStackTrace(); }
+				this.pstmt.close();
 			}
 		}
 		return flag;
 	}
 	
-	public boolean addUser(User user) {
+	public boolean addUser(User user) throws Exception {
 		boolean flag = false;
 		try {
 			String sql = "INSERT INTO user VALUE(?,?,?)";
@@ -48,8 +48,7 @@ public class UserDAOImplement implements UserDAOInterface {
 		} catch(Exception e) { e.printStackTrace();
 		} finally {
 			if(this.pstmt != null) {
-				try { this.pstmt.close();
-				} catch(Exception e) { e.printStackTrace(); }
+				this.pstmt.close();
 			}
 		}
 		return flag;

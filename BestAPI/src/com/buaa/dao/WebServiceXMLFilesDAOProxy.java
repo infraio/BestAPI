@@ -14,21 +14,33 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		this.dao = new WebServiceXMLFilesDAOImplement(this.xfl.getDirectory());
 	}
 	
-	public boolean findWebServiceByName(WebService api) throws Exception {
+	public boolean findWebServiceByName(WebService api) {
 		boolean flag = false;
-		flag = this.dao.findWebServiceByName(api);
+		try {
+			flag = this.dao.findWebServiceByName(api);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return flag;
 	}
 	
 	public boolean submitWebService(WebService api) throws Exception {
 		boolean flag = false;
-		flag = this.dao.submitWebService(api);
+		try {
+			flag = this.dao.submitWebService(api);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return flag;
 	}
 	
 	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
 		boolean flag = false;
-		flag = this.dao.findWebServicesByOwner(null, apis);
+		try {
+			flag = this.dao.findWebServicesByOwner(null, apis);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return flag;
 	}
 }

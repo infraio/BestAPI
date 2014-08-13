@@ -8,12 +8,15 @@ public class UserDAOProxy implements UserDAOInterface {
 	private UserDAOInterface dao = null;
 	
 	public UserDAOProxy() {
-		try { this.dbc = new DatabaseConnector();
-		} catch(Exception e) { e.printStackTrace(); return; }
+		try { 
+			this.dbc = new DatabaseConnector();
+		} catch(Exception e) { 
+			e.printStackTrace(); return;
+		}
 		this.dao = new UserDAOImplement(this.dbc.getConnection());
 	}
 	
-	public boolean findUser(User user) throws Exception {
+	public boolean findUser(User user) {
 		boolean flag = false;
 		try { flag = this.dao.findUser(user);
 		} catch(Exception e) { e.printStackTrace();
@@ -21,7 +24,7 @@ public class UserDAOProxy implements UserDAOInterface {
 		return flag;
 	}
 	
-	public boolean addUser(User user) throws Exception {
+	public boolean addUser(User user) {
 		boolean flag = false;
 		try { flag = this.dao.addUser(user);
 		} catch(Exception e) { e.printStackTrace();
@@ -29,7 +32,7 @@ public class UserDAOProxy implements UserDAOInterface {
 		return flag;
 	}
 	
-	public boolean removeUser(User user) throws Exception {
+	public boolean removeUser(User user) {
 		boolean flag = false;
 		try { flag = this.dao.removeUser(user);
 		} catch(Exception e) { e.printStackTrace();

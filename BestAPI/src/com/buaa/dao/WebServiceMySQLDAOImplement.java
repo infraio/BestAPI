@@ -30,11 +30,11 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 				this.pstmt.setString(i+1, api.getAttributeContent(attributes[i]));
 			if(this.pstmt.executeUpdate() == 1)
 				flag = true;
-		} catch(Exception e) { e.printStackTrace();
+		} catch(Exception e) {
+			throw e;
 		} finally {
 			if(this.pstmt != null) {
-				try { this.pstmt.close();
-				} catch(Exception e) { e.printStackTrace(); }
+				this.pstmt.close();
 			}
 		}
 		return flag;
@@ -53,11 +53,11 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 					api.setAttributeContent(attributes[i], rs.getString(i+1));
 				flag = true;
 			}
-		} catch(Exception e) { e.printStackTrace();
+		} catch(Exception e) {
+			throw e;
 		} finally {
 			if(this.pstmt != null) {
-				try { this.pstmt.close();
-				} catch(Exception e) { e.printStackTrace(); }
+					this.pstmt.close();
 			}
 		}
 		return flag;
@@ -79,11 +79,11 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 //				for(WebService a : apis) System.out.println(a.getAttributeContent(WebServiceAttribute.API_NAME));
 				flag = true;
 			}
-		} catch(Exception e) { e.printStackTrace();
+		} catch(Exception e) {
+			throw e;
 		} finally {
 			if(this.pstmt != null) {
-				try { this.pstmt.close();
-				} catch(Exception e) { e.printStackTrace(); }
+				this.pstmt.close();
 			}
 		}
 		return flag;
