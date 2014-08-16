@@ -2,6 +2,8 @@ package com.buaa.model;
 
 public class WebService {
 	
+	private int similarity;
+	
 	private String owner;
 	private String name;
 	private String provider;
@@ -17,6 +19,14 @@ public class WebService {
 	private String authenticationMode;
 	
 	public WebService() {}
+	
+	public void setSimilarity(int similarity) {
+		this.similarity = similarity;
+	}
+	
+	public int getSimilarity() {
+		return similarity;
+	}
 	
 	public void setAttributeContent(WebServiceAttribute wsa, String content) {
 		switch(wsa) {
