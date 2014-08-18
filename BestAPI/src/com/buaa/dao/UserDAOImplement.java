@@ -54,8 +54,20 @@ public class UserDAOImplement implements UserDAOInterface {
 		return flag;
 	}
 	
-	public boolean removeUser(User user) {
+	public boolean removeUser(User user) throws Exception {
 		boolean flag = false;
+		try {
+			String sql = "DELETE FROM user WHERE email=?";
+			this.pstmt = this.connect.prepareStatement(sql);
+			this.pstmt.setString(1, user.getEmail());
+			if(this.pstmt.executeUpdate() >= 0)
+				flag = true;
+		} catch(Exception e) { e.printStackTrace();
+		} finally {
+			if(this.pstmt != null) {
+				this.pstmt.close();
+			}
+		}
 		return flag;
 	}
 }

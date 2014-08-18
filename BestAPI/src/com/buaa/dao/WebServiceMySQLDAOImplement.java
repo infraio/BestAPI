@@ -111,13 +111,13 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		int[] weight = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 		boolean flag = false;
 		try {
-			String sql = "SELECT * FROM api WHERE API_NAME LIKE '" + key + 
-						 "' or API_OWNER LIKE '" + key + "' or API_PROVIDER LIKE '" + key + 
-						 "' or API_ENDPOINT LIKE '" + key + "' or API_HOMEPAGE LIKE '" + key + 
-						 "' or CONTACT_EMAIL LIKE '" + key + "' or PRIMARY_CATEGORY LIKE '" + key + 
-						 "' or SECONDARY_CATEGORIES LIKE '" + key + "' or PROTOCOL_FORMATS LIKE '" + key + 
-						 "' or API_HUB_URL LIKE '" + key + "' or SSL_SUPPORT LIKE '" + key +
-						 "' or TWITER_URL LIKE '" + key + "' or AUTHENTICATION_MODE LIKE '" + key ;
+			String sql = "SELECT * FROM api WHERE API_NAME LIKE '%" + key + 
+						 "%' or API_OWNER LIKE '%" + key + "%' or API_PROVIDER LIKE '%" + key + 
+						 "%' or API_ENDPOINT LIKE '%" + key + "%' or API_HOMEPAGE LIKE '%" + key + 
+						 "%' or CONTACT_EMAIL LIKE '%" + key + "%' or PRIMARY_CATEGORY LIKE '%" + key + 
+						 "%' or SECONDARY_CATEGORIES LIKE '%" + key + "%' or PROTOCOL_FORMATS LIKE '%" + key + 
+						 "%' or API_HUB_URL LIKE '%" + key + "%' or SSL_SUPPORT LIKE '%" + key +
+						 "%' or TWITER_URL LIKE '%" + key + "%' or AUTHENTICATION_MODE LIKE '%" + key + "%'";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
 			
@@ -127,9 +127,11 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 				int similarity = 0;
 				for(int i = 0; i < attributes.length; ++i)  {
 					String attribute = rs.getString(i+1);
-					if(attribute.contains(key))
-						similarity += weight[i];
-					api.setAttributeContent(attributes[i], attribute);
+					if(attribute != null) {
+						if(attribute.contains(key))
+							similarity += weight[i];
+						api.setAttributeContent(attributes[i], attribute);
+					}
 				}
 				api.setSimilarity(similarity);
 				apis.add(api);
