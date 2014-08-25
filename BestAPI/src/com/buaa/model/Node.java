@@ -1,9 +1,9 @@
 package com.buaa.model;
 
-public class Node {
+public abstract class Node {
 	
-	private String name;
-	private double weight;
+	protected String name;
+	protected double weight;
 	
 	public Node() {}
 	
