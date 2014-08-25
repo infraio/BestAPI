@@ -25,5 +25,21 @@ create table api(
 	APIHUB_URL varchar(255),
 	SSL_SUPPORT varchar(255),
 	TWITER_URL varchar(255),
-	AUTHENTICATION_MODE varchar(255)
+	AUTHENTICATION_MODE varchar(255),
 );
+
+drop table if exists tree;
+create table tree(
+	name varchar(20) not null primary key,
+	path varchar(255) not null
+)
+
+drop table if exists master;
+create table master(
+	email varchar(20) not null,
+	apiname varchar(255) not null,
+	treename varchar(20) not null,
+	foreign key(email) references user(email) on delete cascade on update cascade,
+	foreign key(apiname) references api(API_NAME) on delete cascade on update cascade,
+	foreign key(treename) references tree(name) on delete cascade on update cascade
+)

@@ -3,6 +3,7 @@ package com.buaa.model;
 public class WebService {
 	
 	private int similarity;
+	private DataInstance datains;
 	
 	private String owner;
 	private String name;
@@ -19,6 +20,11 @@ public class WebService {
 	private String authenticationMode;
 	
 	public WebService() {}
+	
+	public WebService(String name, User user) {
+		this.name = name;
+		datains = new DataInstance(user, this);
+	}
 	
 	public void setSimilarity(int similarity) {
 		this.similarity = similarity;
