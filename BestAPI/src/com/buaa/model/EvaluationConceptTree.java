@@ -5,34 +5,43 @@ import java.util.List;
 public class EvaluationConceptTree {
 	
 	private String name;
-	private String path;
 	private Node root;
+	private List<FactorNode> staticFactors;
+	private List<FactorNode> dynamicFactors;
 	
 	public EvaluationConceptTree() {}
-
-	public void getFactors(Node node, List<DataItem> items) {
+	
+	public void getFactors(Node node, List<FactorNode> factors) {
 		if(node instanceof CategoryNode) {
 			for(Node anode : ((CategoryNode)node).getChild()) 
-				getFactors(anode, items);
+				getFactors(anode, factors);
 		} else if(node instanceof FactorNode) { 
-			items.add(new DataItem((FactorNode)node));
+			factors.add((FactorNode)node);
 		}
 	}
 	
+	public List<FactorNode> getStaticFactors() {
+		return staticFactors;
+	}
+
+	public void setStaticFactors(List<FactorNode> staticFactors) {
+		this.staticFactors = staticFactors;
+	}
+
+	public List<FactorNode> getDynamicFactors() {
+		return dynamicFactors;
+	}
+
+	public void setDynamicFactors(List<FactorNode> dynamicFactors) {
+		this.dynamicFactors = dynamicFactors;
+	}
+
 	public String getName() {
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getPath() {
-		return path;
-	}
-
-	public void setPath(String path) {
-		this.path = path;
 	}
 
 	public Node getRoot() {

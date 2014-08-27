@@ -1,5 +1,9 @@
 package com.buaa.dao;
 
+import java.util.List;
+
+import com.buaa.model.DataInstance;
+import com.buaa.model.DataItem;
 import com.buaa.model.EvaluationConceptTree;
 import com.buaa.model.User;
 import com.buaa.model.WebService;
@@ -18,27 +22,36 @@ public class TreeDAOProxy implements TreeDAOInterface {
 		this.dao = new TreeDAOImplement(this.dbc.getConnection());
 	}
 	
-	public boolean buildTree(EvaluationConceptTree tree) {
+//	public boolean readTree(EvaluationConceptTree tree) {
+//		boolean flag = false;
+//		try { flag = this.dao.readTree(tree);
+//		} catch (Exception e) { e.printStackTrace(); 
+//		} finally { this.dbc.close(); }
+//		return flag;
+//	}
+	
+	public boolean createTree(EvaluationConceptTree tree) {
 		boolean flag = false;
-		try { flag = this.dao.buildTree(tree);
+		try { flag = this.dao.createTree(tree);
 		} catch (Exception e) { e.printStackTrace(); 
 		} finally { this.dbc.close(); }
 		return flag;
 	}
 	
-	public boolean getTreeName(User user, WebService api, EvaluationConceptTree tree) {
+	public boolean getWeight(WebService api, EvaluationConceptTree tree) {
 		boolean flag = false;
-		try { flag = this.dao.getTreeName(user, api, tree);
+		try { flag = this.dao.getWeight(api, tree);
 		} catch (Exception e) { e.printStackTrace(); 
 		} finally { this.dbc.close(); }
 		return flag;
 	}
 	
-	public boolean addTree(EvaluationConceptTree tree) {
+	public boolean getValue(DataInstance instance) {
 		boolean flag = false;
-		try { flag = this.dao.addTree(tree);
+		try { flag = this.dao.getValue(instance);
 		} catch (Exception e) { e.printStackTrace(); 
 		} finally { this.dbc.close(); }
 		return flag;
 	}
+	
 }

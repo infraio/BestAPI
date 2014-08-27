@@ -41,7 +41,7 @@
 							<weight>0.05</weight>
 						</Node>
 						<Node>
-							<name>Self-recovery Capability</name>
+							<name>Self Recovery Capability</name>
 							<weight>0.05</weight>
 						</Node>
 					</Nodes>
