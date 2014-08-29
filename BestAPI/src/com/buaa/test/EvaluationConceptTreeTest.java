@@ -12,8 +12,8 @@ public class EvaluationConceptTreeTest {
 		EvaluationConceptTree tree = new EvaluationConceptTree();
 		tree.setName("BaseTree");
 		if(TreeDAOFactory.getTreeDAOInstance().createTree(tree)) {
-			WebService api = new WebService("APIFON", new User("wuyinan0126@gmail.com", "wuyinan", "wuyinan"));
-			System.out.println(api.getInstance().getResult());
+//			WebService api = new WebService("Tapir", new User("nhjjjb@gmail.com", "nhjjjb", "nhjjjb"));
+//			System.out.println(api.getInstance().getResult());
 		}
 	}
 }

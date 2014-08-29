@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.buaa.dao.WebServiceDAOFactory;
+import com.buaa.model.DataItem;
 import com.buaa.model.DataSource;
+import com.buaa.model.User;
 import com.buaa.model.WebService;
 import com.buaa.model.WebServiceAttribute;
 
@@ -52,8 +54,15 @@ public class SearchServlet extends HttpServlet {
 				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword, apis)) {
 					WebServiceAttribute[] attributes = WebServiceAttribute.values();
 					for(WebService api : apis) {
+						WebService ws = new WebService(api.getAttributeContent(WebServiceAttribute.API_NAME), new User("nhjjjb@gmail.com","nhjjjb","nhjjjb"));
 						for(int i = 0; i < attributes.length; ++i)
-							info.add(attributes[i].getName() + ":&nbsp;&nbsp;&nbsp;&nbsp;" + api.getAttributeContent(attributes[i]));
+							info.add(attributes[i].getName() + ": " + api.getAttributeContent(attributes[i]));
+						info.add("value of static factors :");
+						for(DataItem item : ws.getInstance().getStaticItems())
+							info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
+						info.add("value of dynamic factors :");
+						for(DataItem item : ws.getInstance().getDynamicItems())
+							info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
 						info.add("<br><br>");
 					}
 				} else {
