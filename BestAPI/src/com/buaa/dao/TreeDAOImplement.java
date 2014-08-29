@@ -93,37 +93,81 @@ public class TreeDAOImplement implements TreeDAOInterface {
 	private void random(EvaluationConceptTree tree) throws SQLException {
 		try {
 			
-			String sql = "INSERT INTO user VALUE('wuyinan0126@gmail.com', 'wuyinan', 'wuyinan')";
-			this.stmt = this.connect.createStatement();
-			this.stmt.executeUpdate(sql);
+			int apinum = 7133, usernum = 100;
 			
-			sql = "INSERT INTO api VALUE('APIFON', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a')";
-			this.stmt = this.connect.createStatement();
-			this.stmt.executeUpdate(sql);
+			for(int j = 0; j < usernum; ++j) {
+				String name = "";
+				char a = 'a';
+				for(int i = 0; i < 6; ++i)
+					name += String.valueOf((char)(a+(int)(Math.random()*26)));
+				String email = name+"@gmail.com";
+				String password = name;
+				System.out.println(name);
+				
+				String sql = "SELECT * FROM user WHERE username='" + name + "'";
+				this.stmt = this.connect.createStatement();
+				ResultSet rs = this.stmt.executeQuery(sql);
+				if(rs.next()) {
+					rs.close();
+					continue;
+				} else {
+					rs.close();
+				}
+				sql = "INSERT INTO user VALUE(?, ?, ?)";
+				this.pstmt = this.connect.prepareStatement(sql);
+				this.pstmt.setString(1, email);
+				this.pstmt.setString(2, name);
+				this.pstmt.setString(3, password);
+				this.pstmt.executeUpdate();
+			}
 			
-			String qmark = "";
-			for(int i = 0; i < tree.getStaticFactors().size(); ++i)
-				qmark += "?,";
-			qmark += "?";
-			sql = "INSERT INTO Static_" + tree.getName() + " VALUE(" + qmark + ")";
-			this.pstmt = this.connect.prepareStatement(sql);
-			this.pstmt.setString(1, "APIFON");
-			for(int i = 0; i < tree.getStaticFactors().size(); ++i)
-				this.pstmt.setDouble(i+2, new Random().nextDouble());
-			this.pstmt.executeUpdate();
-			
-			qmark = "";
-			for(int i = 0; i < tree.getDynamicFactors().size(); ++i)
-				qmark += "?,";
-			qmark += "?,?";
-			sql = "INSERT INTO Dynamic_" + tree.getName() + " VALUE(" + qmark + ")";
-			this.pstmt = this.connect.prepareStatement(sql);
-			this.pstmt.setString(1, "wuyinan0126@gmail.com");
-			this.pstmt.setString(2, "APIFON");
-			for(int i = 0; i < tree.getDynamicFactors().size(); ++i)
-				this.pstmt.setDouble(i+3, new Random().nextDouble());
-			this.pstmt.executeUpdate();
-			
+			for(int i = 1; i <= apinum; ++i) {
+				String sql = "SELECT API_NAME FROM api LIMIT " + String.valueOf(i) + ",1";
+				this.stmt = this.connect.createStatement();
+				ResultSet rs = this.stmt.executeQuery(sql);
+				if(rs.next()) {
+					String apiname = rs.getString("API_NAME");
+					rs.close();
+					
+					String qmark = "";
+					for(int j = 0; j < tree.getStaticFactors().size(); ++j)
+						qmark += "?,";
+					qmark += "?";
+					sql = "INSERT INTO Static_" + tree.getName() + " VALUE(" + qmark + ")";
+					this.pstmt = this.connect.prepareStatement(sql);
+					this.pstmt.setString(1, apiname);
+					for(int j = 0; j < tree.getStaticFactors().size(); ++j)
+						this.pstmt.setDouble(j+2, new Random().nextDouble());
+					this.pstmt.executeUpdate();
+					
+					for(int j = 1; j <= usernum; ++j) {
+						sql = "SELECT email FROM user LIMIT " + String.valueOf(j) + ",1";
+						this.stmt = this.connect.createStatement();
+						rs = this.stmt.executeQuery(sql);
+						
+						if(rs.next()) {
+							String email = rs.getString("email");
+							rs.close();
+							
+							qmark = "";
+							for(int k = 0; k < tree.getDynamicFactors().size(); ++k)
+								qmark += "?,";
+							qmark += "?,?";
+							sql = "INSERT INTO Dynamic_" + tree.getName() + " VALUE(" + qmark + ")";
+							this.pstmt = this.connect.prepareStatement(sql);
+							this.pstmt.setString(1, email);
+							this.pstmt.setString(2, apiname);
+							for(int k = 0; k < tree.getDynamicFactors().size(); ++k)
+								this.pstmt.setDouble(k+3, new Random().nextDouble());
+							this.pstmt.executeUpdate();
+						} else {
+							rs.close();
+						}
+					}
+				} else {
+					rs.close();
+				}
+			}
 		} catch(Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -211,6 +255,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 			if(rs.next())
 				for(DataItem item : instance.getStaticItems())
 					item.setValue(rs.getDouble(item.getFactor().getName().toUpperCase().replaceAll(" ", "_")));
+			flag = true;
 		} catch(Exception e) {
 			throw e;
 		} finally {
