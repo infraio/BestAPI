@@ -23,42 +23,35 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String path = "login.jsp";
+		String path = "index.jsp";
 		String email = req.getParameter("email");
 		String password = req.getParameter("password");
-		String isUser = (String) req.getSession().getAttribute("user");
-		List<String> info = new ArrayList<String>();
+		//String isUser = (String) req.getSession().getAttribute("user");
+		String info = "";
 		
-		if(isUser != null && !"".equals(isUser)) {
+		//if(isUser != null && !"".equals(isUser)) {
 			
+		//} else {
+		
+		if(email == null || "".equals(email)) {
+			info = "用户名不能为空！";
+		} else if(password == null || "".equals(password)) {
+			info = "密码不能为空！";
 		} else {
-			if(email == null || "".equals(email)) {
-				info.add("email is empty.");
-			}
-			if(password == null || "".equals(password)) {
-				info.add("password is empty.");
-			}
-			
-			if(info.isEmpty()) {
-				User user = new User(email, password);
-				try {
-					if(UserDAOFactory.getUserDAOInstance().findUser(user)) {
-						req.getSession().setAttribute("username", user.getUsername());
-						req.getSession().setAttribute("user", user.getEmail());			// set is_user in session
-						HashSet<WebService> apis = new HashSet<WebService>();
-						if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).findWebServicesByOwner(user.getEmail(), apis)) {
-							req.getSession().setAttribute("apis", apis);
-//							for(WebService api : apis) System.out.println(api.getAttributeContent(WebServiceAttribute.API_NAME));
-						}
-					} else {
-						info.add("login fail! wrong email or password!");
-						req.getSession().setAttribute("user", "");
-					}
-				} catch(Exception e) { e.printStackTrace(); }
+			User user = new User(email, password);
+			try {
+				if(UserDAOFactory.getUserDAOInstance().findUser(user)) {
+					req.getSession().setAttribute("user", user);
+					req.getRequestDispatcher("/index.jsp").forward(req, resp);
+				} else {
+					info = "用户名或密码错误！";
+				}
+			} catch(Exception e) { 
+				e.printStackTrace();
 			}
 		}
 		req.setAttribute("info", info);
-		req.getRequestDispatcher(path).forward(req, resp);
+		req.getRequestDispatcher("/login.jsp").forward(req, resp);
 	}
 	
 	@Override

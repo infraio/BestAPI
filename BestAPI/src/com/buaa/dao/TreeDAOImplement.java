@@ -27,7 +27,7 @@ import com.buaa.model.WebServiceAttribute;
 
 public class TreeDAOImplement implements TreeDAOInterface {
 
-	private final String dir = "/home/wuyinan/Repository/BestAPI/BestAPI/data";
+	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	private Connection connect = null;
 	private PreparedStatement pstmt = null;
 	private Statement stmt = null;

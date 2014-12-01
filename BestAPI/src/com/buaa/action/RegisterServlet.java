@@ -19,40 +19,35 @@ public class RegisterServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		String path = "register.jsp";
 		String email = req.getParameter("email");
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		String confirm = req.getParameter("confirm");
-		List<String> info = new ArrayList<String>();
+		String info = "";
 		
 		if(email == null || "".equals(email)) {
-			info.add("email is empty.");
-		}
-		if(username == null || "".equals(username)) {
-			info.add("username is empty.");
-		}
-		if(password == null || "".equals(password)) {
-			info.add("password is empty.");
-		}
-		if(confirm == null || "".equals(confirm)) {
-			info.add("password confirm is empty.");
-		}
-		if(!password.equals(confirm)) {
-			info.add("password can not be confirmed.");
-		}
-		
-		if(info.isEmpty()) {
+			info = "邮箱为空！";
+		} else if(username == null || "".equals(username)) {
+			info = "用户名为空！";
+		} else if(password == null || "".equals(password)) {
+			info = "密码为空！";
+		} else if(confirm == null || "".equals(confirm)) {
+			info = "确认密码为空！";
+		} else if(!password.equals(confirm)) {
+			info = "两次输入的密码不一致！";
+		} else {
 			User user = new User(email, username, password);
 			try {
-				if(UserDAOFactory.getUserDAOInstance().addUser(user))
-					info.add("sign up success!");
-				else
-					info.add("sign up fail!");
+				if(UserDAOFactory.getUserDAOInstance().addUser(user)) {
+					req.getSession().setAttribute("user", user);
+					req.getRequestDispatcher("/index.jsp").forward(req, resp);
+				} else {
+					info = "注册失败！请重试！";
+				}
 			} catch(Exception e) { e.printStackTrace(); }
 		}
 		req.setAttribute("info", info);
-		req.getRequestDispatcher(path).forward(req, resp);
+		req.getRequestDispatcher("/register.jsp").forward(req, resp);
 	}
 	
 	@Override

@@ -32,8 +32,8 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		String keyword = req.getParameter("keyword");
-		List<String> info = new ArrayList<String>();
-		
+		ArrayList<String> thead = new ArrayList<String>();
+		ArrayList<ArrayList<String>> tbody = new ArrayList<ArrayList<String>>();
 		if(keyword != null && !"".equals(keyword)) {
 // search by name
 			/*keyword = keyword.toUpperCase().replaceAll(" ", "_");
@@ -49,30 +49,41 @@ public class SearchServlet extends HttpServlet {
 				}
 			} catch(Exception e) { e.printStackTrace(); }*/
 // fuzzy search
+			int[] needs = {0, 2, 6, 4};
 			TreeSet<WebService> apis = new TreeSet<WebService>(new SimilarityComparator());
 			try {
 				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword, apis)) {
 					WebServiceAttribute[] attributes = WebServiceAttribute.values();
-					for(WebService api : apis) {
-						WebService ws = new WebService(api.getAttributeContent(WebServiceAttribute.API_NAME), new User("nhjjjb@gmail.com","nhjjjb","nhjjjb"));
-						for(int i = 0; i < attributes.length; ++i)
-							info.add(attributes[i].getName() + ": " + api.getAttributeContent(attributes[i]));
-						info.add("value of static factors :");
-						for(DataItem item : ws.getInstance().getStaticItems())
-							info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
-						info.add("value of dynamic factors :");
-						for(DataItem item : ws.getInstance().getDynamicItems())
-							info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
-						info.add("<br><br>");
+					for (int i = 0; i < 4; i++)
+						thead.add(attributes[needs[i]].getName());
+					for (WebService api : apis) {
+						ArrayList<String> temp = new ArrayList<String>();
+						for (int i = 0; i < 4; i++)
+							temp.add(api.getAttributeContent(attributes[needs[i]]));
+						tbody.add(temp);
 					}
-				} else {
-					info.add("no such web service found");
+					//for(WebService api : apis) {
+						//WebService ws = new WebService(api.getAttributeContent(WebServiceAttribute.API_NAME), new User("nhjjjb@gmail.com","nhjjjb","nhjjjb"));
+						//for(int i = 0; i < attributes.length; ++i)
+						//	info.add(attributes[i].getName() + ": " + api.getAttributeContent(attributes[i]));
+						//info.add("value of static factors :");
+						//for(DataItem item : ws.getInstance().getStaticItems())
+						//	info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
+						//info.add("value of dynamic factors :");
+						//for(DataItem item : ws.getInstance().getDynamicItems())
+						//	info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
+						//info.add("<br><br>");
+					//}
 				}
-			} catch(Exception e) { e.printStackTrace(); }
-			req.setAttribute("info", info);
-			req.getRequestDispatcher("result.jsp").forward(req, resp);
+			} catch(Exception e) { 
+				e.printStackTrace();
+			}
+			req.getSession().setAttribute("thead", thead);
+			req.getSession().setAttribute("tbody", tbody);
+			req.getSession().setAttribute("haha", "hahahaha");
+			req.getRequestDispatcher("/result.jsp").forward(req, resp);
 		} else {
-			req.getRequestDispatcher("index.jsp").forward(req, resp);
+			req.getRequestDispatcher("/index.jsp").forward(req, resp);
 		}
 	}
 	
