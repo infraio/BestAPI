@@ -56,12 +56,25 @@ public class CategoryNode extends Node {
 		this.weight = weight;
 	}
 	
+	public void setWeightByChilds() {
+		double tempWeight = 0.0;
+		for (int i = 0; i < childs.size(); i++) {
+			if (childs.get(i) instanceof CategoryNode) {
+				CategoryNode temp = (CategoryNode) childs.get(i);
+				temp.setWeightByChilds();
+			}
+			tempWeight += childs.get(i).getWeight();
+		}
+		setWeight(tempWeight);
+	}
+	
 	@Override
 	public String toString() {
 		String str = "";
 		for (int i = 0; i < level; i++)
 			str += "\t";
-		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+//		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+		str += this.name + "," + this.weight + "\n";
 		for (int i = 0; i < childs.size(); i++) {
 			str += childs.get(i);
 		}

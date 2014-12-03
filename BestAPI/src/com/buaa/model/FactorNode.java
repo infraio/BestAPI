@@ -41,7 +41,8 @@ public class FactorNode extends Node {
 		String str = "";
 		for (int i = 0; i < level; i++)
 			str += "\t";
-		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+//		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+		str += this.name + "," + this.weight + "\n";
 		return str;
 	}
 }
