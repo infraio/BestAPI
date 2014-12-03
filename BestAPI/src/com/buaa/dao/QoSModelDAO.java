@@ -15,9 +15,8 @@ public class QoSModelDAO {
 		QoSModel qosModel = new QoSModel(domain);
 		File file = new File(dir + "/QoSModel_" + domain + ".xml");
 		try {
-			System.out.println(file.getPath());
+//			System.out.println(file.getPath());
 			if (file.exists()) {
-				System.out.println("2");
 				SAXReader sr = new SAXReader();
 				Document doc = sr.read(file);
 				Element rootElement = doc.getRootElement();
