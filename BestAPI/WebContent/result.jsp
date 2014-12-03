@@ -14,7 +14,7 @@
 	<jsp:include page="head.jsp"></jsp:include>
 	
 	<div class="view-result">
-	<h2>搜索结果</h2>
+	<h4>搜索结果</h4>
 	<%
 	ArrayList<String> thead = (ArrayList<String>) session.getAttribute("thead");
 	ArrayList<ArrayList<String>> tbody = (ArrayList<ArrayList<String>>) session.getAttribute("tbody");

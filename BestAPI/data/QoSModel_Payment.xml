@@ -1,0 +1,59 @@
+<QoSAttribute>
+	<name>Payment Service</name>
+	<QoSAttributes>
+		<QoSAttribute>
+			<name>Static Attribute</name>
+			<QoSAttributes>
+				<QoSAttribute>
+					<name>Interface Stability</name>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Robustness</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Exception handling capability</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Self-recovery capability</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+			</QoSAttributes>
+		</QoSAttribute>
+		<QoSAttribute>
+			<name>Dynamic Attribute</name>
+			<QoSAttributes>
+				<QoSAttribute>
+					<name>Availability</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Response time</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Performance</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Service run time</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Throughput</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+			</QoSAttributes>
+		</QoSAttribute>
+		<QoSAttribute>
+			<name>Domain Attribute</name>
+			<QoSAttributes>
+				<QoSAttribute>
+					<name>User number</name>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Pay success rate</name>
+				</QoSAttribute>
+			</QoSAttributes>
+		</QoSAttribute>
+	</QoSAttributes>
+</QoSAttribute>

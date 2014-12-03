@@ -2,18 +2,18 @@ package com.buaa.model;
 
 import java.util.List;
 
-public class EvaluationConceptTree {
+public class EvaluationTree {
 	
 	private String name;
 	private Node root;
 	private List<FactorNode> staticFactors;
 	private List<FactorNode> dynamicFactors;
 	
-	public EvaluationConceptTree() {}
+	public EvaluationTree() {}
 	
 	public void getFactors(Node node, List<FactorNode> factors) {
 		if(node instanceof CategoryNode) {
-			for(Node anode : ((CategoryNode)node).getChild()) 
+			for(Node anode : ((CategoryNode)node).getChilds()) 
 				getFactors(anode, factors);
 		} else if(node instanceof FactorNode) { 
 			factors.add((FactorNode)node);
@@ -52,4 +52,8 @@ public class EvaluationConceptTree {
 		this.root = root;
 	}
 	
+	@Override
+	public String toString() {
+		return this.name + this.root;
+	}
 }

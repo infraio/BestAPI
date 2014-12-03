@@ -18,7 +18,7 @@ import org.dom4j.io.SAXReader;
 import com.buaa.model.CategoryNode;
 import com.buaa.model.DataInstance;
 import com.buaa.model.DataItem;
-import com.buaa.model.EvaluationConceptTree;
+import com.buaa.model.EvaluationTree;
 import com.buaa.model.FactorNode;
 import com.buaa.model.Node;
 import com.buaa.model.User;
@@ -59,7 +59,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 		}
 	}
 	
-	private boolean readTree(EvaluationConceptTree tree) {
+	private boolean readTree(EvaluationTree tree) {
 		boolean flag = false;
 		try {
 			File target = new File(dir + "/" + tree.getName() + ".xml");
@@ -90,7 +90,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 		return flag;
 	}
 	
-	private void random(EvaluationConceptTree tree) throws SQLException {
+	private void random(EvaluationTree tree) throws SQLException {
 		try {
 			
 			int apinum = 7133, usernum = 100;
@@ -180,7 +180,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 		}
 	}
 	
-	public boolean createTree(EvaluationConceptTree tree) throws Exception {
+	public boolean createTree(EvaluationTree tree) throws Exception {
 		boolean flag = false;
 		try {
 			if(readTree(tree)) {
@@ -219,7 +219,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 		return flag;
 	}
 	
-	public boolean getWeight(WebService api, EvaluationConceptTree tree) throws Exception {
+	public boolean getWeight(WebService api, EvaluationTree tree) throws Exception {
 		boolean flag = false;
 		try {
 			File target = new File(dir + "/map.xml");

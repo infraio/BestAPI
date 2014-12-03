@@ -4,6 +4,8 @@ public abstract class Node {
 	
 	protected String name;
 	protected double weight;
+	protected double relativeWeight;
+	protected int level;
 	
 	public Node() {}
 	
@@ -21,5 +23,21 @@ public abstract class Node {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+	
+	public double getRelativeWeight() {
+		return this.relativeWeight;
+	}
+	
+	public void setRelativeWeight(double relativeWeight) {
+		this.relativeWeight = relativeWeight;
+	}
+	
+	public int getLevel() {
+		return this.level;
+	}
+	
+	public void setLevel(int level) {
+		this.level = level;
 	}
 }

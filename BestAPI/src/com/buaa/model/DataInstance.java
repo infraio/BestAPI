@@ -7,7 +7,7 @@ import com.buaa.dao.TreeDAOFactory;
 
 public class DataInstance {
 	
-	private EvaluationConceptTree tree;
+	private EvaluationTree tree;
 	private List<DataItem> staticItems;
 	private List<DataItem> dynamicItems;
 	private User user;
@@ -18,7 +18,7 @@ public class DataInstance {
 		this.api = api;
 		this.staticItems = new ArrayList<DataItem>();
 		this.dynamicItems = new ArrayList<DataItem>();
-		this.tree = new EvaluationConceptTree();
+		this.tree = new EvaluationTree();
 		TreeDAOFactory.getTreeDAOInstance().getWeight(api, tree);
 		for(FactorNode node : tree.getStaticFactors())
 			staticItems.add(new DataItem(node));
@@ -36,11 +36,11 @@ public class DataInstance {
 		return result;
 	}
 
-	public EvaluationConceptTree getTree() {
+	public EvaluationTree getTree() {
 		return tree;
 	}
 
-	public void setTree(EvaluationConceptTree tree) {
+	public void setTree(EvaluationTree tree) {
 		this.tree = tree;
 	}
 

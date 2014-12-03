@@ -2,6 +2,7 @@ package com.buaa.model;
 
 public class WebService {
 	
+	private int id;
 	private int similarity;
 	private DataInstance instance;
 	
@@ -40,6 +41,14 @@ public class WebService {
 	
 	public int getSimilarity() {
 		return similarity;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	public void setAttributeContent(WebServiceAttribute wsa, String content) {

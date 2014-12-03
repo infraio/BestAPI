@@ -15,6 +15,11 @@ public class FactorNode extends Node {
 		this.weight = weight;
 	}
 	
+	public FactorNode(String name, int level) {
+		this.name = name;
+		this.level = level;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -29,5 +34,14 @@ public class FactorNode extends Node {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+	
+	@Override
+	public String toString() {
+		String str = "";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+		return str;
 	}
 }

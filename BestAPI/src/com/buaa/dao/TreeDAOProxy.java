@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.buaa.model.DataInstance;
 import com.buaa.model.DataItem;
-import com.buaa.model.EvaluationConceptTree;
+import com.buaa.model.EvaluationTree;
 import com.buaa.model.User;
 import com.buaa.model.WebService;
 
@@ -30,7 +30,7 @@ public class TreeDAOProxy implements TreeDAOInterface {
 //		return flag;
 //	}
 	
-	public boolean createTree(EvaluationConceptTree tree) {
+	public boolean createTree(EvaluationTree tree) {
 		boolean flag = false;
 		try { flag = this.dao.createTree(tree);
 		} catch (Exception e) { e.printStackTrace(); 
@@ -38,7 +38,7 @@ public class TreeDAOProxy implements TreeDAOInterface {
 		return flag;
 	}
 	
-	public boolean getWeight(WebService api, EvaluationConceptTree tree) {
+	public boolean getWeight(WebService api, EvaluationTree tree) {
 		boolean flag = false;
 		try { flag = this.dao.getWeight(api, tree);
 		} catch (Exception e) { e.printStackTrace(); 

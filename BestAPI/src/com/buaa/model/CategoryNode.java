@@ -5,29 +5,39 @@ import java.util.List;
 
 public class CategoryNode extends Node {
 
-	private List<Node> child;
+	private List<Node> childs;
 	
 	public CategoryNode() {
-		child = new ArrayList<Node>();
+		childs = new ArrayList<Node>();
 	}
 	
 	public CategoryNode(String name) {
 		this.name = name;
-		this.child = new ArrayList<Node>();
+		this.childs = new ArrayList<Node>();
 	}
 	
 	public CategoryNode(String name, double weight) {
 		this.name = name;
 		this.weight = weight;
-		this.child = new ArrayList<Node>();
+		this.childs = new ArrayList<Node>();
 	}
 	
-	public List<Node> getChild() {
-		return child;
+	public CategoryNode(String name, int level) {
+		this.name = name;
+		this.level = level;
+		this.childs = new ArrayList<Node>();
+	}
+	
+	public List<Node> getChilds() {
+		return childs;
 	}
 
-	public void setChild(List<Node> child) {
-		this.child = child;
+	public void setChilds(List<Node> childs) {
+		this.childs = childs;
+	}
+	
+	public void addchild(Node child) {
+		this.childs.add(child);
 	}
 	
 	public String getName() {
@@ -44,5 +54,17 @@ public class CategoryNode extends Node {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+	
+	@Override
+	public String toString() {
+		String str = "";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += this.name + "," + this.weight + "," + this.relativeWeight + "\n";
+		for (int i = 0; i < childs.size(); i++) {
+			str += childs.get(i);
+		}
+		return str;
 	}
 }
