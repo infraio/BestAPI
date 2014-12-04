@@ -40,4 +40,8 @@ public abstract class Node {
 	public void setLevel(int level) {
 		this.level = level;
 	}
+	
+	public String toXML() {
+		return this.toXML();
+	}
 }

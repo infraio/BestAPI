@@ -1,10 +1,13 @@
 package com.buaa.model;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.util.List;
 import java.util.ArrayList;
 
 public class EvaluationTree {
 	
+	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	private String name;
 	private Node root;
 	private List<FactorNode> staticFactors;
@@ -66,6 +69,18 @@ public class EvaluationTree {
 	public void setRoot(Node root) {
 		this.root = root;
 	}
+	
+	public void saveToXML() {
+		try {
+			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + name + ".txt"));
+			fw.write(root.toXML());
+			fw.flush();
+			fw.close();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	
 	@Override
 	public String toString() {

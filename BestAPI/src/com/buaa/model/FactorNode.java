@@ -45,4 +45,22 @@ public class FactorNode extends Node {
 		str += this.name + "," + this.weight + "\n";
 		return str;
 	}
+	
+	@Override
+	public String toXML() {
+		String str = "";
+		for (int i = 0; i < level - 1; i++)
+			str += "\t";
+		str += "<FactorNode>\n";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "<Name>" + name + "</Name>\n";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "<Weight>" + weight + "</Weight>\n";
+		for (int i = 0; i < level - 1; i++)
+			str += "\t";
+		str += "</FactorNode>\n";
+		return str;
+	}
 }

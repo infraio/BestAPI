@@ -80,4 +80,30 @@ public class CategoryNode extends Node {
 		}
 		return str;
 	}
+	
+	@Override
+	public String toXML() {
+		String str = "";
+		for (int i = 0; i < level - 1; i++)
+			str += "\t";
+		str += "<CategoryNode>\n";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "<Name>" + name + "</Name>\n";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "<Weight>" + weight + "</Weight>\n";
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "<Childs>\n";
+		for (int i = 0; i < childs.size(); i++)
+			str += childs.get(i).toXML();
+		for (int i = 0; i < level; i++)
+			str += "\t";
+		str += "</Childs>\n";
+		for (int i = 0; i < level - 1; i++)
+			str += "\t";
+		str += "</CategoryNode>\n";
+		return str;
+	}
 }

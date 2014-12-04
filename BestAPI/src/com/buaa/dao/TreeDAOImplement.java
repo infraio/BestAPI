@@ -46,7 +46,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 			CategoryNode node = new CategoryNode();
 			node.setName(name);
 			node.setWeight(weight);
-			father.getChild().add(node);
+			father.getChilds().add(node);
 			for(@SuppressWarnings("rawtypes")
 			Iterator iter = nodes.elementIterator(); iter.hasNext(); ) {
 				recurse((Element)iter.next(), node);
@@ -55,7 +55,7 @@ public class TreeDAOImplement implements TreeDAOInterface {
 			FactorNode node = new FactorNode();
 			node.setName(name);
 			node.setWeight(weight);
-			father.getChild().add(node);
+			father.getChilds().add(node);
 		}
 	}
 	
@@ -69,9 +69,9 @@ public class TreeDAOImplement implements TreeDAOInterface {
 				Element root = doc.getRootElement();
 				CategoryNode father = new CategoryNode();
 				recurse(root, father);
-				tree.setRoot(father.getChild().get(0));
+				tree.setRoot(father.getChilds().get(0));
 				
-				for(Node node : ((CategoryNode)tree.getRoot()).getChild()) {
+				for(Node node : ((CategoryNode)tree.getRoot()).getChilds()) {
 					if(node.getName().contains("Static")) {
 						List<FactorNode> staticFactors = new ArrayList<FactorNode>();
 						tree.getFactors(node, staticFactors);

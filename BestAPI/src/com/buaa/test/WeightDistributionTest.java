@@ -34,6 +34,7 @@ public class WeightDistributionTest {
 		wd.hybridMethod(eTree, dataSet);
 		System.out.println(eTree);
 		System.out.println(eTree.checkConstraintRules());
+		eTree.saveToXML();
 //		System.out.println(dataSet.size());
 /*		wd.weightSplitByML(fList, dataSet);
 		System.out.println("评价因子\t权重");
