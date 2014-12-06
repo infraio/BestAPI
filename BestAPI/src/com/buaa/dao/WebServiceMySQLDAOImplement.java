@@ -1,5 +1,8 @@
 package com.buaa.dao;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,9 +18,37 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 	private Connection connect = null;
 	private PreparedStatement pstmt = null;
 	private Statement stmt = null;
+	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	
 	public WebServiceMySQLDAOImplement(Connection connect) {
 		this.connect = connect;
+	}
+	
+	public boolean saveWebServices() throws Exception {
+		boolean flag = false;
+		try {
+			String sql = "SELECT api_name,api_provider,api_endpoint,api_homepage,contact_email,primary_category,protocol_formats,api_hub_url,authentication_mode FROM api";
+			this.stmt = connect.createStatement();
+			ResultSet rs = this.stmt.executeQuery(sql);
+			File file = new File(dir + "/apis_backup.txt");
+			file.createNewFile();
+			BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+			while(rs.next()) {
+				for (int i = 1; i < 9; i++)
+					bw.write(rs.getString(i) + "\t");
+				bw.write(rs.getString(9) + "\n");
+				bw.flush();
+				flag = true;
+			}
+			bw.close();
+		} catch(Exception e) {
+			throw e;
+		} finally {
+			if(this.pstmt != null) {
+					this.pstmt.close();
+			}
+		}
+		return flag;
 	}
 	
 	public boolean submitWebService(WebService api) throws Exception {

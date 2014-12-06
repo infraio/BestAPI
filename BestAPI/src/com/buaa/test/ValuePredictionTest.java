@@ -1,6 +1,7 @@
 package com.buaa.test;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,6 +14,7 @@ public class ValuePredictionTest {
 	private final double density = 0.2;
 	private static final String rtFile = "/home/xiaohao/github/BestAPI/BestAPI/data/rtmatrix.txt";
 	private static final String resultFile = "/home/xiaohao/github/BestAPI/BestAPI/data/result.txt";
+	private static final String mapReduceInFile = "/home/xiaohao/github/BestAPI/BestAPI/data/mapreduce.in";
 	private static final int rowNum = 339;
 	private static final int colNum = 5825;
 	
@@ -20,13 +22,31 @@ public class ValuePredictionTest {
 		ValuePredictionTest vpt = new ValuePredictionTest();
 		double[][] matrix = vpt.getMatrix(rtFile);
 		double[][] randomMatrix = vpt.getRandomMatrix(matrix);
-		for (int i = 0; i < colNum; i++)
-			System.out.println(matrix[0][i] + "\t" + randomMatrix[0][i]);
+		vpt.saveMatrixToFile(randomMatrix, mapReduceInFile);
+		//for (int i = 0; i < colNum; i++)
+		//	System.out.println(matrix[0][i] + "\t" + randomMatrix[0][i]);
 		//ValuePrediction vp = new ValuePrediction(randomMatrix);
 		//vp.predictAll();
 		//double[][] result = vp.getResult();
-		double[][] result = vpt.getMatrix(resultFile);
-		vpt.computeMaeRmse(matrix, result);
+		//double[][] result = vpt.getMatrix(resultFile);
+		//vpt.computeMaeRmse(matrix, result);
+	}
+	
+	private void saveMatrixToFile(double[][] matrix, String filePath) {
+		try {
+			FileWriter fw = new FileWriter(new File(filePath));
+			for (int i = 0; i < rowNum; i++) {
+				for (int j = 0; j < colNum; j++) {
+					if (matrix[i][j] != 0.0 && matrix[i][j] != -1.0) {
+						fw.write(i + " " + j + " " + matrix[i][j] + "\n");
+					}
+				}
+				fw.flush();
+			}
+			fw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private void computeMaeRmse(double[][] matrix, double[][] result) {

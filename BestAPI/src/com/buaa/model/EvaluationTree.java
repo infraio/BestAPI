@@ -15,6 +15,12 @@ public class EvaluationTree {
 	
 	public EvaluationTree() {}
 	
+	public List<FactorNode> getFactors() {
+		List<FactorNode> fList = new ArrayList<FactorNode>();
+		this.getFactors(this.getRoot(), fList);
+		return fList;
+	}
+	
 	public void getFactors(Node node, List<FactorNode> factors) {
 		if(node instanceof CategoryNode) {
 			for(Node anode : ((CategoryNode)node).getChilds()) 
@@ -72,7 +78,7 @@ public class EvaluationTree {
 	
 	public void saveToXML() {
 		try {
-			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + name + ".txt"));
+			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + name + ".xml"));
 			fw.write(root.toXML());
 			fw.flush();
 			fw.close();

@@ -4,10 +4,17 @@ import java.util.ArrayList;
 
 public class FactorNode extends Node {
 
+	private FactorType type;
+	
 	public FactorNode() {}
 	
 	public FactorNode(String name) {
 		this.name = name;
+	}
+	
+	public FactorNode(String name, FactorType type) {
+		this.name = name;
+		this.type = type;
 	}
 	
 	public FactorNode(String name, double weight) {
@@ -34,6 +41,27 @@ public class FactorNode extends Node {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+	
+	public FactorType getType() {
+		if (this.type == null) {
+			setType(decideTypeByName());
+		}
+		return this.type;
+	}
+	
+	public void setType(FactorType type) {
+		this.type = type;
+	}
+	
+	private FactorType decideTypeByName() {
+		if (this.name.equals("Pay success rate")) {
+			return FactorType.related;
+		} else if (this.name.equals("Response time")) {
+			return FactorType.related;
+		} else {
+			return FactorType.independent;
+		}
 	}
 	
 	@Override

@@ -25,16 +25,22 @@ public class WeightDistributionTest {
 		QoSModelDAO qosDao = new QoSModelDAO();
 		EvaluationTreeDAO etDao = new EvaluationTreeDAO();
 		EvaluationTree eTree = etDao.genByQoSModel(qosDao.getByDomain("Payment"));
-		WeightDistribution wd = new WeightDistribution();
+		etDao.createDbForFactors(eTree);
+		try {
+			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServices();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+//		WeightDistribution wd = new WeightDistribution();
 //		wd.weightSplitByAHP(eTree);
 //		System.out.println(eTree);
-		List<FactorNode> fList = new ArrayList<FactorNode>();
-		eTree.getFactors(eTree.getRoot(), fList);
-		HashMap<List<Double>, Boolean> dataSet = wdt.readDataSet(fList.size());
-		wd.hybridMethod(eTree, dataSet);
-		System.out.println(eTree);
-		System.out.println(eTree.checkConstraintRules());
-		eTree.saveToXML();
+//		List<FactorNode> fList = new ArrayList<FactorNode>();
+//		eTree.getFactors(eTree.getRoot(), fList);
+//		HashMap<List<Double>, Boolean> dataSet = wdt.readDataSet(fList.size());
+//		wd.hybridMethod(eTree, dataSet);
+//		System.out.println(eTree);
+//		System.out.println(eTree.checkConstraintRules());
+//		eTree.saveToXML();
 //		System.out.println(dataSet.size());
 /*		wd.weightSplitByML(fList, dataSet);
 		System.out.println("评价因子\t权重");

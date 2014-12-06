@@ -12,10 +12,10 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class SimItem {
-	private static final int AROW = 101;
-	private static final int ACOL = 150;
-	private static final int BROW = 150;
-	private static final int BCOL = 101;
+	private static final int AROW = 5825;
+	private static final int ACOL = 339;
+	private static final int BROW = 339;
+	private static final int BCOL = 5825;
 	
 	public static class MatrixMapper 
 	extends Mapper<Object, Text, Text, Text> {

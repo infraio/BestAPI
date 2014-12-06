@@ -33,4 +33,12 @@ public class WebServiceMySQLDAOProxyTest {
 		assertTrue(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword, apis));
 		assertTrue(!apis.isEmpty());
 	}
+	
+	public static void main() {
+		try {
+			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServices();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

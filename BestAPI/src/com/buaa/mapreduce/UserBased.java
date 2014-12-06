@@ -15,10 +15,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class UserBased {
 	
 	private static final int k = 10;
-	private static final int ACOL = 150;
-	private static final int AROW = 150;
-	private static final int BCOL = 101;
-	private static final int BROW = 150;
+	private static final int ACOL = 339;
+	private static final int AROW = 339;
+	private static final int BCOL = 5825;
+	private static final int BROW = 339;
 	
 	public static class UserBasedMapper 
 	extends Mapper<Object, Text, Text, Text> {

@@ -89,4 +89,8 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		
 		return flag;
 	}
+	
+	public boolean saveWebServices() {
+		return false;
+	}
 }

@@ -58,4 +58,12 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		} finally { this.dbc.close(); }
 		return flag;
 	}
+	
+	public boolean saveWebServices() {
+		boolean flag = false;
+		try { flag = this.dao.saveWebServices();
+		} catch(Exception e) { e.printStackTrace();
+		} finally { this.dbc.close(); }
+		return flag;
+	}
 }

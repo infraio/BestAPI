@@ -13,10 +13,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class SimUser {
 	
-	private static final int ACOL = 101;
-	private static final int AROW = 150;
-	private static final int BCOL = 150;
-	private static final int BROW = 101;
+	private static final int ACOL = 5825;
+	private static final int AROW = 339;
+	private static final int BCOL = 339;
+	private static final int BROW = 5825;
 	
 	public static class SimUserMapper 
 	extends Mapper<Object, Text, Text, Text> {
