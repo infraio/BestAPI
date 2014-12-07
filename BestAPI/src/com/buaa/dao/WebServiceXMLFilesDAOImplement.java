@@ -1,7 +1,7 @@
 package com.buaa.dao;
 
 import java.io.File;
-import java.util.HashSet;
+import java.util.List;
 import java.util.TreeSet;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -26,9 +26,9 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		this.directory = directory;
 	}
 	
-	public boolean findWebServiceByName(WebService api) throws Exception {
-		boolean flag = false;
-		File target = new File(directory + api.getAttributeContent(WebServiceAttribute.API_NAME) + ".xml");
+	public WebService getWebServiceByName(String name) throws Exception {
+		WebService ws = new WebService();
+		File target = new File(directory + name + ".xml");
 		if(target.exists()) {
 			SAXReader sr = new SAXReader();
 			Document doc = sr.read(target);
@@ -36,15 +36,14 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 			WebServiceAttribute[] attributes = WebServiceAttribute.values();
 			
 			for(int i = 1; i < attributes.length; ++i)
-				api.setAttributeContent(attributes[i], root.elementText(attributes[i].getName()));
-			flag = true;
+				ws.setAttributeContent(attributes[i], root.elementText(attributes[i].getName()));
 		}
-		return flag;
+		return ws;
 	}
 	
-	public boolean submitWebService(WebService api) throws Exception {
+	public boolean addWebService(WebService ws) throws Exception {
 		boolean flag = false;
-		File target = new File(directory + api.getAttributeContent(WebServiceAttribute.API_NAME) + ".xml");
+		File target = new File(directory + ws.getAttributeContent(WebServiceAttribute.API_NAME) + ".xml");
 		if(!target.exists()) {
 			org.w3c.dom.Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
 			WebServiceAttribute[] attributes = WebServiceAttribute.values();
@@ -54,7 +53,7 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 			
 			for(int i = 0; i < attributes.length; ++i) {
 				org.w3c.dom.Element element = doc.createElement(attributes[i].getName());
-				element.appendChild(doc.createTextNode(api.getAttributeContent(attributes[i])));
+				element.appendChild(doc.createTextNode(ws.getAttributeContent(attributes[i])));
 				root.appendChild(element);
 			}
 			
@@ -68,15 +67,13 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
-		boolean flag = false;
-		
-		return flag;
+	public List<WebService> getWebServicesByCategory(String category) throws Exception {
+		return null;
 	}
 	
-	public boolean removeWebServiceByName(WebService api) throws Exception {
+	public boolean deleteWebServiceByName(String name) throws Exception {
 		boolean flag = false;
-		File target = new File(directory + api.getAttributeContent(WebServiceAttribute.API_NAME) + ".xml");
+		File target = new File(directory + name + ".xml");
 		if(target.exists()) {
 			if(target.delete())
 				flag = true;
@@ -84,13 +81,22 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean deleteWebService(WebService ws) throws Exception {
+		return deleteWebServiceByName(ws.getName());
+	}
+	
 	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception {
 		boolean flag = false;
-		
 		return flag;
 	}
 	
-	public boolean saveWebServices() {
-		return false;
+	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception {
+		boolean flag = false;
+		return flag;
+	}
+	
+	public boolean saveWebServicesFromFileToDb(String filePath) throws Exception {
+		boolean flag = false;
+		return flag;
 	}
 }

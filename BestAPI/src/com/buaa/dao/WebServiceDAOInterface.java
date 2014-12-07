@@ -1,18 +1,18 @@
 package com.buaa.dao;
 
-import java.util.HashSet;
+import java.util.List;
 import java.util.TreeSet;
 
 import com.buaa.model.WebService;
 
 public interface WebServiceDAOInterface {
 
-	public boolean submitWebService(WebService api) throws Exception;
-	public boolean findWebServiceByName(WebService api) throws Exception;
-	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception;
-	public boolean removeWebServiceByName(WebService api) throws Exception;
+	public boolean addWebService(WebService api) throws Exception;
+	public WebService getWebServiceByName(String name) throws Exception;
+	public List<WebService> getWebServicesByCategory(String category) throws Exception;
+	public boolean deleteWebService(WebService ws) throws Exception;
+	public boolean deleteWebServiceByName(String name) throws Exception;
 	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception;
-	public boolean saveWebServices() throws Exception;
-	
-	
+	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception;
+	public boolean saveWebServicesFromFileToDb(String filePath) throws Exception;
 }

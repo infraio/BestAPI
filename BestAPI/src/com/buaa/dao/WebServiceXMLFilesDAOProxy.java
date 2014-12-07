@@ -1,6 +1,6 @@
 package com.buaa.dao;
 
-import java.util.HashSet;
+import java.util.List;
 import java.util.TreeSet;
 
 import com.buaa.model.WebService;
@@ -15,56 +15,73 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		this.dao = new WebServiceXMLFilesDAOImplement(this.xfl.getDirectory());
 	}
 	
-	public boolean findWebServiceByName(WebService api) {
+	public WebService getWebServiceByName(String name) {
+		WebService ws = null;
+		try { 
+			ws = this.dao.getWebServiceByName(name);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		}
+		return ws;
+	}
+	
+	public boolean addWebService(WebService ws) {
 		boolean flag = false;
-		try {
-			flag = this.dao.findWebServiceByName(api);
-		} catch (Exception e) {
+		try { 
+			flag = this.dao.addWebService(ws);
+		} catch(Exception e) { 
 			e.printStackTrace();
 		}
 		return flag;
 	}
 	
-	public boolean submitWebService(WebService api) {
+	public List<WebService> getWebServicesByCategory(String category) {
+		List<WebService> wss = null;
+		try { 
+			wss = this.dao.getWebServicesByCategory(category);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		}
+		return wss;
+	}
+
+	public boolean deleteWebServiceByName(String name) {
 		boolean flag = false;
-		try {
-			flag = this.dao.submitWebService(api);
-		} catch (Exception e) {
+		try { 
+			flag = this.dao.deleteWebServiceByName(name);
+		} catch(Exception e) { 
 			e.printStackTrace();
 		}
 		return flag;
 	}
 	
-	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) {
+	public boolean deleteWebService(WebService ws) {
 		boolean flag = false;
-		try {
-			flag = this.dao.findWebServicesByOwner(owner, apis);
-		} catch (Exception e) {
+		try { 
+			flag = this.dao.deleteWebService(ws);
+		} catch(Exception e) { 
 			e.printStackTrace();
 		}
 		return flag;
 	}
 	
-	public boolean removeWebServiceByName(WebService api) {
+	public boolean fuzzySearch(String key, TreeSet<WebService> apis) {
 		boolean flag = false;
-		try {
-			flag = this.dao.removeWebServiceByName(api);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return flag;
-	}
-	
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception {
-		boolean flag = false;
-		try {
+		try { 
 			flag = this.dao.fuzzySearch(key, apis);
-		} catch (Exception e) {
+		} catch(Exception e) { 
 			e.printStackTrace();
 		}
 		return flag;
 	}
-	public boolean saveWebServices() {
-		return true;
+	
+	public boolean saveWebServicesFromDbToFile(String filePath) {
+		boolean flag = false;
+		return flag;
+	}
+	
+	public boolean saveWebServicesFromFileToDb(String filePath) {
+		boolean flag = false;
+		return flag;
 	}
 }

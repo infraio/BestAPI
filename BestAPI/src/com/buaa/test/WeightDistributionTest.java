@@ -18,7 +18,7 @@ import com.buaa.algorithm.*;
 public class WeightDistributionTest {
 
 	private final int Count = 1000;
-	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
+	private final static String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	
 	public static void main(String[] args) {
 		WeightDistributionTest wdt = new WeightDistributionTest();
@@ -27,7 +27,7 @@ public class WeightDistributionTest {
 		EvaluationTree eTree = etDao.genByQoSModel(qosDao.getByDomain("Payment"));
 		etDao.createDbForFactors(eTree);
 		try {
-			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServices();
+			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServicesFromDbToFile(dir + "/apis_test.txt");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -1,4 +1,3 @@
-
 drop database if exists bestapi;
 create database bestapi;
 
@@ -13,17 +12,18 @@ create table user(
 
 drop table if exists api;
 create table api(
-	API_NAME varchar(255) primary key,
-	API_OWNER varchar(255),
-	API_PROVIDER varchar(255),
-	API_ENDPOINT varchar(255),
-	API_HOMEPAGE varchar(255),
-	CONTACT_EMAIL varchar(255),
-	PRIMARY_CATEGORY varchar(255),
-	SECONDARY_CATEGORIES varchar(255),
-	PROTOCOL_FORMATS varchar(255),
-	APIHUB_URL varchar(255),
-	SSL_SUPPORT varchar(255),
-	TWITER_URL varchar(255),
-	AUTHENTICATION_MODE varchar(255)
+	name varchar(255) primary key,
+	owner varchar(255),
+	endpoint varchar(255),
+	homepage varchar(255),
+	contact_email varchar(255),
+	category varchar(20),
+	protocol_formats varchar(20),
+	hub_url varchar(255),
+	authentication_mode varchar(20)
+);
+
+drop table if exists domain;
+create table domain (
+	name varchar(20) primary key
 );

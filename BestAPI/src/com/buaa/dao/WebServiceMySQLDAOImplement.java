@@ -1,13 +1,16 @@
 package com.buaa.dao;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 import com.buaa.model.WebService;
@@ -18,19 +21,18 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 	private Connection connect = null;
 	private PreparedStatement pstmt = null;
 	private Statement stmt = null;
-	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	
 	public WebServiceMySQLDAOImplement(Connection connect) {
 		this.connect = connect;
 	}
 	
-	public boolean saveWebServices() throws Exception {
+	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception {
 		boolean flag = false;
 		try {
-			String sql = "SELECT api_name,api_provider,api_endpoint,api_homepage,contact_email,primary_category,protocol_formats,api_hub_url,authentication_mode FROM api";
+			String sql = "SELECT * FROM api";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
-			File file = new File(dir + "/apis_backup.txt");
+			File file = new File(filePath);
 			file.createNewFile();
 			BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 			while(rs.next()) {
@@ -51,13 +53,39 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean submitWebService(WebService api) throws Exception {
+	public boolean saveWebServicesFromFileToDb(String filePath) throws Exception {
 		boolean flag = false;
 		try {
-			String sql = "INSERT INTO api VALUE(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			File file = new File(filePath);
+			if (file.exists()) {
+				BufferedReader br = new BufferedReader(new FileReader(file));
+				String line = br.readLine();
+				while (line != null) {
+					String[] s = line.split("\t");
+					if (s.length == 9) {
+						WebService ws = new WebService(s);
+						flag = addWebService(ws);
+					}
+					line = br.readLine();
+				}
+				br.close();
+			}
+		} catch(Exception e) {
+			throw e;
+		} finally {
+			if(this.pstmt != null) {
+					this.pstmt.close();
+			}
+		}
+		return flag;
+	}
+	
+	public boolean addWebService(WebService api) throws Exception {
+		boolean flag = false;
+		try {
+			String sql = "INSERT INTO api VALUE(?,?,?,?,?,?,?,?,?)";
 			this.pstmt = this.connect.prepareStatement(sql);
 			WebServiceAttribute[] attributes = WebServiceAttribute.values();
-			
 			for(int i = 0; i < attributes.length; ++i) 
 				this.pstmt.setString(i+1, api.getAttributeContent(attributes[i]));
 			if(this.pstmt.executeUpdate() == 1)
@@ -72,18 +100,16 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean findWebServiceByName(WebService api) throws Exception {
-		boolean flag = false;
+	public WebService getWebServiceByName(String name) throws Exception {
+		WebService ws = new WebService();
 		try {
-			String sql = "SELECT * FROM api WHERE API_NAME=" + api.getAttributeContent(WebServiceAttribute.API_NAME);
+			String sql = "SELECT * FROM api WHERE name=\"" + name + "\"";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
-			
 			if(rs.next()) {
 				WebServiceAttribute[] attributes = WebServiceAttribute.values();
 				for(int i = 1; i < attributes.length; ++i) 
-					api.setAttributeContent(attributes[i], rs.getString(i+1));
-				flag = true;
+					ws.setAttributeContent(attributes[i], rs.getString(i+1));
 			}
 		} catch(Exception e) {
 			throw e;
@@ -92,24 +118,21 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 					this.pstmt.close();
 			}
 		}
-		return flag;
+		return ws;
 	}
 	
-	public boolean findWebServicesByOwner(String owner, HashSet<WebService> apis) throws Exception {
-		boolean flag = false;
+	public List<WebService> getWebServicesByCategory(String category) throws Exception {
+		List<WebService> wss = new ArrayList<WebService>();
 		try {
-			String sql = "SELECT * FROM api WHERE API_OWNER=\"" + owner + "\"";
+			String sql = "SELECT * FROM api WHERE category=\"" + category + "\"";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
-			
 			while(rs.next()) {
-				WebService api = new WebService();
+				WebService ws = new WebService();
 				WebServiceAttribute[] attributes = WebServiceAttribute.values();
 				for(int i = 0; i < attributes.length; ++i) 
-					api.setAttributeContent(attributes[i], rs.getString(i+1));
-				apis.add(api);
-//				for(WebService a : apis) System.out.println(a.getAttributeContent(WebServiceAttribute.API_NAME));
-				flag = true;
+					ws.setAttributeContent(attributes[i], rs.getString(i+1));
+				wss.add(ws);
 			}
 		} catch(Exception e) {
 			throw e;
@@ -118,13 +141,14 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 				this.pstmt.close();
 			}
 		}
-		return flag;
+		return wss;
 	}
 
-	public boolean removeWebServiceByName(WebService api) throws Exception {
+	public boolean deleteWebServiceByName(String name) throws Exception {
 		boolean flag = false;
 		try {
-			String sql = "DELETE FROM api WHERE API_NAME=" + api.getAttributeContent(WebServiceAttribute.API_NAME);
+			String sql = "DELETE FROM api WHERE name=\"" + name + "\"";
+			System.out.println(sql);
 			this.stmt = connect.createStatement();
 			if(this.stmt.executeUpdate(sql) >= 0)
 				flag = true;
@@ -138,17 +162,17 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean deleteWebService(WebService ws) throws Exception {
+		return deleteWebServiceByName(ws.getName());
+	}
+	
 	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception {
-		int[] weight = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+		int[] weight = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1};
 		boolean flag = false;
 		try {
-			String sql = "SELECT * FROM api WHERE API_NAME LIKE '%" + key + 
-						 "%' or API_OWNER LIKE '%" + key + "%' or API_PROVIDER LIKE '%" + key + 
-						 "%' or API_ENDPOINT LIKE '%" + key + "%' or API_HOMEPAGE LIKE '%" + key + 
-						 "%' or CONTACT_EMAIL LIKE '%" + key + "%' or PRIMARY_CATEGORY LIKE '%" + key + 
-						 "%' or SECONDARY_CATEGORIES LIKE '%" + key + "%' or PROTOCOL_FORMATS LIKE '%" + key + 
-						 "%' or API_HUB_URL LIKE '%" + key + "%' or SSL_SUPPORT LIKE '%" + key +
-						 "%' or TWITER_URL LIKE '%" + key + "%' or AUTHENTICATION_MODE LIKE '%" + key + "%'";
+			String sql = "SELECT * FROM api WHERE name LIKE '%" + key + "%'"
+					+ " or category LIKE '%" + key + "%'"
+					+ " or protocol_formats LIKE '%" + key + "%'";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
 			
