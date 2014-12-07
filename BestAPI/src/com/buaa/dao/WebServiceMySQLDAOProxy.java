@@ -14,7 +14,8 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		try {
 			this.dbc = new DatabaseConnector();
 		} catch (Exception e) {
-			e.printStackTrace(); return;
+			e.printStackTrace();
+			return;
 		}
 		this.dao = new WebServiceMySQLDAOImplement(this.dbc.getConnection());
 	}
@@ -79,16 +80,16 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) {
-		boolean flag = false;
+	public List<WebService> fuzzySearch(String key) {
+		List<WebService> wss = null;
 		try { 
-			flag = this.dao.fuzzySearch(key, apis);
+			wss = this.dao.fuzzySearch(key);
 		} catch(Exception e) { 
 			e.printStackTrace();
 		} finally { 
 			this.dbc.close(); 
 		}
-		return flag;
+		return wss;
 	}
 	
 	public boolean saveWebServicesFromDbToFile(String filePath) {

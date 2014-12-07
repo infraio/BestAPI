@@ -11,32 +11,93 @@ public class UserDAOProxy implements UserDAOInterface {
 		try { 
 			this.dbc = new DatabaseConnector();
 		} catch(Exception e) { 
-			e.printStackTrace(); return;
+			e.printStackTrace(); 
+			return;
 		}
 		this.dao = new UserDAOImplement(this.dbc.getConnection());
 	}
 	
-	public boolean findUser(User user) {
+	public boolean isExistUser(User user) {
 		boolean flag = false;
-		try { flag = this.dao.findUser(user);
-		} catch(Exception e) { e.printStackTrace();
-		} finally { this.dbc.close(); }
+		try { 
+			flag = this.dao.isExistUser(user);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
 		return flag;
+	}
+	
+	public User getUserByEmail(String email) {
+		User user = null;
+		try { 
+			user = this.dao.getUserByEmail(email);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return user;
 	}
 	
 	public boolean addUser(User user) {
 		boolean flag = false;
-		try { flag = this.dao.addUser(user);
-		} catch(Exception e) { e.printStackTrace();
-		} finally { this.dbc.close(); }
+		try { 
+			flag = this.dao.addUser(user);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
 		return flag;
 	}
 	
-	public boolean removeUser(User user) {
+	public boolean deleteUser(User user) {
 		boolean flag = false;
-		try { flag = this.dao.removeUser(user);
-		} catch(Exception e) { e.printStackTrace();
-		} finally { this.dbc.close(); }
+		try { 
+			flag = this.dao.deleteUser(user);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return flag;
+	}
+	
+	public boolean deleteUserByEmail(String email) {
+		boolean flag = false;
+		try { 
+			flag = this.dao.deleteUserByEmail(email);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return flag;
+	}
+	
+	public boolean addRandomUser() {
+		boolean flag = false;
+		try { 
+			flag = this.dao.addRandomUser();
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return flag;
+	}
+	
+	public boolean addRandomUsers(int n) {
+		boolean flag = false;
+		try { 
+			flag = this.dao.addRandomUsers(n);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
 		return flag;
 	}
 }

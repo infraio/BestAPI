@@ -65,14 +65,8 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) {
-		boolean flag = false;
-		try { 
-			flag = this.dao.fuzzySearch(key, apis);
-		} catch(Exception e) { 
-			e.printStackTrace();
-		}
-		return flag;
+	public List<WebService> fuzzySearch(String key) {
+		return null;
 	}
 	
 	public boolean saveWebServicesFromDbToFile(String filePath) {

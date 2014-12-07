@@ -40,7 +40,8 @@ public class LoginServlet extends HttpServlet {
 		} else {
 			User user = new User(email, password);
 			try {
-				if(UserDAOFactory.getUserDAOInstance().findUser(user)) {
+				if(UserDAOFactory.getUserDAOInstance().isExistUser(user)) {
+					user = UserDAOFactory.getUserDAOInstance().getUserByEmail(email);
 					req.getSession().setAttribute("user", user);
 					req.getRequestDispatcher("/index.jsp").forward(req, resp);
 				} else {

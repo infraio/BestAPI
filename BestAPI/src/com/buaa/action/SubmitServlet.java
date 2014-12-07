@@ -32,7 +32,7 @@ public class SubmitServlet extends HttpServlet {
 				api.setAttributeContent(attributes[i], req.getParameter(attributes[i].getName()));
 			api.setAttributeContent(WebServiceAttribute.API_OWNER, user);
 			try {
-				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).submitWebService(api)) {
+				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).addWebService(api)) {
 //					System.out.println("submit success");
 					// TODO
 				} else {

@@ -2,8 +2,8 @@ package com.buaa.test;
 
 import static org.junit.Assert.*;
 
+import java.util.List;
 import java.util.Comparator;
-import java.util.TreeSet;
 
 import com.buaa.model.*;
 import com.buaa.dao.*;
@@ -38,8 +38,7 @@ public class WebServiceMySQLDAOProxyTest {
 	@Test
 	public void testFuzzySearch() throws Exception {
 		String keyword = "Payment";
-		TreeSet<WebService> apis = new TreeSet<WebService>(new SimilarityComparator());
-		assertTrue(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword, apis));
-		assertTrue(!apis.isEmpty());
+		List<WebService> wss = WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword);
+		assertTrue(!wss.isEmpty());
 	}
 }

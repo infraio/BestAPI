@@ -101,12 +101,13 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 	}
 	
 	public WebService getWebServiceByName(String name) throws Exception {
-		WebService ws = new WebService();
+		WebService ws = null;
 		try {
 			String sql = "SELECT * FROM api WHERE name=\"" + name + "\"";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
 			if(rs.next()) {
+				ws = new WebService();
 				WebServiceAttribute[] attributes = WebServiceAttribute.values();
 				for(int i = 1; i < attributes.length; ++i) 
 					ws.setAttributeContent(attributes[i], rs.getString(i+1));
@@ -166,31 +167,33 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		return deleteWebServiceByName(ws.getName());
 	}
 	
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception {
-		int[] weight = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1};
-		boolean flag = false;
+	public List<WebService> fuzzySearch(String key) throws Exception {
+		List<WebService> apis = new ArrayList<WebService>();
 		try {
 			String sql = "SELECT * FROM api WHERE name LIKE '%" + key + "%'"
 					+ " or category LIKE '%" + key + "%'"
 					+ " or protocol_formats LIKE '%" + key + "%'";
 			this.stmt = connect.createStatement();
 			ResultSet rs = this.stmt.executeQuery(sql);
-			
 			while(rs.next()) {
 				WebService api = new WebService();
 				WebServiceAttribute[] attributes = WebServiceAttribute.values();
-				int similarity = 0;
 				for(int i = 0; i < attributes.length; ++i)  {
 					String attribute = rs.getString(i+1);
-					if(attribute != null) {
-						if(attribute.contains(key))
-							similarity += weight[i];
-						api.setAttributeContent(attributes[i], attribute);
-					}
+					api.setAttributeContent(attributes[i], attribute);
+				}
+				int similarity = 0;
+				if (api.getName().contains(key)) {
+					similarity += 2;
+				}
+				if (api.getCategory().contains(key)) {
+					similarity += 1;
+				}
+				if (api.getProtocolFormats().contains(key)) {
+					similarity += 1;
 				}
 				api.setSimilarity(similarity);
 				apis.add(api);
-				flag = true;
 			}
 		} catch(Exception e) {
 			throw e;
@@ -199,6 +202,6 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 				this.pstmt.close();
 			}
 		}
-		return flag;
+		return apis;
 	}
 }

@@ -85,9 +85,8 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		return deleteWebServiceByName(ws.getName());
 	}
 	
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception {
-		boolean flag = false;
-		return flag;
+	public List<WebService> fuzzySearch(String key) throws Exception {
+		return null;
 	}
 	
 	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception {

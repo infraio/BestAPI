@@ -2,6 +2,7 @@ package com.buaa.action;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.TreeSet;
@@ -21,7 +22,7 @@ import com.buaa.model.WebServiceAttribute;
 class SimilarityComparator implements Comparator<WebService> {
 	@Override
 	public int compare(WebService o1, WebService o2) {
-		return o1.getSimilarity()-o2.getSimilarity();
+		return o2.getSimilarity() - o1.getSimilarity();
 	}
 }
 
@@ -35,24 +36,12 @@ public class SearchServlet extends HttpServlet {
 		ArrayList<String> thead = new ArrayList<String>();
 		ArrayList<ArrayList<String>> tbody = new ArrayList<ArrayList<String>>();
 		if(keyword != null && !"".equals(keyword)) {
-// search by name
-			/*keyword = keyword.toUpperCase().replaceAll(" ", "_");
-			WebService api = new WebService();
-			api.setAttributeContent(WebServiceAttribute.API_NAME, keyword);
+			int[] needs = {0, 1, 5, 6};
+			List<WebService> apis;
 			try {
-				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.XMLFILES).findWebServiceByName(api)) {
-					WebServiceAttribute[] attributes = WebServiceAttribute.values();
-					for(int i = 0; i < attributes.length; ++i)
-						info.add(attributes[i].getName() + ":&nbsp;&nbsp;&nbsp;&nbsp;" + api.getAttributeContent(attributes[i]));
-				} else {
-					info.add("no such web service found");
-				}
-			} catch(Exception e) { e.printStackTrace(); }*/
-// fuzzy search
-			int[] needs = {0, 2, 6, 4};
-			TreeSet<WebService> apis = new TreeSet<WebService>(new SimilarityComparator());
-			try {
-				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword, apis)) {
+				apis = WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword);
+				Collections.sort(apis, new SimilarityComparator());
+				if(apis != null) {
 					WebServiceAttribute[] attributes = WebServiceAttribute.values();
 					for (int i = 0; i < 4; i++)
 						thead.add(attributes[needs[i]].getName());
@@ -62,18 +51,6 @@ public class SearchServlet extends HttpServlet {
 							temp.add(api.getAttributeContent(attributes[needs[i]]));
 						tbody.add(temp);
 					}
-					//for(WebService api : apis) {
-						//WebService ws = new WebService(api.getAttributeContent(WebServiceAttribute.API_NAME), new User("nhjjjb@gmail.com","nhjjjb","nhjjjb"));
-						//for(int i = 0; i < attributes.length; ++i)
-						//	info.add(attributes[i].getName() + ": " + api.getAttributeContent(attributes[i]));
-						//info.add("value of static factors :");
-						//for(DataItem item : ws.getInstance().getStaticItems())
-						//	info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
-						//info.add("value of dynamic factors :");
-						//for(DataItem item : ws.getInstance().getDynamicItems())
-						//	info.add("&nbsp;&nbsp;&nbsp;&nbsp;" + item.getFactor().getName() + ": " + item.getValue());
-						//info.add("<br><br>");
-					//}
 				}
 			} catch(Exception e) { 
 				e.printStackTrace();

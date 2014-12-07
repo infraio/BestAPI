@@ -12,7 +12,7 @@ public interface WebServiceDAOInterface {
 	public List<WebService> getWebServicesByCategory(String category) throws Exception;
 	public boolean deleteWebService(WebService ws) throws Exception;
 	public boolean deleteWebServiceByName(String name) throws Exception;
-	public boolean fuzzySearch(String key, TreeSet<WebService> apis) throws Exception;
+	public List<WebService> fuzzySearch(String key) throws Exception;
 	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception;
 	public boolean saveWebServicesFromFileToDb(String filePath) throws Exception;
 }
