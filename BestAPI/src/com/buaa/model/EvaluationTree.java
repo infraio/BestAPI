@@ -10,8 +10,9 @@ public class EvaluationTree {
 	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	private String name;
 	private Node root;
-	private List<FactorNode> staticFactors;
-	private List<FactorNode> dynamicFactors;
+	private List<FactorNode> independentFactors;
+	private List<FactorNode> relatedFactors;
+	private Domain domain;
 	
 	public EvaluationTree() {}
 	
@@ -44,21 +45,6 @@ public class EvaluationTree {
 		return nodes;
 	}
 	
-	public List<FactorNode> getStaticFactors() {
-		return staticFactors;
-	}
-
-	public void setStaticFactors(List<FactorNode> staticFactors) {
-		this.staticFactors = staticFactors;
-	}
-
-	public List<FactorNode> getDynamicFactors() {
-		return dynamicFactors;
-	}
-
-	public void setDynamicFactors(List<FactorNode> dynamicFactors) {
-		this.dynamicFactors = dynamicFactors;
-	}
 
 	public String getName() {
 		return name;
@@ -76,6 +62,48 @@ public class EvaluationTree {
 		this.root = root;
 	}
 	
+	public List<FactorNode> getIndependentFactors() {
+		if (independentFactors == null) {
+			List<FactorNode> fList = getFactors();
+			independentFactors = new ArrayList<FactorNode>();
+			for (FactorNode factor : fList) {
+				if (factor.getType() == FactorType.independent) {
+					independentFactors.add(factor);
+				}
+			}
+		}
+		return independentFactors;
+	}
+
+	public void setIndependentFactors(List<FactorNode> independentFactors) {
+		this.independentFactors = independentFactors;
+	}
+
+	public List<FactorNode> getRelatedFactors() {
+		if (relatedFactors == null) {
+			List<FactorNode> fList = getFactors();
+			relatedFactors = new ArrayList<FactorNode>();
+			for (FactorNode factor : fList) {
+				if (factor.getType() == FactorType.related) {
+					relatedFactors.add(factor);
+				}
+			}
+		}
+		return relatedFactors;
+	}
+
+	public void setRelatedFactors(List<FactorNode> relatedFactors) {
+		this.relatedFactors = relatedFactors;
+	}
+
+	public Domain getDomain() {
+		return domain;
+	}
+
+	public void setDomain(Domain domain) {
+		this.domain = domain;
+	}
+
 	public void saveToXML() {
 		try {
 			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + name + ".xml"));

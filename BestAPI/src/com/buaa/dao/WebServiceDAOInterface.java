@@ -15,4 +15,5 @@ public interface WebServiceDAOInterface {
 	public List<WebService> fuzzySearch(String key) throws Exception;
 	public boolean saveWebServicesFromDbToFile(String filePath) throws Exception;
 	public boolean saveWebServicesFromFileToDb(String filePath) throws Exception;
+	public List<WebService> getAllWebServices();
 }

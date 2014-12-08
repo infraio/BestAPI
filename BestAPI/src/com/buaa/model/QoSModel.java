@@ -1,19 +1,19 @@
 package com.buaa.model;
 
 public class QoSModel {
-	private String domain;
+	private Domain domain;
 	private QoSAttribute root;
 	
-	public QoSModel(String domain) {
+	public QoSModel(Domain domain) {
 		this.domain = domain;
 		root = null;
 	}
 	
-	public String getDomain() {
+	public Domain getDomain() {
 		return this.domain;
 	}
 	
-	public void setDomain(String domain) {
+	public void setDomain(Domain domain) {
 		this.domain = domain;
 	}
 	

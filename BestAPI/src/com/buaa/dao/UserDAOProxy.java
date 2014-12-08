@@ -1,11 +1,13 @@
 package com.buaa.dao;
 
+import java.util.List;
+
 import com.buaa.model.User;
 
 public class UserDAOProxy implements UserDAOInterface {
 	
 	private DatabaseConnector dbc = null;
-	private UserDAOInterface dao = null;
+	private UserDAOImplement dao = null;
 	
 	public UserDAOProxy() {
 		try { 
@@ -100,4 +102,16 @@ public class UserDAOProxy implements UserDAOInterface {
 		}
 		return flag;
 	}
+	
+	public List<User> getAllUsers() {
+		List<User> users = null;
+		try {
+			users = this.dao.getAllUsers();
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return users;
+ 	}
 }

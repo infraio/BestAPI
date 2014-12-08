@@ -13,6 +13,7 @@ import java.util.Random;
 
 import com.buaa.dao.*;
 import com.buaa.model.*;
+import com.buaa.system.DomainFactory;
 import com.buaa.algorithm.*;
 
 public class WeightDistributionTest {
@@ -22,15 +23,26 @@ public class WeightDistributionTest {
 	
 	public static void main(String[] args) {
 		WeightDistributionTest wdt = new WeightDistributionTest();
-		QoSModelDAO qosDao = new QoSModelDAO();
-		EvaluationTreeDAO etDao = new EvaluationTreeDAO();
-		EvaluationTree eTree = etDao.genByQoSModel(qosDao.getByDomain("Payment"));
-		etDao.createDbForFactors(eTree);
-		try {
-			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServicesFromDbToFile(dir + "/apis_test.txt");
-		} catch (Exception e) {
-			e.printStackTrace();
+//		QoSModelDAO qosDao = new QoSModelDAO();
+//		EvaluationTreeDAO etDao = new EvaluationTreeDAO();
+//		EvaluationTree eTree = etDao.genByQoSModel(qosDao.getByDomain("Business"));
+//		etDao.createDbForFactors(eTree);
+//		List<FactorNode> factors = eTree.getFactors();
+//		System.out.println(factors.size());
+		for (Domain domain : DomainFactory.getInstance().getAllDomains()) {
+			if (domain.getName().equals("Payments"))
+				continue;
+			try {
+				wdt.saveDataSet(wdt.genDataSet(16), domain.getName());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
+//		try {
+//			WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).saveWebServicesFromDbToFile(dir + "/apis_test.txt");
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 //		WeightDistribution wd = new WeightDistribution();
 //		wd.weightSplitByAHP(eTree);
 //		System.out.println(eTree);
@@ -72,7 +84,7 @@ public class WeightDistributionTest {
 				}
 			} else {
 				dataSet = genDataSet(n);
-				saveDataSet(dataSet);
+				//saveDataSet(dataSet);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -80,8 +92,8 @@ public class WeightDistributionTest {
 		return dataSet;
 	}
 	
-	private void saveDataSet(HashMap<List<Double>, Boolean> dataSet) throws IOException{
-		File file = new File(dir + "/dataSet.txt");
+	private void saveDataSet(HashMap<List<Double>, Boolean> dataSet, String name) throws IOException{
+		File file = new File(dir + "/record/" + name + ".txt");
 		file.createNewFile();
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 		for (List<Double> key : dataSet.keySet()) {
@@ -132,9 +144,9 @@ public class WeightDistributionTest {
 	}
 	
 	private boolean compareTwoKey(List<Double> a, List<Double> b) {
-		double[] weight = {0.1, 0.05, 0.05, 0.15, 0.05, 0.05, 0.2, 0.25};
+		double[] weight = {0.05, 0.05, 0.05, 0.1, 0.05, 0.05, 0.05, 0.1, 0.05, 0.05, 0.05, 0.1, 0.05, 0.05, 0.05, 0.1};
 		double ra = 0.0, rb = 0.0;
-		for (int i = 0; i < 8; i++) {
+		for (int i = 0; i < a.size(); i++) {
 			ra += weight[i] * a.get(i);
 			rb += weight[i] * b.get(i);
 		}

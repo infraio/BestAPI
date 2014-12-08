@@ -10,6 +10,15 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
+    <servlet-name>startup</servlet-name>
+    <servlet-class>com.buaa.system.StartUp</servlet-class>
+    <load-on-startup>9</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>startup</servlet-name>
+    <url-pattern>/startup</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>index</servlet-name>
     <servlet-class>com.buaa.action.SearchServlet</servlet-class>
   </servlet>

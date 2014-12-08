@@ -78,4 +78,8 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		boolean flag = false;
 		return flag;
 	}
+	
+	public List<WebService> getAllWebServices() {
+		return null;
+	}
 }

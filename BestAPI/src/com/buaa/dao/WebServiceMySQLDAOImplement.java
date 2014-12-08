@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -200,6 +201,35 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		} finally {
 			if(this.pstmt != null) {
 				this.pstmt.close();
+			}
+		}
+		return apis;
+	}
+	
+	public List<WebService> getAllWebServices() {
+		List<WebService> apis = new ArrayList<WebService>();
+		try {
+			String sql = "SELECT * FROM api";
+			this.stmt = connect.createStatement();
+			ResultSet rs = this.stmt.executeQuery(sql);
+			while(rs.next()) {
+				WebService api = new WebService();
+				WebServiceAttribute[] attributes = WebServiceAttribute.values();
+				for(int i = 0; i < attributes.length; ++i)  {
+					String attribute = rs.getString(i+1);
+					api.setAttributeContent(attributes[i], attribute);
+				}
+				apis.add(api);
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(this.pstmt != null) {
+					this.pstmt.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
 		}
 		return apis;

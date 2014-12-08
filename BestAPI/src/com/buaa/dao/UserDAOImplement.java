@@ -1,10 +1,12 @@
 package com.buaa.dao;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.buaa.model.User;
 
-public class UserDAOImplement implements UserDAOInterface {
+public class UserDAOImplement {
 
 	private Connection connect = null;
 	private PreparedStatement pstmt = null;
@@ -16,7 +18,7 @@ public class UserDAOImplement implements UserDAOInterface {
 	public boolean isExistUser(User user) throws Exception {
 		boolean flag = false;
 		try {
-			String sql = "SELECT username FROM user WHERE email=? and password=?";
+			String sql = "SELECT * FROM user WHERE email=? and password=?";
 			this.pstmt = this.connect.prepareStatement(sql);
 			this.pstmt.setString(1, user.getEmail());
 			this.pstmt.setString(2, user.getPassword());
@@ -37,7 +39,7 @@ public class UserDAOImplement implements UserDAOInterface {
 	public User getUserByEmail(String email) throws Exception {
 		User user = null;
 		try {
-			String sql = "SELECT username FROM user WHERE email=?";
+			String sql = "SELECT * FROM user WHERE email=?";
 			this.pstmt = this.connect.prepareStatement(sql);
 			this.pstmt.setString(1, email);
 			ResultSet rs = this.pstmt.executeQuery();
@@ -112,6 +114,25 @@ public class UserDAOImplement implements UserDAOInterface {
 		for (int i = 0; i < n; i++)
 			flag = addRandomUser();
 		return flag;
+	}
+	
+	public List<User> getAllUsers() throws Exception {
+		List<User> users = new ArrayList<User>();
+		try {
+			String sql = "SELECT * FROM user";
+			this.pstmt = this.connect.prepareStatement(sql);
+			ResultSet rs = this.pstmt.executeQuery();
+			while(rs.next()) {
+				users.add(new User(rs.getString(1), rs.getString(2), rs.getString(3)));
+			}
+		} catch(Exception e) {
+			throw e;
+		} finally {
+			if(this.pstmt != null) {
+				this.pstmt.close();
+			}
+		}
+		return users;
 	}
 	
 }

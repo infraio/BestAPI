@@ -55,9 +55,7 @@ public class FactorNode extends Node {
 	}
 	
 	private FactorType decideTypeByName() {
-		if (this.name.equals("Pay success rate")) {
-			return FactorType.related;
-		} else if (this.name.equals("Response time")) {
+		if (this.name.equals("Response time")) {
 			return FactorType.related;
 		} else {
 			return FactorType.independent;

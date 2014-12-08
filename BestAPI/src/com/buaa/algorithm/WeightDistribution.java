@@ -6,7 +6,17 @@ import java.util.ArrayList;
 
 public class WeightDistribution {
 
-	private final int K = 2;
+	private int K = 2;
+	private static WeightDistribution instance = null;
+	
+	private WeightDistribution() {
+	}
+	
+	public static WeightDistribution getInstance() {
+		if (instance == null)
+			instance = new WeightDistribution();
+		return instance;
+	}
 	
 	public void hybridMethod(EvaluationTree eTree, HashMap<List<Double>, Boolean> dataSet) {
 		Node root = eTree.getRoot();
@@ -22,6 +32,11 @@ public class WeightDistribution {
 			computeWeight(nodes.get(i), fList);
 			start += fList.size();
 		}
+	}
+	
+	public void hybridMethod(EvaluationTree eTree, HashMap<List<Double>, Boolean> dataSet, int k) {
+		this.K = k;
+		hybridMethod(eTree, dataSet);
 	}
 	
 	private void computeWeight(Node root, List<FactorNode> fList) {

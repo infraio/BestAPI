@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.buaa.model.*;
+import com.buaa.system.DomainFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,8 +26,9 @@ public class EvaluationTreeDAO {
 	
 	public EvaluationTree genByQoSModel(QoSModel qosModel) {
 		EvaluationTree eTree = new EvaluationTree();
-		eTree.setName(qosModel.getDomain());
+		eTree.setName(qosModel.getDomain().getName());
 		eTree.setRoot(convertAttributeToNode(qosModel.getRoot()));
+		eTree.setDomain(qosModel.getDomain());
 		return eTree;
 	}
 	
@@ -54,21 +56,23 @@ public class EvaluationTreeDAO {
 				relatedFactors.add(factors.get(i));
 			}
 		}
-		createDbForRelatedFactors(relatedFactors, eTree.getName() + "_" + FactorType.related + "_" + "factors");
-		createDbForRelatedFactors(independentFactors, eTree.getName() + "_" + FactorType.independent + "_" + "factors");
+		createDbForRelatedFactors(relatedFactors, eTree.getDomain().getName() + "_" + FactorType.related + "_" + "factors");
+		createDbForIndependentFactors(independentFactors, eTree.getDomain().getName() + "_" + FactorType.independent + "_" + "factors");
 	}
 	
 	private void createDbForRelatedFactors(List<FactorNode> factors, String tableName) {
+		dropTable(tableName);
 		String sql = "create table " + tableName + " ( " 
-				+ "apiname varchar(255) not null, "
-				+ "username varchar(255) not null, ";
+				+ "username varchar(255) not null, "
+				+ "apiname varchar(255) not null, ";
 		for (int i = 0; i < factors.size(); i++) {
 			sql += "`" + factors.get(i).getName() + "` double not null, ";
 		}
-		sql += "CONSTRAINT combination_key PRIMARY KEY (apiname, username))";
+		sql += "isPrediction int not null, ";
+		sql += "CONSTRAINT combination_key PRIMARY KEY (username, apiname))";
 		try {
 			Statement s = this.connect.createStatement();
-			s.execute("drop table if exists " + tableName);
+			s = this.connect.createStatement();
 			s.execute(sql);
 			s.close();
 		} catch(Exception e) {
@@ -76,7 +80,25 @@ public class EvaluationTreeDAO {
 		}
 	}
 	
-	private void createDbForIndenpendentFactors(List<FactorNode> factors, String tableName) {
+	private void dropTable(String tableName) {
+		try {
+			Statement s = this.connect.createStatement();
+			s.execute("drop table if exists " + tableName);
+			s.close();
+			this.connect.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		try { 
+			this.dbc = new DatabaseConnector();
+		} catch(Exception e) { 
+			e.printStackTrace(); return;
+		}
+		this.connect = dbc.getConnection();
+	}
+	
+	private void createDbForIndependentFactors(List<FactorNode> factors, String tableName) {
+		dropTable(tableName);
 		String sql = "create table " + tableName + " ( " 
 				+ "apiname varchar(255) primary key, ";
 		for (int i = 0; i < factors.size(); i++) {
@@ -88,7 +110,7 @@ public class EvaluationTreeDAO {
 		}
 		try {
 			Statement s = this.connect.createStatement();
-			s.execute("drop table if exists " + tableName);
+			s = this.connect.createStatement();
 			s.execute(sql);
 			s.close();
 		} catch(Exception e) {

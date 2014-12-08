@@ -7,25 +7,34 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import com.buaa.model.*;
+import com.buaa.system.DomainFactory;
 
 public class QoSModelDAO {
 	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	
-	public QoSModel getByDomain(String domain) {
-		QoSModel qosModel = new QoSModel(domain);
-		File file = new File(dir + "/QoSModel_" + domain + ".xml");
+	public QoSModel getByDomain(String domainName) {
+		QoSModel qosModel = new QoSModel(DomainFactory.getInstance().getDomain(domainName));
+		qosModel.setRoot(getRoot(dir + "/QoSModel_" + domainName + ".xml"));
+		return qosModel;
+	}
+	
+	private QoSAttribute getRoot(String fileName) {
+		File file = new File(fileName);
+		QoSAttribute root = null;
 		try {
 //			System.out.println(file.getPath());
 			if (file.exists()) {
 				SAXReader sr = new SAXReader();
 				Document doc = sr.read(file);
 				Element rootElement = doc.getRootElement();
-				qosModel.setRoot(recurseRead(rootElement, 1));
+				root = recurseRead(rootElement, 1);
+			} else {
+				root = getRoot(dir + "/QoSModel_Base.xml");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return qosModel;
+		return root;
 	}
 	
 	public QoSAttribute recurseRead(Element rootElement, int level) {

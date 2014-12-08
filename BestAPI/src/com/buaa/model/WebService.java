@@ -4,7 +4,6 @@ public class WebService {
 	
 	private int id;
 	private int similarity;
-	private DataInstance instance;
 	
 	private String name;
 	private String owner;
@@ -32,15 +31,6 @@ public class WebService {
 	
 	public WebService(String name, User user) throws Exception {
 		this.name = name;
-		setInstance(new DataInstance(user, this));
-	}
-	
-	public DataInstance getInstance() {
-		return instance;
-	}
-
-	public void setInstance(DataInstance instance) {
-		this.instance = instance;
 	}
 
 	public void setSimilarity(int similarity) {

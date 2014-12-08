@@ -18,9 +18,7 @@
 	<%
 	ArrayList<String> thead = (ArrayList<String>) session.getAttribute("thead");
 	ArrayList<ArrayList<String>> tbody = (ArrayList<ArrayList<String>>) session.getAttribute("tbody");
-	String test = (String) session.getAttribute("haha");
 	if (thead == null || thead.size() == 0) {
-		out.println(test);
 	%>
 	<h4>没有找到相关的Web服务</h4>
 	<%} else { %>
@@ -31,6 +29,7 @@
 				<th><%=thead.get(1) %></th>
 				<th><%=thead.get(2) %></th>
 				<th><%=thead.get(3) %></th>
+				<th><%=thead.get(4) %></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -42,6 +41,7 @@
 				<td><%=tr.get(1) %></td>
 				<td><%=tr.get(2) %></td>
 				<td><%=tr.get(3) %></td>
+				<th><%=tr.get(4) %></th>
 			</tr>
 		<% } %>
 		</tbody>
