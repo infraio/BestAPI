@@ -36,13 +36,16 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		String keyword = req.getParameter("keyword");
+		User user = (User)req.getSession().getAttribute("user");
+		if (user == null) {
+			user = new User("nouser@gmail.com", "nouser", "nouser");
+		}
 		ArrayList<String> thead = new ArrayList<String>();
 		ArrayList<ArrayList<String>> tbody = new ArrayList<ArrayList<String>>();
 		if(keyword != null && !"".equals(keyword)) {
 			int[] needs = {0, 1, 5, 6};
 			List<WebService> apis;
 			List<WebServiceInstance> wsis;
-			User user = UserDAOFactory.getUserDAOInstance().getUserByEmail("zuzyuypd@gmail.com");
 			try {
 				apis = WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).fuzzySearch(keyword);
 				Collections.sort(apis, new SimilarityComparator());

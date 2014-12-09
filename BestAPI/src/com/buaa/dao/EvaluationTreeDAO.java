@@ -5,13 +5,16 @@ import java.util.List;
 import com.buaa.model.*;
 import com.buaa.system.DomainFactory;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 
 public class EvaluationTreeDAO {
 
-	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
+	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data/Tree";
+	private final String csvDir = "/home/xiaohao/github/BestAPI/BestAPI/WebContent/csvdata";
 	private DatabaseConnector dbc = null;
 	private Connection connect = null;
 	
@@ -19,7 +22,8 @@ public class EvaluationTreeDAO {
 		try { 
 			this.dbc = new DatabaseConnector();
 		} catch(Exception e) { 
-			e.printStackTrace(); return;
+			e.printStackTrace(); 
+			return;
 		}
 		this.connect = dbc.getConnection();
 	}
@@ -30,6 +34,28 @@ public class EvaluationTreeDAO {
 		eTree.setRoot(convertAttributeToNode(qosModel.getRoot()));
 		eTree.setDomain(qosModel.getDomain());
 		return eTree;
+	}
+	
+	public void saveToXML(EvaluationTree eTree) {
+		try {
+			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + eTree.getDomain().getName() + ".xml"));
+			fw.write(eTree.getRoot().toXML());
+			fw.flush();
+			fw.close();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void saveToCSV(EvaluationTree eTree) {
+		try {
+			FileWriter fw = new FileWriter(new File(csvDir + "/" + eTree.getDomain().getName() + ".csv"));
+			fw.write(eTree.getCSVData());
+			fw.flush();
+			fw.close();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	private Node convertAttributeToNode(QoSAttribute a) {

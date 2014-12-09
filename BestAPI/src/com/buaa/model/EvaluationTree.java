@@ -2,12 +2,14 @@ package com.buaa.model;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.text.DecimalFormat;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class EvaluationTree {
 	
-	private final String dir = "/home/xiaohao/github/BestAPI/BestAPI/data";
 	private String name;
 	private Node root;
 	private List<FactorNode> independentFactors;
@@ -103,18 +105,45 @@ public class EvaluationTree {
 	public void setDomain(Domain domain) {
 		this.domain = domain;
 	}
-
-	public void saveToXML() {
-		try {
-			FileWriter fw = new FileWriter(new File(dir + "/EvaluationTree_" + name + ".xml"));
-			fw.write(root.toXML());
-			fw.flush();
-			fw.close();
-		} catch(Exception e) {
-			e.printStackTrace();
+	
+	public String getCSVData() {
+		String str = "ID,name,size,parentID,value\n";
+		List<Node> nodeList = new ArrayList<Node>();
+		List<Node> parentList = new ArrayList<Node>();
+		DecimalFormat df = new DecimalFormat("0.000");
+		this.layerOrder(this.root, nodeList, parentList);
+		for (int i = 0; i < nodeList.size(); i++) {
+			str += i + "," + nodeList.get(i).getName() + ",3000,";
+			Node parent = parentList.get(i);
+			if (parent == null) {
+				str += ",";
+			} else {
+				for (int j = 0; j < nodeList.size(); j++) {
+					if (parent == nodeList.get(j)) {
+						str += j + ","; 
+					}
+				}
+			}
+			str += df.format(nodeList.get(i).getWeight()) + "\n";
 		}
+		return str;
 	}
 	
+	private void layerOrder(Node root, List<Node> nodeList, List<Node> parentList) {
+		Queue<Node> q = new LinkedList<Node>();
+		q.add(root);
+		parentList.add(null);
+		while (!q.isEmpty()) {
+			Node node = q.poll();
+			nodeList.add(node);
+			if (node instanceof CategoryNode) {
+				for (Node child :((CategoryNode) node).getChilds()) {
+					q.add(child);
+					parentList.add(node);
+				}
+			}
+		}
+	}
 	
 	@Override
 	public String toString() {

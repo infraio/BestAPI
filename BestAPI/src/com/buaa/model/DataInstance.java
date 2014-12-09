@@ -3,7 +3,6 @@ package com.buaa.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.buaa.dao.TreeDAOFactory;
 
 public class DataInstance {
 	

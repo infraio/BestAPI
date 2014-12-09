@@ -39,7 +39,7 @@
 			<tr>
 				<td><%=tr.get(0) %></td>
 				<td><%=tr.get(1) %></td>
-				<td><%=tr.get(2) %></td>
+				<td><a href="tree.jsp?domain=<%=tr.get(2) %>"><%=tr.get(2) %></a></td>
 				<td><%=tr.get(3) %></td>
 				<th><%=tr.get(4) %></th>
 			</tr>

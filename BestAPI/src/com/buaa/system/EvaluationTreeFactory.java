@@ -31,6 +31,9 @@ public class EvaluationTreeFactory {
 			EvaluationTree eTree = dao.genByQoSModel(QoSModelFactory.getInstance().getQoSModelByDomain(domain));
 			HashMap<List<Double>, Boolean> dataSet = RecordDAO.getInstance().readDataSet(domain, eTree.getFactors().size());
 			WeightDistribution.getInstance().hybridMethod(eTree, dataSet, 1);
+			dao.saveToXML(eTree);
+			dao.saveToCSV(eTree);
+			System.out.println(domain.getName() + "\t get and save EvaluationTree");
 			map.put(domain, eTree);
 		}
 	}

@@ -23,14 +23,13 @@ public class QoSModelFactory {
 		List<Domain> domains = DomainFactory.getInstance().getAllDomains();
 		for (Domain domain : domains) {
 			QoSModel qosModel = this.dao.getByDomain(domain.getName());
-			System.out.println(domain.getName() + "\t" + qosModel.getDomain().getName());
+			System.out.println(domain.getName() + "\t gen QoSModel");
 			this.map.put(domain, qosModel);
 		}
 	}
 	
 	public QoSModel getQoSModelByDomain(Domain domain) {
 		QoSModel qosModel = this.map.get(domain);
-		System.out.println(domain.getName() + "\t" + qosModel.getDomain().getName());
 		return qosModel;
 	}
 	
