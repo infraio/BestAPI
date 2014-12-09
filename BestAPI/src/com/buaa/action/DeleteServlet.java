@@ -14,7 +14,7 @@ import com.buaa.model.DataSource;
 import com.buaa.model.WebService;
 import com.buaa.model.WebServiceAttribute;
 
-public class SubmitServlet extends HttpServlet {
+public class DeleteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override

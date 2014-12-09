@@ -13,7 +13,7 @@
 <div id="wrap">
 	<jsp:include page="head.jsp"></jsp:include>
 	
-	<div class="container">
+	<div class="container" style="margin-top:100px">
 		<div class="site-intro-register">
 			<form action="index" method="post" onSubmit="return true">
 				<div class="input-group fn-auto">

@@ -21,7 +21,8 @@
 				<%
 					} else {
 				%>
-				<li><a class="login"><%=user.getUsername() %>，你好</a></li>
+				<li><a href="user.jsp"><%=user.getUsername() %></a></li>
+				<li><a href="logout">退出</a></li>
 				<%} %>
 			</ul>
 		</div>

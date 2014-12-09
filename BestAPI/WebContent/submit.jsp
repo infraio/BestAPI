@@ -4,24 +4,84 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Add an API</title>
+<link type="text/css" rel="stylesheet" href="css/main_ori.css">
+<link href="http://static.hihocoder.com/images/hiho.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
-	<form action="submit" method="post" onSubmit="return true">
-			API Name: <input type="text" name="API_NAME"><br>
-			API Provider: <input type="text" name="API_PROVIDER"><br>
-			API Endpoint: <input type="text" name="API_ENDPOINT"><br>
-			API Homepage: <input type="text" name="API_HOMEPAGE"><br>
-			Contact Email: <input type="text" name="CONTACT_EMAIL"><br>
-			Primary Category: <input type="text" name="PRIMARY_CATEGORY"><br>
-			Seconary Categories: <input type="text" name="SECONDARY_CATEGORIES"><br>
-			Protocol Formats: <input type="text" name="PROTOCOL_FORMATS"><br>
-			APIhub URL: <input type="text" name="APIHUB_URL"><br>
-			SSL Support: <input type="text" name="SSL_SUPPORT"><br>
-			Twitter URL: <input type="text" name="TWITER_URL"><br>
-			Authentication Mode: <input type="text" name="AUTHENTICATION_MODE"><br>
-			<input type="submit" value="SUBMIT">
-			<input type="reset" value="RESET">
-	</form>
+	<jsp:include page="head.jsp"></jsp:include>
+	
+	<div class="container single">
+	<div class="submit box">
+	<div class="form">
+		<div class="form-heading">
+			<h3>Add an API</h3>
+		</div>
+		<form name="submit" action="submit" method="post" class="form-horizontal">
+			<div class="form-group">
+				<label for="title" class="col-md-3 col-sm-3 control-label ">API Name</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="name" placeholder="Amazon S3 API " required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="author" class="col-md-3 col-sm-3 control-label ">Owner Name</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="owner" placeholder="Amazon" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name" class="col-md-3 col-sm-3 control-label ">API Endpoint</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="endpoint" placeholder="http://s3.amazonaws.com/" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name" class="col-md-3 col-sm-3 control-label ">API Homepage</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="homepage" placeholder="http://aws.amazon.com/s3/" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email" class="col-md-3 col-sm-3 control-label with-note">Contact Email</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="email" placeholder="email@address.com" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="title" class="col-md-3 col-sm-3 control-label ">Category</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="category" placeholder="Storage" required="" class="form-control">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="name" class="col-md-3 col-sm-3 control-label ">Protocol Formats</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="protocol" placeholder="XML, REST, SOAP" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link" class="col-md-3 col-sm-3 control-label with-note">API Hub URL</label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="huburl" placeholder="" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="name" class="col-md-3 col-sm-3 control-label with-note">Authentication Mode</span></label>
+				<div class="col-md-7 col-sm-8">
+					<input type="text" name="authentication" placeholder="API Key" required="" class="form-control">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-offset-3 col-md-7 col-sm-offset-3 col-sm-8">
+					<button type="submit" class="btn btn-blue pull-right">Submit for Approval</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>
+	<jsp:include page="footer.html"></jsp:include>
 </body>
 </html>

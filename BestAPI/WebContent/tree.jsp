@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="http://static.hihocoder.com/images/hiho.ico" rel="shortcut icon" type="image/x-icon">
   	<title>tree</title>
   	<script type="text/javascript" src="js/deps.js"></script>
 	<script type="text/javascript" src="js/sea.js"></script>
