@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.buaa.dao.RelationshipDAO;
 import com.buaa.dao.WebServiceDAOFactory;
 import com.buaa.model.DataSource;
+import com.buaa.model.User;
 import com.buaa.model.WebService;
 import com.buaa.model.WebServiceAttribute;
 
@@ -20,34 +22,25 @@ public class DeleteServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		
-		String user = req.getSession().getAttribute("user").toString();
-		List<String> info = new ArrayList<String>();
-		
-		if(info.isEmpty()) {
-			WebService api = new WebService();
-			api.setName(req.getParameter("name"));
-			api.setOwner(req.getParameter("owner"));
-			api.setEndpoint(req.getParameter("endpoint"));
-			api.setHomepage(req.getParameter("homepage"));
-			api.setContactEmail(req.getParameter("email"));
-			api.setCategory(req.getParameter("category"));
-			api.setHubUrl(req.getParameter("huburl"));
-			api.setAuthenticationMode(req.getParameter("authentication"));
-			try {
-				if(WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).addWebService(api)) {
-//					System.out.println("submit success");
-					// TODO
-				} else {
-//					System.out.println("submit fail");
-				}
-			} catch (Exception e) { e.printStackTrace();}
-		}
+		doGet(req, resp);
 	}
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		doPost(req, resp);
+		User user = (User) req.getSession().getAttribute("user");
+		String apiname = req.getParameter("apiname");
+		try {
+			WebService ws = WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).getWebServiceByName(apiname);
+			boolean flag = RelationshipDAO.getInstance().deleteRelationship(user, ws);
+			flag = WebServiceDAOFactory.getWebServiceDAOInstance(DataSource.MYSQL).deleteWebService(ws);
+			if (flag == true) {
+				req.getRequestDispatcher("/user.jsp").forward(req, resp);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }

@@ -67,6 +67,10 @@ public class WebServiceXMLFilesDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean updateWebService(WebService ws) throws Exception {
+		return false;
+	}
+	
 	public List<WebService> getWebServicesByCategory(String category) throws Exception {
 		return null;
 	}

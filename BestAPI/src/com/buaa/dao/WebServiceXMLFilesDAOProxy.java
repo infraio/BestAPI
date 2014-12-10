@@ -35,6 +35,16 @@ public class WebServiceXMLFilesDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean updateWebService(WebService ws) {
+		boolean flag = false;
+		try { 
+			flag = this.dao.updateWebService(ws);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		}
+		return flag;
+	}
+	
 	public List<WebService> getWebServicesByCategory(String category) {
 		List<WebService> wss = null;
 		try { 

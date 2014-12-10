@@ -27,3 +27,11 @@ drop table if exists domain;
 create table domain (
 	name varchar(20) primary key
 );
+
+drop table if exists user_api;
+create table user_api (
+	username varchar(20) not null,
+	apiname varchar(255) not null,
+	relation int not null,
+	CONSTRAINT combination_key PRIMARY KEY (username, apiname, relation)
+);

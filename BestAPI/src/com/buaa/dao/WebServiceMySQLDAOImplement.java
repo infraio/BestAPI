@@ -101,6 +101,13 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean updateWebService(WebService api) throws Exception {
+		boolean flag = false;
+		flag = deleteWebServiceByName(api.getName());
+		flag = addWebService(api);
+		return flag;
+	}
+	
 	public WebService getWebServiceByName(String name) throws Exception {
 		WebService ws = null;
 		try {
@@ -110,7 +117,7 @@ public class WebServiceMySQLDAOImplement implements WebServiceDAOInterface {
 			if(rs.next()) {
 				ws = new WebService();
 				WebServiceAttribute[] attributes = WebServiceAttribute.values();
-				for(int i = 1; i < attributes.length; ++i) 
+				for(int i = 0; i < attributes.length; ++i) 
 					ws.setAttributeContent(attributes[i], rs.getString(i+1));
 			}
 		} catch(Exception e) {

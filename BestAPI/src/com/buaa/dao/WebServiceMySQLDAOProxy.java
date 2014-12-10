@@ -44,6 +44,17 @@ public class WebServiceMySQLDAOProxy implements WebServiceDAOInterface {
 		return flag;
 	}
 	
+	public boolean updateWebService(WebService ws) throws Exception {
+		boolean flag = false;
+		try { 
+			flag = this.dao.updateWebService(ws);
+		} catch(Exception e) { 
+			e.printStackTrace();
+		} finally { 
+			this.dbc.close(); 
+		}
+		return flag;
+	}
 	public List<WebService> getWebServicesByCategory(String category) {
 		List<WebService> wss = null;
 		try { 

@@ -36,7 +36,7 @@ public class DataInstanceDAOImplement {
 			String sql = "SELECT `" + factor.getName() + "` from " + tableName + " where apiname=?";
 			this.pstmt = this.connect.prepareStatement(sql);
 			this.pstmt.setString(1, wsName);
-			System.out.println(sql);
+			//System.out.println(sql);
 			ResultSet rs = this.pstmt.executeQuery();
 			if(rs.next()) {
 				value = rs.getDouble(1);

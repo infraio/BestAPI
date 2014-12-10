@@ -8,6 +8,7 @@ import com.buaa.model.WebService;
 public interface WebServiceDAOInterface {
 
 	public boolean addWebService(WebService api) throws Exception;
+	public boolean updateWebService(WebService api) throws Exception;
 	public WebService getWebServiceByName(String name) throws Exception;
 	public List<WebService> getWebServicesByCategory(String category) throws Exception;
 	public boolean deleteWebService(WebService ws) throws Exception;

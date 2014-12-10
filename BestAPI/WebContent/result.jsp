@@ -42,7 +42,7 @@
 				<td><%=tr.get(1) %></td>
 				<td><a href="tree.jsp?domain=<%=tr.get(2) %>"><%=tr.get(2) %></a></td>
 				<td><%=tr.get(3) %></td>
-				<th><%=tr.get(4) %></th>
+				<td><%=tr.get(4) %></td>
 			</tr>
 		<% } %>
 		</tbody>
