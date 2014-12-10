@@ -1,5 +1,9 @@
 package com.buaa.dao;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,6 +23,8 @@ import com.buaa.system.EvaluationTreeFactory;
 
 public class FactorDataDAO {
 	
+	private static final String mapReduceInFile = "/home/xiaohao/github/BestAPI/BestAPI/data/mapreduce.in";
+	private static final String mapReduceOutFile = "/home/xiaohao/github/BestAPI/BestAPI/data/mapreduce.in";
 	private static FactorDataDAO instance = null;
 	private DatabaseConnector dbc = null;
 	private Connection connect = null;
@@ -43,6 +49,27 @@ public class FactorDataDAO {
 		return instance;
 	}
 	
+	public void saveRelatedFactorDataForMapReduce(String factorName) {
+		double[][] matrix = this.getMatrixForRelatedFactor(factorName);
+		int rowNum = users.size();
+		int colNum = wss.size();
+		System.out.println(rowNum + "\t" + colNum);
+		try {
+			FileWriter fw = new FileWriter(new File(mapReduceInFile));
+			for (int i = 0; i < rowNum; i++) {
+				for (int j = 0; j < colNum; j++) {
+					if (matrix[i][j] != 0.0 && matrix[i][j] != -1.0) {
+						fw.write(i + " " + j + " " + matrix[i][j] + "\n");
+					}
+				}
+				fw.flush();
+			}
+			fw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public double[][] getMatrixForRelatedFactor(String factorName) {
 		int m = users.size();
 		int n = wss.size();
@@ -53,6 +80,32 @@ public class FactorDataDAO {
 			}
 		}
 		return matrix;
+	}
+	
+	private double[][] readMatrixFromMapReduce() {
+		int rowNum = users.size();
+		int colNum = wss.size();
+		double[][] matrix = new double[rowNum][colNum];
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(mapReduceOutFile));
+			String s;
+			int usernum = 0;
+			while((s = br.readLine()) != null) {
+				String[] ss = s.split("\t");
+				for(int i = 0; i < colNum; ++i) {
+					matrix[usernum][i] = Double.parseDouble(ss[i]);
+				}
+				usernum++;
+			}
+			br.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return matrix;
+	}
+	
+	public void savePredictionResultFromMapReduce(String factorName) {
+		savePredictionResult(readMatrixFromMapReduce(), factorName);
 	}
 	
 	public void savePredictionResult(double[][] result, String factorName) {
@@ -77,6 +130,7 @@ public class FactorDataDAO {
 			this.pstmt.setString(1, username);
 			this.pstmt.setString(2, wsName);
 			this.pstmt.setDouble(3, value);
+			// 1 means predict data
 			this.pstmt.setInt(4, 1);
 			if(this.pstmt.executeUpdate() == 1)
 				flag = true;
@@ -105,6 +159,7 @@ public class FactorDataDAO {
 			this.pstmt.setString(2, wsName);
 			ResultSet rs = this.pstmt.executeQuery();
 			if(rs.next()) {
+				// 0 means real data
 				if (rs.getInt(4) == 0) {
 					value = rs.getDouble(3);
 				}

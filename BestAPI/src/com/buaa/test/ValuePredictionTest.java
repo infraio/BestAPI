@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.Random;
 
 import com.buaa.algorithm.*;
+import com.buaa.dao.FactorDataDAO;
 
 public class ValuePredictionTest {
 
@@ -19,10 +20,10 @@ public class ValuePredictionTest {
 	private static final int colNum = 5825;
 	
 	public static void main(String[] args) {
-		ValuePredictionTest vpt = new ValuePredictionTest();
-		double[][] matrix = vpt.getMatrix(rtFile);
-		double[][] randomMatrix = vpt.getRandomMatrix(matrix);
-		vpt.saveMatrixToFile(randomMatrix, mapReduceInFile);
+//		ValuePredictionTest vpt = new ValuePredictionTest();
+//		double[][] matrix = vpt.getMatrix(rtFile);
+//		double[][] randomMatrix = vpt.getRandomMatrix(matrix);
+//		vpt.saveMatrixToFile(randomMatrix, mapReduceInFile);
 		//for (int i = 0; i < colNum; i++)
 		//	System.out.println(matrix[0][i] + "\t" + randomMatrix[0][i]);
 		//ValuePrediction vp = new ValuePrediction(randomMatrix);
@@ -30,6 +31,7 @@ public class ValuePredictionTest {
 		//double[][] result = vp.getResult();
 		//double[][] result = vpt.getMatrix(resultFile);
 		//vpt.computeMaeRmse(matrix, result);
+		FactorDataDAO.getInstance().saveRelatedFactorDataForMapReduce("Response time");
 	}
 	
 	private void saveMatrixToFile(double[][] matrix, String filePath) {
