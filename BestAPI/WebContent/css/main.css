@@ -1,0 +1,871 @@
+element.style {
+}
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+body {
+margin: 0;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetbody {
+display: block;
+margin: 8px;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+body .submit .form-heading {
+margin-top: 40px;
+margin-bottom: 40px;
+text-align: center;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetform {
+display: block;
+margin-top: 0em;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+body .submit .form-group label {
+height: 50px;
+padding-top: 0;
+font-size: 15px;
+font-weight: 600;
+line-height: 50px;
+color: #6a7176;
+}
+@media (min-width: 768px)
+.form-horizontal .control-label {
+padding-top: 7px;
+margin-bottom: 0;
+text-align: right;
+}
+@media (min-width: 992px)
+.col-md-3 {
+width: 25%;
+}
+@media (width: 992px)
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+float: left;
+}
+@media (min-width: 768px)
+.col-sm-3 {
+width: 25%;
+}
+@media (width: 768px)
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+float: left;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+label {
+display: inline-block;
+max-width: 100%;
+margin-bottom: 5px;
+font-weight: 700;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetlabel {
+cursor: default;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+body .submit .form-group input, body .submit .form-group textarea {
+font-size: 17px;
+}
+body .submit .form-group input {
+height: 50px;
+}
+.form-control {
+display: block;
+width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-group input {
+height: 50px;
+}
+button, input, select, textarea {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+margin: 0;
+font: inherit;
+color: inherit;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetinput:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+padding: 1px 0px;
+}
+user agent stylesheetinput, input[type="password" i], input[type="search" i] {
+-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+}
+user agent stylesheetinput, textarea, keygen, select, button {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+user agent stylesheetinput, textarea, keygen, select, button, meter, progress {
+-webkit-writing-mode: horizontal-tb;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+.fa-plus:before {
+content: "\f067";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+element.style {
+}
+body .submit .form-heading h3 {
+font-size: 38px;
+font-weight: 300;
+color: #58bb6a;
+}
+body h3 {
+margin-top: 30px;
+}
+.h3, h3 {
+font-size: 24px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+font-family: inherit;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheeth3 {
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.form-heading
+body .submit .form-heading {
+margin-top: 40px;
+margin-bottom: 40px;
+text-align: center;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+body {
+margin: 0;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetbody {
+display: block;
+margin: 8px;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+.form-horizontal .form-group {
+margin-right: -15px;
+margin-left: -15px;
+}
+.form-group {
+margin-bottom: 15px;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+clear: both;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+body .btn-blue {
+font-size: 17px;
+color: #fff;
+background: #4189da url(/images/submit-btn-bg.png) repeat-x;
+background-size: 1px 100%;
+border-color: #376ca1;
+box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.pull-right {
+float: right;
+}
+.pull-right {
+float: right!important;
+}
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.42857143;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+button, input, select, textarea {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+-webkit-appearance: button;
+cursor: pointer;
+}
+button, select {
+text-transform: none;
+}
+button {
+overflow: visible;
+}
+button, input, optgroup, select, textarea {
+margin: 0;
+font: inherit;
+color: inherit;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetinput[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+padding: 1px 6px;
+}
+user agent stylesheetinput[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+align-items: flex-start;
+text-align: center;
+cursor: default;
+color: buttontext;
+padding: 2px 6px 3px;
+border: 2px outset buttonface;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+background-color: buttonface;
+box-sizing: border-box;
+}
+user agent stylesheetinput, textarea, keygen, select, button {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+user agent stylesheetinput, textarea, keygen, select, button, meter, progress {
+-webkit-writing-mode: horizontal-tb;
+}
+user agent stylesheetbutton {
+-webkit-appearance: button;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from div.submit.box
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+Inherited from body
+element.style {
+}
+@media (min-width: 768px)
+.container {
+width: 750px;
+}
+.container, .container-fluid {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+clear: both;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+.box {
+position: relative;
+display: block;
+padding: 20px;
+color: #596368;
+background-color: #fff;
+box-shadow: 0 0 5px #d0d3d5;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from body
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+element.style {
+}
+@media (min-width: 768px)
+.container {
+width: 750px;
+}
+.container, .container-fluid {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetdiv {
+display: block;
+}
+Pseudo ::before element
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+clear: both;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+display: table;
+content: " ";
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from body
+element.style {
+}
+body {
+font-family: 'Open Sans',sans-serif;
+font-weight: 400;
+background-color: #f1f3f5;
+}
+body {
+font-size: 14px;
+line-height: 1.42857143;
+color: #333;
+}
+body {
+margin: 0;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+user agent stylesheetbody {
+display: block;
+margin: 8px;
+}
+Pseudo ::before element
+*, :after, :before {
+box-sizing: border-box;
+}
+Pseudo ::after element
+*, :after, :before {
+box-sizing: border-box;
+}
+Inherited from html
+html {
+font-size: 10px;
+-webkit-tap-highlight-color: transparent;
+}
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+.container {
+width: 970px;
+}

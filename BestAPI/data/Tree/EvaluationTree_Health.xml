@@ -1,0 +1,118 @@
+<CategoryNode>
+	<Name>Base Web Service</Name>
+	<Weight>1.0</Weight>
+	<Childs>
+	<CategoryNode>
+		<Name>Static Attribute</Name>
+		<Weight>0.48283413030486366</Weight>
+		<Childs>
+		<CategoryNode>
+			<Name>Security</Name>
+			<Weight>0.24908432853441598</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Encryption algorithm</Name>
+				<Weight>0.023440729151880436</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Traceability rating</Name>
+				<Weight>0.043569411583188125</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Classified level</Name>
+				<Weight>0.037687592898789785</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Access</Name>
+				<Weight>0.14438659490055764</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<FactorNode>
+			<Name>fee</Name>
+			<Weight>0.038029138784962925</Weight>
+		</FactorNode>
+		<CategoryNode>
+			<Name>Robustness</Name>
+			<Weight>0.06493474662318219</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Exception handling capability</Name>
+				<Weight>0.03449540082008104</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Self-recovery capability</Name>
+				<Weight>0.030439345803101155</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<FactorNode>
+			<Name>Interface stability</Name>
+			<Weight>0.13078591636230252</Weight>
+		</FactorNode>
+		</Childs>
+	</CategoryNode>
+	<CategoryNode>
+		<Name>Dynamic Attribute</Name>
+		<Weight>0.5171658696951363</Weight>
+		<Childs>
+		<CategoryNode>
+			<Name>Performance</Name>
+			<Weight>0.11196556806401507</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Throughput</Name>
+				<Weight>0.03662624198338167</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Delay</Name>
+				<Weight>0.03414082698345258</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Service run time</Name>
+				<Weight>0.04119849909718082</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<CategoryNode>
+			<Name>Availability</Name>
+			<Weight>0.14281455534114398</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Response time</Name>
+				<Weight>0.14281455534114398</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<CategoryNode>
+			<Name>Reputation</Name>
+			<Weight>0.046186680695024955</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>User satisfaction</Name>
+				<Weight>0.046186680695024955</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<CategoryNode>
+			<Name>Reliability</Name>
+			<Weight>0.21619906559495236</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Average Response Time</Name>
+				<Weight>0.03440466715199212</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Call Success Rate</Name>
+				<Weight>0.04413722231531779</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Consistency</Name>
+				<Weight>0.13765717612764244</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		</Childs>
+	</CategoryNode>
+	</Childs>
+</CategoryNode>

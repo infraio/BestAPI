@@ -21,9 +21,13 @@ public class MachineLearning {
 	}
 	private double[] computeGain(int n, HashMap<List<Double>, Boolean> dataSet) {
 		double entropy = computeEntropyOfDataSet(dataSet);
+		System.out.println("用户选择记录数据集的熵Entropy(S)：" + entropy);
 		double[] gain = new double[n];
 		for (int i = 0; i < n; i++) {
+			double fi = computeEntropyOfFactorI(dataSet, i);
+			System.out.println("以第" + i + "个评价因子进行划分时的熵Entropy(f" + i + ")：" + fi);
 			gain[i] = entropy - computeEntropyOfFactorI(dataSet, i);
+			System.out.println("第" + i + "个评价因子的信息增益Gain(f" + i + ")：" + gain[i]);
 //			System.out.println(entropy + "\t" + computeEntropyOfFactorI(dataSet, i) + "\t" + gain[i]);
 		}
 		return gain;

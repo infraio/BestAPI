@@ -32,6 +32,13 @@ public class AnalyticHierarchyProcess {
 				judgeMatrix[j][i] = 1 / judgeMatrix[i][j];
 			}
 		}
+		System.out.println("判断矩阵");
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(judgeMatrix[i][j] + "\t");
+			}
+			System.out.print("\n");
+		}
 	}
 	
 	public void computeWeightVec() {
@@ -67,12 +74,14 @@ public class AnalyticHierarchyProcess {
 	}
 	
 	private double getContrast(String a, String b) {
-		System.out.println("1 : " + a + "和" + b + "同等重要");
-		System.out.println("3 : " + a + "比" + b + "稍微重要");
-		System.out.println("5 : " + a + "比" + b + "较强重要");
-		System.out.println("7 : " + a + "比" + b + "强烈重要");
-		System.out.println("9 : " + a + "比" + b + "绝对重要");
+		System.out.println("请判断节点" + a + "和节点" + b + "的重要性对比结果:");
+		System.out.println("1 : 两个因素同等重要");
+		System.out.println("3 : 一个因素比另一个因素稍微重要");
+		System.out.println("5 : 一个因素比另一个因素较强重要");
+		System.out.println("7 : 一个因素比另一个因素强烈重要");
+		System.out.println("9 : 一个因素比另一个因素绝对重要");
 		System.out.println("2, 4, 6, 8 : 两相邻判断的中间值");
+		System.out.println("倒数：对比顺序相反");
 		double choice = 1.0;
 		try {
 			choice = str2Double(readUserInput("请输入您的判断："));

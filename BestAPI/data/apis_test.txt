@@ -1,0 +1,753 @@
+11870	http://11870.com/	http://11870.com/api/	http://11870.com/api	http://11870.com/interaction	Search	REST 		OAuth with API Key
+123Cloud ECP	http://www.123cloud.nl/	http://www.123cloud.nl/api/rest	http://www.123cloud.nl/docs/api.html	nfo@123cloud.nl	Storage	REST 		HTTP Basic Authentication
+3.0 Trippin&amp;#039; in	http://www.trippinin.com	http://api.v1.trippinin.com	http://www.trippinin.com/#!api/c1o45	api@trippinin.com	Travel	REST 		API Key
+AASHE STARS	http://www.aashe.org/	https://stars.aashe.org/api/0.1/	http://stars-api-documentation.readthedocs.org/en/latest/	stars@aashe.org	Education	REST 		API Key
+Achievement Standards Network	http://www.jesandco.org/	http://asn.jesandco.org/api/1/	http://asn.jesandco.org/content/asn-web-services-overview	JosephC@jesandco.org	Education	REST 		Public
+Achta Sepa	http://www.achta.com	https://api.achta.com/FinancePlatform/	https://www.achta.com/AchtaIBANApi.pdf	info@achta.com	Financial	REST 		API Key
+ActionKit	http://actionkit.com/	https://roboticdogs.actionkit.com/rest/v1/	https://roboticdogs.actionkit.com/docs/manual/api/rest/index.html	demos@wawd.com	Social	REST 		HTTP Basic Authenticaiton
+AdaptivePlanning	http://www.adaptiveplanning.com	http://webservices.adaptiveplanning.com/	http://www.adaptiveplanning.com/products/data-integration/	support@adaptiveplanning.com	Financial	SOAP 		HTTP Basic Authentication
+Adform	http://www.adform.com/	https://api.adform.com/Services/	http://api.adform.com/Services/Documentation/Index.htm	support@adform.com	Advertising	SOAP 		API Key
+Adriatic.hr	http://www.adriatic.hr/en	https://www.adriatic.hr/services/rest/	http://www.adriatic.hr/en/subagent/xmlapi	info@adriatic.hr	Travel	REST 		API Key
+AdventureLink	http://www.adventurelink.com/	http://api.adventurelink.com/trips	http://api.adventurelink.com/	support@adventurelink.com	Travel	REST 		API Key
+Afla.MD	http://edu.md/	http://afla.md/ws/	http://afla.md/info/api/?&amp;lang=english	iurie@edu.md	Education	REST 		Public
+AlchemyAPI	http://www.alchemyapi.com	http://access.alchemyapi.com	http://www.alchemyapi.com/developers/	general@alchemyapi.com	Tools	REST 		API Key
+ALTER Reflective	http://sing.ei.uvigo.es/	http://sing.ei.uvigo.es/ALTER/api/convert	http://sing.ei.uvigo.es/jarvest/	dgpena@uvigo.es	Science	REST 		Public
+AlterGeo	http://altergeo.ru/	http://altergeo.ru/openapi/v1	http://altergeo.ru/open_api	info@altergeo.ru	Social	REST 		HTTP Basic Authentication
+Ambassador	https://getambassador.com/	https://getambassador.com/api	https://getambassador.com/api	support@getambassador.com	Social	HTTP 		URI
+AMEE	http://www.amee.com	http://live.amee.com	https://www.amee.com/pages/api	help@amee.com	Science	REST 		Username and password
+Amplitude	https://amplitude.com	https://amplitude.com/api/1/	https://amplitude.com/docs	contact@amplitude.com	Tools	REST 		API Key
+Anedot	https://anedot.com/	https://api.anedot.com/{version}	http://www.anedot.com/api/v2/	info@anedot.com	Payments	REST 		HTTP Basic Authentication
+Animetrics Face Recognition	http://animetrics.com/	http://api.animetrics.com/v1/	http://api.animetrics.com	api@animetrics.com	Tools	HTTP 		API Key
+Apicultur Word Lemmatizer	http://www.apicultur.com/	http://store.apicultur.com/api/lematiza-clasico/1.0.0	https://store.apicultur.com/apis/info?name=LematizadorClasico&amp;version=1.0.0&amp;prov...	admin@apicultur.com	Tools	REST 		API Key, OAuth
+App.net	https://join.app.net/	https://alpha-api.app.net	https://join.app.net/	support@app.net	Social	REST 		OAuth2 SSL
+AppDirect	http://www.appdirect.com/	https://www.appdirect.com/api?_wadl	http://info.appdirect.com/developers/docs/api_integration/api_overview	developer@appdirect.com	Cloud	REST 		OAuth, OpenID
+Archivme	http://www.archivme.com/us	http://plist.api.seedhack.archivme.com	http://developer.archivme.net/	fabien@archivme.com	Financial	REST 		Basic Authentication, API Token
+Arrayent	http://www.arrayent.com/	https://api2.arrayent.com:8081/zdk/services/zamapi/	http://developer.arrayent.com/cloud/ws/api.php	info@arrayent.com	Tools	XML 		HTTP Basic Auth, Token
+Arts Holland	http://artsholland.com	http://api.artsholland.com/rest/	http://dev.artsholland.com/api/	 info@artsholland.com	Travel	REST 		API Key
+atama	http://www.atama.io	 http://cloud.atama.io/1.0/	http://atama.io/api.html	info@atama.io	Tools	REST 		OAuth
+Athlinks	http://athlinks.com/	http://api.athlinks.com/	http://api.athlinks.com/	developer@athlinks.com	Sports	REST 		API key
+AudioBox.fm	http://icorete.ch	https://audiobox.fm/api/v1	http://audiobox.fm/apidocs	claudio@audiobox.fm	Music	REST 		Basic Authentication over SSL, OAuth2, Auth Token
+Auphonic	http://auphonic.com/	https://auphonic.com/api/	https://auphonic.com/api-docs/index.html	info@auphonic.com	Tools	REST 		HTTP Basic Authentication, OAuth 2
+Australia Post SecurePay	http://www.securepay.com.au/	https://api.securepay.com.au/xmlapi/	https://auspost.com.au/devcentre/assets/pdfs/pac-pcs-technical-specification.pdf	info@auspost.com.au	Payments	REST 		HTTP Basic Authentication
+Avatars.io	http://getchute.com/	http://avatars.io/	http://avatars.io/	hello@getchute.com	Tools	REST 		OAuth
+awe.sm	http://totally.awe.sm/	http://api.awe.sm/	http://developers.awe.sm/	developers@awe.sm	Social	REST 		API Key
+AzonMobile QR Code	http://azonmobile.com	https://azonmobile.com/xml_server.php	http://azonmobile.com/en/help/API	sales@azonmobile.com	Advertising	HTTP 		API Key
+Baconfile	http://baconfile.com	http://baconfile.com/	http://baconfile.com/api/	bacon@baconfile.com	Storage	REST 		HTTP Basic Auth
+Bandpage	https://www.bandpage.com/	https://api-read.bandpage.com/	https://developers.bandpage.com/docs	api@bandpage.com	Music	REST 		OAuth2 access token
+Bandsintown	http://www.bandsintown.com	http://api.bandsintown.com/	http://www.bandsintown.com/api/overview	biz@bandsintown.com	Music	XML 		App ID, Basic app ID
+Bank Account Checker	http://www.bankaccountchecker.com/	http://www.bankaccountchecker.com/listener.php	https://www.bankaccountchecker.com/	al@bankaccountchecker.com	Financial	REST 		API Key, User Password
+BayWeb Cloud-EMS	http://www.bayweb.com/	http://api.bayweb.com/v2/	http://www.bayweb.com/commercial/cloud-ems/	support@bayweb.com	Tools	REST 		API Key
+Beats Music	https://www.beatsmusic.com/	https://partner.api.beatsmusic.com/v1/	https://developer.beatsmusic.com/docs	hi@beatsmusic.com	Music	REST 		HTTP Basic Authentication over SSL
+Bebo	http://www.bebo.com	http://apps.bebo.com	http://developer.bebo.com/	http://www.bebo.com/ContactUs.jsp	Social	REST 		API Key
+Beintoo	http://www.beintoo.com/home.html	https://api.beintoo.com/api/rest/	http://documentation.beintoo.com/home/api-docs	info@beintoo.com	Tools	REST 		API Key
+BellaDati	http://www.belladati.com/	https://service.belladati.com/api	http://support.belladati.com/techdoc/Developer+Tools	support@belladati.com	Tools	REST 		OAuth
+Big Media Scraper	http://www.bigimtoolbox.com/	http://app.bigmediascraper.com/api/	http://www.bigimtoolbox.com/apidocs/big-media-scraper-api	support@bigimtoolbox.com	Media	REST 		API Key, HTTP Basic Auth
+Bikko	http://www.bikko.net/	http://bikko.net/route/	http://bikko.net/events/6/details	http://www.bikko.net/about	Sports	REST 		Public
+Billogram	http://www.billogram.com	https://api.billogram.com	https://express.billogram.com/developers/	hej@billogram.com	Financial	REST 		HTTP Basic Authentication
+Bim.im	http://bim.im	http://bim.im/api.php?f=[function]	http://bim.im/page/API/	contact@bim.im	Tools	REST 		API Key, User Password
+BioBricks Public Agreement	http://biobricks.org	https://biobricks.org/api/contributions	https://biobricks.org/bpa/developers/	contact@biobricks.org	Science	REST 		API Key
+BioCyc	http://biocyc.org/	http://websvc.biocyc.org/getxml?	http://ecocyc.org/web-services.shtml	biocyc-support@ai.sri.com	Science	REST 		Public
+BioDOM	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/biodomws/axis/AlignmentML	http://bibiserv.techfak.uni-bielefeld.de/biodomws/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+BiologicalNetworks	http://www.biologicalnetworks.net	http://biologicalnetworks.net/	http://biologicalnetworks.net/doc/api.php	http://biologicalnetworks.net/bug/index.php	Science	XML 		None
+Bit-Pay	https://bit-pay.com/home.html	https://bit-pay.com:8443	https://bitpay.com/bitcoin-payment-gateway-api	info@bit-pay.com 	Financial	REST 		Basic Authentication over SSL
+Bitcasa	http://bitcasa.com/	https://developer.api.bitcasa.com/v1/	https://developer.bitcasa.com/	bizdev@bitcasa.com	Storage	REST 		API Key
+Bitcasa CloudFS	Bitcasa	server.example.com	Bitcasa CloudFS APIs	platform@bitcasa.com	Storage	REST 		Other/Custom
+Bitcoin Payflow	http://bitcoinpayflow.com/	https://www.bitcoinpayflow.com	http://bitcoinpayflow.com/	support@bitcoinpayflow.com	Payments	REST 		Unique address token
+BitInstant	https://www.bitinstant.com/	https://www.bitinstant.com/api/json/$Method	https://www.bitinstant.com/api	info@bitinstant.com	Financial	REST 		Basic Authentication over SSL
+BitMinter	https://bitminter.com/	https://bitminter.com/api/pool/	https://bitminter.com/api	https://bitminter.com/contact	Financial	REST 		Public
+BlazeMeter	http://blazemeter.com/	http://a.blazemeter.com/api/rest/blazemeter/	http://community.blazemeter.com/knowledgebase/articles/69998-api-getting-started	info@blazemeter.com	Cloud	REST 		API Key
+Blocksi	http://www.block.si/	http://api.block.si	http://www.block.si/	support@block.si	Tools	REST 		API Key
+BlogCatalog	http://www.blogcatalog.com	http://api.blogcatalog.com/	http://www.blogcatalog.com/api/	webmaster@blogcatalog.com	Search	REST 		API Key
+BlueTarp Authorization	https://bluetarp.com/index	https://integration.bluetarp.com/auth/	https://bluetarp.com/developer/api	api-support@bluetarp.com	Payments	REST 		HTTP Basic Authentication over TLS/SSL
+Bluevia Mobile Payment	http://www.bluevia.com	https://api.bluevia.com/services/RPC/Payment/payment 	http://labs.bluevia.com/en/page/tech.APIs.PaymentAPI	support@bluevia.com	Payments	REST 		OAuth, API Key
+Bookleteer	http://bookleteer.com/	http://bookleteer.com/api/	http://bookleteer.com/blog/faq/	bookleteer@bookleteer.com	Entertainment	REST 		API Key
+Boom test uitgevers	http://www.boomtestuitgevers.nl/	https://account.boomtestuitgevers.nl/	https://account.boomtestuitgevers.nl/api.html	thijs@fngtps.com	Education	REST 		HTTP Basic Authentication
+BoxBilling	http://www.boxbilling.com/	http://www.yourdomain.com/api	http://www.boxbilling.com/docs/api.html	info@boxbilling.com	Financial	REST 		Basic Authentication over HTTP
+Boxcar	http://boxcar.io	http://boxcar.io/help/api/providers	http://boxcar.io/help/api/providers	info@boxcar.io	Social	REST 		API Key, API URL, email address of Boxcar users
+Breezy	https://www.breezy.com/	api.breezy.com	http://www.breezy.com/developers/	dev@breezy.com	Tools	REST 		oAuth2
+Brownbook OpenSearch	http://www.brownbook.net/	http://www.brownbook.net/business/search/	http://help.brownbook.net/opensearch/	jerry@brownbook.net	Search	REST 		Public
+Bter	http://www.bter.com	https://bter.com/api/1	https://bter.com/api	support@bter.com	Financial	REST 		HTTP Basic Authentication over SSL, WAF, Google TOTP
+buddyfetch	http://www.buddyfetch.com/	http://www.buddyfetch.com/index.php	http://www.buddyfetch.com/api.php	info@buddyfetch.com	Social	REST 		API Key
+Buffer	http://www.bufferapp.com	https://api.bufferapp.com/1	http://bufferapp.com/developers/api	api@bufferapp.com	Social	REST 		API Token
+Bugrocket	https://www.bugrocket.com/	https://account.bugrocket.com/api/v1/path	http://developer.bugrocket.com/	hello@bugrocket.com	Tools	REST 		HTTP Basic Authentication over SSL
+BugSnag	http://www.bugsnag.com	https://api.bugsnag.com	https://bugsnag.com/docs/api	support@bugsnag.com	Tools	REST 		HTTP Basic Authentication over SSL, API Toeksns
+Buildasearch	http://www.buildasearch.com	http://buildasearch.com/services	http://www.buildasearch.com	diego@earthoid.com	Search	REST 		API Key
+Burstly	http://www.burstly.com/	http://req.appads.com/scripts/ConfirmDownload.aspx	http://support.burstly.com/customer/portal/articles/888634-download-tracking-api	support@burstly.com	Advertising	REST 		API Key
+Buyvite Transaction	http://buyvite.com/	https://buyvite.com/api/transact.aspx	http://buyvite.com/api/default.aspx	info@buyvite.com	Payments	HTTP 		HTTP basic authentication over SSL
+BuzzSumo	http://buzzsumo.com/	http://api.buzzsumo.com/	http://buzzsumo.com/knowledge/buzzsumo-api	team@buzzsumo.com	Media	REST 		API Key
+Byte Plant Address Verification Online	http://www.byteplant.com/	http://api.address-validator.net/api/verify 	Address Verification Online API	 support@byteplant.com	Addresses	HTTP 		API Key
+BYU Academic	http://www.byu.edu/	https://ws.byu.edu/rest/v1/academic/	https://developer.byu.edu/wiki/display/SOA/Academic	it@byu.edu	Education	REST 		Some public, some proprietary authorization
+BYU Entrance Exams	http://www.byu.edu/	https://ws.byu.edu/rest/v1.0/academic/records/	https://developer.byu.edu/wiki/display/SOA/Exam+Credit_v1.0	info@byu.edu	Education	REST 		Proprietary network authorizations
+Calais	http://www.opencalais.com	http://api.opencalais.com/enlighten/?wsdl	http://www.opencalais.com/documentation/calais-web-service-api	questions@opencalais.com	Other	HTTP 		API Key
+Campus Notes	http://getcampusnotes.com/	http://getcampusnotes.com/api/	http://getcampusnotes.com/api	support@getcampusnotes.com	Education	REST 		OAuth
+CD Universe	http://www.cduniverse.com	http://www.cduniverse.com/datafeed/ws.asp?	http://www.cduniverse.com/partner/partner_webservices.asp	partners@cduniverse.com	Music	REST 		API Key
+Chalkable	https://chalkable.com/	https://chalkable.com/WebServices	https://chalkable.com/Account/Developers	info@chalkable.com	Education	REST 		API Key
+ChargeBee	http://www.chargebee.com/	https://{site}.chargebee.com/api/v1/	https://apidocs.chargebee.com/docs/api	support@chargebee.com	Payments	REST 		API Key, HTTP Basic Auth
+ChEMBL	http://www.ebi.ac.uk	http://www.ebi.ac.uk/chemblws	https://www.ebi.ac.uk/chembldb/index.php/ws	https://www.ebi.ac.uk/support/index.php	Science	REST 		Public
+Chemical Identifier Resolver	http://cactus.nci.nih.gov/	http://cactus.nci.nih.gov/chemical/structure/	http://cactus.nci.nih.gov/chemical/structure	sitzmann@helix.nih.gov	Science	REST 		Public
+ChemSpider	http://www.rsc.org/	http://www.chemspider.com/Search.asmx	http://www.chemspider.com/AboutServices.aspx?	chemspider@rsc.org	Science	SOAP 		HTTP Basic Authentication, Security Token
+ChromA	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/ChromA/axis/ChromAPort	http://bibiserv.techfak.uni-bielefeld.de/chroma/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+CicerOOs Semantic Graph	http://www.ciceroos.it	http://api.ciceroos.com/development/	http://www.ciceroos.it/developers	staff@ciceroos.com	Travel	HTTP 		API Key
+CIPF RENATO	http://bioinfo.cipf.es/	http://ws.bioinfo.cipf.es/cellbase/rest/	http://bioinfo.cipf.es/docs/renato/restful_web_services	info@bioinfo.cipf.es	Science	REST 		Public
+CircleCI	https://circleci.com	https://circleci.com/api/v1	https://circleci.com/docs	sayhi@circleci.com	Tools	REST 		API Token
+cisimple	https://www.cisimple.com/	https://www.cisimple.com/jobs.json	https://www.cisimple.com/api	dave@cisimple.com	Tools	REST 		API Token
+CitizenNet	https://citizennet.com	https://citizennet.com/api/	https://www.assembla.com/spaces/citizennet/wiki	info@citizennet.com	Advertising	REST 		API Key
+Cleanify	http://cleanify.net	http://cleanify.net/Api/Rewrite	http://cleanify.net/api	info@cleanify.net	Tools	REST 		None
+Clever	https://getclever.com/	https://api.getclever.com/	https://clever.com/developers/docs/	info@getclever.com	Education	REST 		HTTP Basic Authentication, API Key
+Clickworker	http://www.clickworker.com/en	https://api.clickworker.com/api/marketplace/v2/	http://www.clickworker.com/en/api/	helpdesk@clickwoâ€‹rker.com	Social	REST 		HTTP Basic Authentication
+CliFlo	http://www.niwa.co.nz/	http://cliflo.niwa.co.nz/pls/niwp/	http://cliflo.niwa.co.nz/	cliflo@niwa.co.nz	Weather	REST 		HTTP Basic Authentication
+Cloudant	https://cloudant.com/	https://cloudant.com/api/	https://cloudant.com/for-developers/	support@cloudant.com	Tools	REST 		Basic Authentication over SSL
+CloudHarmony	http://www.cloudharmony.com/	http://api.cloudharmony.com/	http://api.cloudharmony.com/	info@cloudharmony.com	Cloud	SOAP 		Public
+Club Speed	http://www.clubspeed.com/	http://97.67.180.38:8080/api/index.php/	http://97.67.180.38:8080/api/	support@clubspeed.com	Sports	HTTP 		API Key
+CO-OPS	http://tidesandcurrents.noaa.gov/	http://opendap.co-ops.nos.noaa.gov/axis/webservices/waterlevelrawsixmin/wsdl	http://opendap.co-ops.nos.noaa.gov/	COOPS.IOOS@noaa.gov	Science	SOAP 		None
+CoinDesk	http://www.coindesk.com/	http://api.coindesk.com/v1/bpi/	API Documentation	contact@coindesk.com	Financial	REST 		Unspecified
+Coinkite	http://www.coinkite.com	https://api.coinkite.com/PATH	https://docs.coinkite.com/api/index.html	support@coinkite.com	Financial	REST 		HTTP Basic Auth
+Collins Indicate	http://www.collinsindicate.com/	https://www.app.collinsindicate.com/services/en-us 	http://staging.services.collinsindicate.com/en-us/docs/api/rest	ask@collinsindicate.com	Tools	REST 		HTTP Basic Authentication
+Compassion International	http://www.compassion.com	https://api2.compassion.com/us/1/	http://developer.compassion.com/	info@compassion.com	Tools	REST 		API Key
+Compendium	http://www.compendium.com/	https://api.compendiumblog.com/app/	http://docs.eng.compendiumblogware.com/node/1	info@compendium.com	Media	REST 		API Key
+Console.fm	http://www.console.fm	http://console.fm/api/v2	http://console.fm/api	alex@console.fm	Music	REST 		API Key
+ConvertAPI Web2PDF	http://www.convertapi.com/	http://do.convertapi.com/web2pdf	http://www.convertapi.com/web-pdf-api	support@baltsoft.com	Tools	REST 		API Key
+ConvertAPI Word2PDF	http://www.convertapi.com	http://do.convertapi.com/Word2Pdf	http://www.convertapi.com/word-pdf-api	support@baltsoft.com	Tools	REST 		API Key
+ConvertAPI Xps2PDF	http://www.convertapi.com	http://do.convertapi.com/Xps2Pdf	http://www.convertapi.com/xps-pdf-api	support@baltsoft.com	Tools	REST 		API Key
+CopasiWS	http://www.comp-sys-bio.org/tiki-index.php	http://services.copasiws.copasi.org/modelprocessorws.wsdl	http://www.comp-sys-bio.org/CopasiWS/	none given	Science	SOAP 		None
+CopperEgg	http://copperegg.com/	https://api.copperegg.com/v2/	http://copperegg.com/api/	info@copperegg.com	Tools	REST 		API Key
+CORE	http://core.kmi.open.ac.uk/	http://core.kmi.open.ac.uk/api/	http://core.kmi.open.ac.uk/intro/api	p.knoth@open.ac.uk	Education	HTTP 		API Key
+Coret Genealogy Online	http://www.coret.org/	http://api.coret.org/scanszoeken/v1/	http://api.coret.org/laatste_nieuws.php	http://www.coret.org/cc/abt/feedback.php	Search	REST 		API Key
+Credit-Agricole	http://www.credit-agricole.fr/	https://www.creditagricolestore.fr/castore-data-provider/docs/V1/guide_utilisateur.html#	https://www.creditagricolestore.fr/castore-data-provider/docs/V1/rest.html	info@credit-agricole.fr	Financial	REST 		OAuth
+CRONOS	http://www.nc-climate.ncsu.edu/	http://www.nc-climate.ncsu.edu/dynamic_scripts/cronos/getCRONOSdata.php?	http://www.nc-climate.ncsu.edu/cronos/api/	mark_brooks@ncsu.edu	Weather	REST 		HTTP Basic Authentication
+Crossbrowser Testing	http://crossbrowsertesting.com/	http://crossbrowsertesting.com/api/	http://crossbrowsertesting.com/apidocs	info@crossbrowsertesting.com	Tools	REST 		Basic Authentication
+CrowdTwist	crowdtwist.com	http://www.crowdtwist.com/docs/api	https://developers.crowdtwist.com/	api@crowdtwist.com	Advertising	JSON 		API Key and secret
+Crunch	http://www.crunch.co.uk	http://api.crunch.co.uk/rest/v2	Developer Centre	api@crunch.co.uk 	Financial	XML 		Unspecified, OAuth
+Culture Grid	http://www.culturegrid.org.uk/	http://culturegrid.org.uk/discover/	http://www.culturegrid.org.uk/use/	culturegrid@collectionstrust.org.uk	Search	REST 		Public
+CurdBee	http://curdbee.com/	http://{subdomain}.curdbee.com/	http://curdbee.com/api/	support@curdbee.com	Financial	REST 		API Key
+DalPay	https://www.dalpay.com/en/	https://secure.dalpay.is/cgi-bin/order2/poauto3.pl	https://www.dalpay.com/en/dalpayapi/	integration@dalpay.com	Payments	REST 		HTTP Basic Authentication
+DaycareSocial	http://www.daycaresocial.com/	https://hub.daycaresocial.com/API/v1.0/DaycareListing.asmx	http://www.daycaresocial.com/api	api@daycaresocial.com	Social	SOAP 		API Key
+DayDetails	http://geciauskas.com/	http://daydetails.com/general.php?	http://daydetails.com/about.php	info@daydetails.com	Entertainment	REST 		Public
+Debitoor	https://debitoor.com/	https://api.debitoor.com/api/v1.0/	https://github.com/e-conomic/debitoor-api	team@debitoor.com	Financial	REST 		OAuth2
+Debuggify	https://www.debuggify.net/	https://cdn.debuggify.net	http://developers.debuggify.net/docs/	support@debuggify.net	Tools	REST 		API Key
+Decomp	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/decomp/axis/decompPort	http://bibiserv.techfak.uni-bielefeld.de/decomp/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+Desire2Learn	http://www.desire2learn.com	http://targethost/d2l/api/	http://docs.valence.desire2learn.com/index.html	info@desire2learn.com	Education	REST 		API Key
+Detectlanguage.com	http://detectlanguage.com/	http://ws.detectlanguage.com/0.2/detect	http://detectlanguage.com/	info@detectlanguage.com	Tools	JSON 		API Key
+Diffbot Frontpage	http://www.diffbot.com	http://www.diffbot.com/api/frontpage	http://www.diffbot.com/products/automatic/frontpage/	support@diffbot.com	Tools	REST 		API Token
+Digit-Eyes	http://www.digit-eyes.com/	http://digit-eyes.com/cgi-bin/	http://www.digit-eyes.com/api.html	support@digit-eyes.com	Tools	HTTP 		API Key
+Digitaliser	http://digitaliser.dk/	https://api.digitaliser.dk/rest/	http://api.digitaliser.dk/rest/	info@digitaliser.dk	Social	REST 		HTTP Basic Authentication
+DigitalOcean	http://digitalocean.com	https://api.digitalocean.com/	https://developers.digitalocean.com/	contact@digitalocean.com	Storage	REST 		API Key, SSH
+Dirble	http://dirble.com/	http://dirble.com/dirapi/	http://dirble.com/developer/api	hakan@dun.se	Music	REST 		API Key
+Discogs	http://discogs.com	http://www.discogs.com/release/1	http://www.discogs.com/developers/	http://www.discogs.com/support	Music	REST 		API Key
+disdar	http://www.disdar.com	http://api.disdar.de/	http://disdar.com/api_documentation.html	info@disdar.com	Financial	REST 		API Key, HTTP Basic Authentication
+Divide-and-Conquer Multiple Sequence Alignment	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/DCA/axis/DCAPort	http://bibiserv.techfak.uni-bielefeld.de/dca/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+DKFZ SoapDB	http://genome.dkfz-heidelberg.de/	http://www.dkfz-heidelberg.de/menu/hobit/2005/04/SoapDB.wsdl	http://genome.dkfz-heidelberg.de/husar/index.php?id=hs_home#soapdb	Genome@DKFZ.de	Science	SOAP 		None
+doctape	http://www.doctape.com	https://api.doctape.com/v1/	https://developer.doctape.com/introduction	developer@doctape.com	Media	REST 		OAuth 2.0
+Docverter	http://www.docverter.com	http://c.docverter.com/convert	http://www.docverter.com/api.html	pete@petekeen.com	Tools	REST 		None
+DOE Green Energy	http://energy.gov/	http://www.osti.gov/greenenergy/rdresults	http://www.osti.gov/scitech/	greenenergy@osti.gov	Search	REST 		Public
+DonorsChoose	http://www.donorschoose.org/	http://api.donorschoose.org/	http://data.donorschoose.org/	apiquestion (at) donorschoose (dot) org	Education	REST 		API Key
+Doximity	https://www.doximity.com/	https://www.doximity.com/api/v1/	http://developer.doximity.com/	bd@doximity.com	Social	HTTP 		OAuth 2.0
+Doxument	http://doxument.com	http://api.doxument.com/	http://www.doxument.com/	support@doxument.com	Tools	REST 		API Key
+Draft	https://draftin.com	https://draftin.com/api/v1/	https://draftin.com/documents/54643?token=Qq1PuS1fL8Zr9yWDSefoeUMQCfp3yr1s6g_7Sh...	nate@cityposh.com	Tools	REST 		OAuth 2.0
+DragonPay	http://www.dragonpay.ph/	https://api.dragonpay.ph/Pay.aspx	http://www.dragonpay.ph/developers	support@dragonpay.ph	Payments	SOAP 		API Key
+Dress Code Finder	http://dresscodefinder.com	http://dresscodefinder.com/venues/search.json	http://dresscodefinder.com/api	contact@dresscodefinder.com	Entertainment	REST 		None
+Dribbble	http://dribbble.com	http://api.dribbble.com	http://dribbble.com/api	contact@dribbble.com	Other	REST 		n/a
+Drillster	http://www.drillster.com	https://www.drillster.com/api/	http://www.drillster.com/info/api	info@drillster.com	Education	REST 		API Key, OAuth 2.0
+Dubset MixSCAN	http://www.thefuture.fm/?ds=1#/	api.mixscan.com	http://mixscan.com/documentation.html	charlie@dubset.com	Music	REST 		HTTP Authentication
+Dudu	http://www.dudu.com	http://dudu.com/api/	http://dudu.com/docs/api/js_api_module	contact@dudu.com	Social	REST 		OAuth
+Duplicated Genes Database	http://www.biogenouest.org/	http://nbcr.sdsc.edu/opal	http://dgd.genouest.org/tutorial#tuto_3	support@genouest.org	Science	SOAP 		None
+DVDXML	http://www.dvdxml.com	http://api.dvdxml.com	http://dvdxml.com/p/forum/forum_viewtopic.php?3193	tim@dvdxml.com	Media	REST 		HTTP Basic Authentication
+e-Fungi	http://www.manchester.ac.uk/	urn:uk.org.efungi	http://beaconw.cs.manchester.ac.uk/	none given	Science	SOAP 		None
+E-goi	http://www.e-goi.com/	http://api.e-goi.com/v2/	http://www.e-goi.com/en/recursos/api/	info@e-goi.com	Advertising	REST 		API Key
+EarthScope Data Portal	http://www.nsf.gov/	http://portal.earthscope.org	http://www.earthscope.org/science/data/access/	http://www.earthscope.org/contacts	Science	SOAP 		None
+Easywallet	https://easywallet.org/	https://easywallet.org/api/v1/new_wallet	https://easywallet.org/en/api	jeremias.kangas@gmail.com	Financial	REST 		API Key
+EBI CENSOR	http://www.ebi.ac.uk/	http://www.ebi.ac.uk/WSCensor	http://www.ebi.ac.uk/Tools/webservices/services/archive/so/wscensor	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	SOAP 		None
+EBI ClustalW2	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI ClustalW2 Phylogeny	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/phylogeny/clustalw2_phylogeny_so...	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI DaliLite	http://www.ebi.ac.uk/	http://www.ebi.ac.uk/WSDaliLite	http://www.ebi.ac.uk/Tools/webservices/services/archive/structure/wsdalilite	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	SOAP 		None
+EBI InterProScan	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/pfa/iprscan_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI Kalign	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/kalign_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI Lalign	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/psa/lalign_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI MAFFT	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/mafft_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI MUSCLE	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/muscle_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI MView	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/mview_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI NCBI BLAST	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/sss/ncbi_blast_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI Phobius	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/pfa/phobius_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI PRANK	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/prank_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI SBO	http://www.ebi.ac.uk/	http://www.ebi.ac.uk/SBO/SBOQuery	http://www.ebi.ac.uk/sbo/main/	lenov@ebi.ac.uk	Science	SOAP 		None
+EBI T-Coffee	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/msa/tcoffee_rest	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI WSDbfetch	http://www.ebi.ac.uk/	http://www.ebi.ac.uk/ws/services/WSDbfetchDoclit	http://www.ebi.ac.uk/Tools/webservices/services/dbfetch	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBI WU-BLAST	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/sss/wu_blast_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EBSCO Host	http://www.ebsco.com/index.asp	http://eit.ebscohost.com/Services/SearchService.asmx	http://www.ebscohost.com/discovery/api	information@ebscohost.com	Search	SOAP 		HTTP Basic Authentication
+ECGridOS EDI	http://www.ld.com	https://ecgridos.net/v2.3/prod/ECGridOS.asmx	http://ecgridos.net/docs/index.htm	awilensky@LD.com	Tools	SOAP 		https
+ecobee	https://www.ecobee.com	https://api.ecobee.com/1/	http://www.ecobee.com/solutions/api/	info@ecobee.com	Tools	HTTP 		OAuth 2.0
+eduroam URN	http://www.geant.net/	https://registry.edugain.org/resolver	https://registry.edugain.org/eduroam/browser/api.php	edugain-ot@geant.net	Education	REST 		Public
+eKim eKart Fraud Buster	http://www.ekim.vn/	http://www.ekim.vn/fraudcheck/order?	http://www.ekim.vn/FB_API.html	contact@ekim.vn	Payments	REST 		API Key
+ElectionsOnline Evote	http://www.electionsonline.com	https://www.electionsonline.com/components/	http://www.electionsonline.com/about-electionsonline/	contact@electionsonline.com	Tools	SOAP 		HTTP Basic Authentication
+EMBOSS Backtranambig	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/st/emboss_backtranambig_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	SOAP 		None
+EMBOSS Backtranseq	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/st/emboss_backtranseq_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EMBOSS Matcher	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/psa/emboss_matcher_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EMBOSS Needle	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/psa/emboss_needle_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EMBOSS Stretcher	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/psa/emboss_stretcher_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EMBOSS Transeq	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/st/emboss_transeq_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+EMBOSS Water	http://www.ebi.ac.uk/	http://soap.jdispatcher.ebi.ac.uk	http://www.ebi.ac.uk/Tools/webservices/services/psa/emboss_water_soap	http://www.ebi.ac.uk/support/index.php?query=WebServices	Science	REST 		None
+Empirasign	http://www.empirasign.com/	http://empirasign.com/api/	http://www.empirasign.com/api_docs/	info@empirasign.com	Financial	REST 		API Key
+EnrichNet	http://bree.cs.nott.ac.uk/enrichnet/index.php	http://bree.cs.nott.ac.uk/enrichnet/	http://bree.cs.nott.ac.uk/enrichnet/api.html	webmaster@arraymining.net	Science	REST 		Public
+EnvoyRelate	http://envoyrelate.com/	https://api.envoyrelate.com/v1/	https://envoymail.zendesk.com/entries/22054001-api-overview	support@envoyrelate.com	Financial	REST 		API Key
+EPA Project Catalog	http://www.epa.gov/	http://gov.epa.storet.projectcatalogservice/ProjectCatalogService.wsdl	http://www.epa.gov/storet/web_services.html	STORET@epa.gov	Science	SOAP 		None
+EPA Station	http://www.epa.gov/	http://gov.epa.storet.stationservice/StationService.wsdl	http://www.epa.gov/storet/web_services.html	STORET@epa.gov	Science	SOAP 		None
+EPA Watershed Summary	http://www.epa.gov/	http://gov.epa.storet.watershedsummary/WatershedSummaryService.wsdl	http://www.epa.gov/storet/web_services.html	STORET@epa.gov	Science	SOAP 		None
+eThor	http://ethor.com/	https://ethor-prod.apigee.net/v1/	http://developers.ethor.com	api@ethor.com	Payments	HTTP 		API Key
+Europeana OpenSearch	http://europeana.eu	http://api.europeana.eu/api/opensearch	http://europeanalabs.eu/wiki/EuropeanaOpenSearchAPI	api@europeana.eu	Education	REST 		API Key
+Eviscape	eviscape.com	http://www.eviscape.com/api/	http://www.eviscape.com/profile/eviscape-api/	contact@eviscape.com	Social	REST 		OAuth
+Exceptional	http://www.getexceptional.com	http://api.getexceptional.com/api	http://docs.exceptional.io/api/publish/	hello@getexceptional.com	Tools	REST 		None
+Exposure Basketball Tournaments	http://exposurebasketballtournaments.com	http://exposurebasketballtournaments.com/api/v1/	http://exposurebasketballtournaments.com/api	info@exposurebasketballtournaments.com	Sports	HTTP 		API Key
+Eyewitness Guides	http://www.pearson.com/	http://api.pearson.com/eyewitness	https://developer.pearson.com/apis/eyewitness-guides/	api-developer@pearson.com	Travel	REST 		API Key
+Fabulous	http://fabulous.com	http://api.fabulous.com/	http://fabulous.com/informationcenter/index.htm?formdata%5Bqid%5D=1452	support@fabulous.com	Advertising	REST 		User Password
+Faithlife	https://faithlife.com	https://api.faithlife.com/community/v2/	https://developer.faithlife.com/	tech@faithlife.com	Social	HTTP 		OAuth 1.0a
+FanBridge	fanbridge.com	https://api.fanbridge.com/v3/	http://www.fanbridge.com/api/	api@FanBridge.com	Advertising	REST 		API Key
+Farelogix	http://www.farelogix.com	http://67.63.42.151:28810/	http://www.farelogix.com/html/ourTechnology.html	proservices@farelogix.com	Travel	SOAP 		API Key
+FAROO	http://www.faroo.com	Multiple	http://www.faroo.com/hp/api/api.html	info@faroo.com	Search	REST 		None
+Favatar	https://en.mention.net/	http://favatar.mention.net/	https://favatar.mention.net/	edouard@mention.net	Media	REST 		API Key
+Feed.fm	http://feed.fm/	http://feed.fm/api/v2/	http://developer.feed.fm/documentation	support@feed.fm	Music	REST 		API Key
+Fellowship One	http://www.fellowshipone.com	https://fellowshiponeapi.com/v1/	http://developer.fellowshipone.com	api@fellowshiptech.com	Other	REST 		OAuth
+figo connect	http://figo.me/	https://api.leanbank.com/rest/	http://developer.figo.me/	business@figo.me	Financial	REST 		OAuth 2.0
+FillAnyPDF	http://www.conceptasys.com/	https://www.fillanypdf.com/api/	http://fillanypdf.wikidot.com/wiki:rest	admin@conceptasys.com	Tools	REST 		Basic Authentication over SSL
+filtrbox	http://www.filtrbox.com	http://www.filtrbox.com/rest/	http://api.filtrbox.com/w/page/13068249/FrontPage	support@filtrbox.com	Social	REST 		HTTP Basic Authentication over SSL
+First Data Global Gateway	http://www.firstdata.com/en_us/home.html	https://api.globalgatewaye4.firstdata.com/transaction	https://firstdata.zendesk.com/entries/407571-first-data-global-gateway-e4sm-web-...	https://www.firstdata.com/en_us/contact/general-inquiries.html	Payments	SOAP 		HTTP Basic Authentication or API Key
+Flashcard Exchange	http://www.cram.com/	https://api.Cram.com/v2	http://www.cram.com/docs/api	support@flashcardexchange.com	Education	REST 		API Key, OAuth
+Fleetly	http://www.fleetly.com	 https://api.fleetly.com/api/v1/	http://www.fleetly.com/login/?next=/api/	hello@fleetly.com	Sports	REST 		OAuth
+FlightAware	http://flightaware.com	http://directflight.flightaware.com/soap	http://flightaware.com/commercial/flightxml/	contact-1238543885@flightaware.com	Travel	REST 		API Key, HTTP Auth
+Flingo	http://flingo.org	http://flingo.tv/fling/	http://flingo.org/developers.html#api_reference	editor@flingo.org	Media	HTTP 		Public
+Fliptop	http://www.fliptop.com/	http://api.fliptop.com/beta/	https://developer.fliptop.com/documentation	sales@fliptop.com	Social	REST 		API Key
+Flo2Cash	http://www.flo2cash.co.nz/index.php	https://secure.flo2cash.co.nz/web2pay	http://www.flo2cash.co.nz/downloadAPI.php	support@flo2cash.co.nz	Payments	REST 		HTTP Basic Authentication
+Floorplanner	http://www.floorplanner.com/	http://{mycompany}.floorplanner.com/users.xml	http://dev.floorplanner.com/doku.php?id=rest-api	support@floorplanner.com	Tools	REST 		HTTP Basic Authentication
+FloraBrasil	http://www.cria.org.br/	 http://checklist.florabrasil.net/service/	http://checklist.florabrasil.net/service	webmaster@cria.org.br	Science	REST 		Public
+FluidSurveys	http://fluidsurveys.com/	http://app.fluidsurveys.com/api/surveys/	http://docs.fluidsurveys.com/	info@fluidsurveys.com	Tools	HTTP 		API Key
+FlyBase	http://flybase.org/	http://flybase.org/chadoxml/	http://flybase.org/forums/viewtopic.php?f=14&amp;t=81	http://flybase.org/cgi-bin/mailto-fbhelp.html	Science	REST 		None
+Footfeed	http://footfeed.com/	http://footfeed.com/api/v1/	http://footfeed.com/api/v1/documentation/index	info@footfeed.com	Social	REST 		API Key, HTTP Basic Authentication
+Footprint Services	http://www.us-vo.org/	ivo://voservices.net/footprint	http://voservices.net/footprint/	vo-help@skysrv.pha.jhu.edu	Science	SOAP 		HTTP Basic Authentication
+Fosbury	http://www.fosbury.co	https://app.fosbury.co/api/v1/	http://www.fosbury.co/api	hello@fosbury.co	Advertising	REST 		HTTP Basic Authentication over SSL, API Key
+foursquare	https://foursquare.com	https://api.foursquare.com/	https://developer.foursquare.com/	api@foursquare.com	Social	REST 		OAuth 2.0
+Free Music Archive	http://freemusicarchive.org/	http://freemusicarchive.org/api/get/	http://freemusicarchive.org/api	dev@freemusicarchive.org	Music	REST 		API Key
+Friendster	http://friendster.com	http://api.friendster.com/v1	http://www.friendster.com/api_reference	developersupport@friendster.com	Social	REST 		API Key, Shared secret
+FT Press	http://www.pearson.com/	http://api.pearson.com/ftpress	https://developer.pearson.com/apis/ft-press/	api-developer@pearson.com	Financial	REST 		API Key
+FullContact Location	http://www.fullcontact.com/	https://api.fullcontact.com/v2/address/	http://www.fullcontact.com/developer/location-api/	support@fullcontact.com	Tools	REST 		API Key
+FullContact Name	http://www.fullcontact.com/	https://api.fullcontact.com/v2/name/	http://www.fullcontact.com/developer/name-api/	support@fullcontact.com	Tools	REST 		API Key
+FullContact Person	http://www.fullcontact.com/	https://api.fullcontact.com/v2/person	http://www.fullcontact.com/developer/person-api/	support@fullcontact.com	Social	REST 		API Key
+Fundraise.com	https://www.fundraise.com/	https://api.fundraise.com/v1/	https://www.fundraise.com/doc/api	info@fundraise.com	Social	REST 		Basic Authentication over SSL, API token
+G Adventures	http://www.gadventures.com/	https://rest.gadventures.com	https://developers.gadventures.com/	travel@gadventures.com	Travel	REST 		API Key
+GenealogyCloud OneGreatFamily	http://www.genealogycloud.com	http://wsdev.onegreatfamily.com/v11.02	http://www.genealogycloud.com/v11.02/help/default.aspx	devws@onegreatfamily.com	Other	REST 		API Key
+GeneProf	http://www.crm.ed.ac.uk/	http://www.geneprof.org/api/	http://www.geneprof.org/GeneProf/webapi.jsp	simon.tomlinson@ed.ac.uk	Science	REST 		Public
+Genomic Name Server	http://bioinformatics.ua.pt/	http://bioinformatics.ua.pt/applications/gens	http://bioinformatics.ua.pt/software/gens/	none given	Science	SOAP 		None
+GeoRanker	http://www.georanker.com	https://api.georanker.com/1/	http://apidocs.georanker.com	contact@georanker.com	Search	REST 		API Key, Shared secret access key
+Geotoko	http://geotoko.com	http://geotoko.com/api/campaigns	http://geotoko.com/about	api@geotoko.com 	Advertising	REST 		API Key
+GiftRocket Gift Card	http://www.giftrocket.com/	https://secure.giftrocket.com/gifts	http://www.giftrocket.com/gift-card-api	api@giftrocket.com	Social	REST 		API Key with authorization
+Gliffy	http://www.gliffy.com	http://www.gliffy.com/api/1.0	http://www.gliffy.com/products/online/api/	http://www.gliffy.com/contactus.php	Other	REST 		OAuth
+Global Sports Media	http://www.globalsportsmedia.com/	http://webpull.globalsportsmedia.com/	http://optasports.com/about/how-we-do-it/distribution-options.aspx	sales@globalsportsmedia.com	Sports	REST 		HTTP Basic Authentication
+Go Processing	http://www.goprocessing.in/	https://www.goprocessing.in/api	https://www.goprocessing.in/api	info@goprocessing.in	Payments	XML 		Unspecified, User Password
+GoCoin	http://www.gocoin.com	http://api.gocoin.com/	https://www.gocoin.com/docs	info@gocoin.com	Payments	REST 		OAuth, HTTP Basic Authentication over SSL
+Golm Metabalome Database	http://www.mpimp-golm.mpg.de/	http://gmd.mpimp-golm.mpg.de/webservices/wsGoBioSpace.asmx/	http://gmd.mpimp-golm.mpg.de/webservices/	hummel@mpimp-golm.mpg.de	Science	SOAP 		None
+Gravatar	http://en.gravatar.com/	http://www.gravatar.com/, https://secure.gravatar.com/xmlrpc	http://en.gravatar.com/site/implement/	support@gravatar.com 	Social	XML 		None (for JavaScript), API Key or Password for (XML-RPC)
+Gridspot	http://www.gridspot.com	https://gridspot.com/compute_api/v1/	https://gridspot.com/compute/api_help	support@gridspot.com	Tools	REST 		API Key
+H-InvDB	http://h-invitational.jp/	http://h-invitational.jp/hinv/hws/	http://h-invitational.jp/hinv/hws/doc/index.html	info@h-invitational.jp	Science	SOAP 		Public
+HaleyMail	http://haleymarketing.com	https://api.haleymarketing.com/	http://www.haleymarketing.com/api/haleymail-rest-api/	webmaster@haleymarketing.com	Advertising	REST 		API Key
+Hello Social	https://hellosocial.com	https://api.hellosocial.com/v1	http://developers.hellosocial.com/	hello@hellosocial.com	Social	REST 		API Key
+Hexillion Whois	http://hexillion.com	http://hexillion.com/rf/xml/1.0/whois/	http://hexillion.com/whois/	info@hexillion.com	Tools	REST 		Session key over SSL
+Heystaks	http://www.heystaks.com/	https://api.heystaks.com/1/	https://www.heystaks.com/developers/#overview	info@heystaks.com	Search	REST 	http://www.apihub.com/heystaks/api/heystaks-api?utm_source=Programmableweb&amp;utm_m...	OAuth
+Hi5	http://www.hi5.com/	http://api.hi5.com	http://api.hi5.com/index.html	http://www.hi5networks.com/contactform.html?subject=4	Social	REST 		API Key, OAuth
+HipGeo	http://www.hipgeo.com	http://api.hipgeo.com/	http://www.hipgeo.com/developer/index	api@hipgeo.com	Travel	REST 		API Key, oAuth 2.0
+Historical currency converter	http://blog.grandtrunk.net/	http://currencies.apps.grandtrunk.net/	http://currencies.apps.grandtrunk.net/	wim.heirman@elis.ugent.be	Financial	REST 		Public
+HitchHiker Flight	http://www.hitchhiker.net	http://www.hitchhiker.net/	http://www.hitchhiker.net/index.php/our-solutions/#flightapi	marketing@hitchhiker.net	Travel	XML 		Unspecified
+Hive	http://www.packetizer.com/	http://hive.packetizer.com/	http://hive.packetizer.com/api/	support@packetizer.com	Storage	REST 		API key
+Houdini	http://houdiniapi.com/	https://api.houdiniapi.com/{version}	http://support.houdiniapp.com/customer/portal/topics/409711-developer-docs/artic...	presto@houdiniapi.com	Tools	REST 		API Key
+Hubba	http://www.hubba.com	http://hubba.com/api/	http://www.hubba.com/api-documentation	info@hubba.com	Advertising	REST 		API Key
+Hummingbird	http://hummingbird.me/	https://hummingbirdv1.p.mashape.com/	https://www.mashape.com/vikhyat/hummingbird-v1	josh@hummingbird.me	Social	HTTP 		API Key
+Hunt Mobile Ads Ad Request	http://www.huntmads.com/	http://ads.huntmads.com/ad	http://www.huntmads.com/soy-un-developer	contact@huntmads.com	Advertising	REST 		API Key
+HUSAR Bioinformatics Lab	http://genome.dkfz-heidelberg.de/	http://www.dkfz.de/menu/biounit/dev.shtml	http://genome.dkfz-heidelberg.de/husar/index.php?id=hs_home#soaplab	Genome@DKFZ.de	Science	SOAP 		None
+IBCP gBIO	http://www.ibcp.fr/	http://gbio.ibcp.fr:8090/Clustalw_Service	http://gbio-pbil.ibcp.fr/ws/	none given	Science	SOAP 		None
+ICBC Payment Service	ICBC	http://www.icbc.com	http://www.icbc.com	payment@icbc.com	Payments	WSDL	http://www.icbc.com	API key
+IceLogo	http://compomics.com/	urn:IceLogoFetcher	http://iomics.ugent.be/icelogoserver/soap.html	lennart.martens@UGent.be	Science	SOAP 		None
+IconFinder	http://www.iconfinder.com/	http://www.iconfinder.com/	https://www.iconfinder.com/about/api	support@iconfinder.com	Search	REST 		Account with service, API key
+iDreamBooks	http://idreambooks.com	http://idreambooks.com/newbooks/api	http://idreambooks.com/api	contact@dreamonus.com	Entertainment	REST 		API Key
+Impossible Software	http://impossiblesoftware.com/	http://api.jet.is/	http://www.impossiblesoftware.com/docs/ServiceAPI.html	contact@impossiblesoftware.com	Media	REST 		HTTP Basic Authentication
+in2Era	http://erapublications.com	http://dev.in2era-web-service.com/api/	http://dev.in2era-web-service.com/implementation	info@erapublications.com	Education	REST 		Public
+Incubate	http://incubate.org	http://api.incubate.org/	http://incubate.org/2012/api	api@incubate.org	Music	REST 		API Key
+Indaba Music	http://www.indabamusic.com/	http://api.indabamusic.com/	https://www.indabamusic.com/labs	info@indabamusic.com	Social	REST 		OAuth Standard
+Ingenio	http://www.ingenio.com	http://api.ingenio.com/{trackingID}/GetListings.asmx	http://developers.ingenio.com/CommunityServer/files/9/default.aspx	dnsadmin@yellowpages.com	Advertising	SOAP 		API Key
+Ingesture	ingesture.com	http://ingesture.com/api/messages/ 	http://ingesture.com/apidocs/	email@ingesture.com	Social	REST 		API Key
+INOH Pathway Database	http://www.inoh.org/	http://www.inoh.org/axis2/services/InohWebService2/	http://www.inoh.org/inoh_api_manual.html	info@inoh.org	Science	REST 		Public
+Inside Higher Ed	http://www.insidehighered.com/	http://careers.insidehighered.com/api/	http://api2.insidehighered.com:8080/api/docs/	info@insidehighered.com	Education	SOAP 		API Key
+Instamojo	http://www.instamojo.com	https://www.instamojo.com/api/1	https://www.instamojo.com/developers/	support@instamojo.com	Payments	REST 		HTTP Basic Authentication over SSL
+InsumaFocus	http://www.insuma.de/insuma/en/index_insuma.h	http://www.insuma.de/	http://www.insuma.de/insuma/en/SEfocus.html	info@insuma.de	Search	HTTP 		HTTP Basic Authentication
+Insured Rating	http://www.insuredapp.com/	https://{userAccount}.insuredapp.com	http://www.insuredapp.com/guides/	info@clariondoor.com	Financial	REST 		HTTP Basic Authentication
+Intacct Online Accounting	http://www.intacct.com/	http://www.intacct.com/ia/xml/xmlgw.phtml	http://developer.intacct.com/wiki/about-web-services	info@intacct.com	Financial	REST 		HTTP Basic Authenticaiton
+Integrated Earth Data Applications	http://www.iedadata.org/	http://app.geosamples.org/webservices/	http://www.iedadata.org/services/webservices	info@iedadata.org	Science	REST 		HTTP Basic Authentication
+Intellexere	http://www.intellexere.com/en/homepage	http://us.ws.intellexere.com/	https://www.intellexere.com/en/ikb/api/	support@complexityintelligence.com 	Search	REST 		HTTP Basic Authentication
+Invoice Machine	http://invoicemachine.com	http://machine_id.invoicemachine.com/api/	http://invoicemachine.com/api	info@invoicemachine.com	Financial	REST 		API Key
+IOOS SOS	http://tidesandcurrents.noaa.gov/	http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/	http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/	COOPS.IOOS@noaa.gov	Science	HTTP 		None
+IP Address	http://www.ipaddressapi.com	http://www.ipaddressapi.com/l/	http://www.ipaddressapi.com/ip_address_location_api/	info@ipaddressapi.com	Tools	REST 		API Key
+iPlant Semantic Web HTTP	http://www.iplantcollaborative.org	http://sswap.info/api 	http://www.iplantcollaborative.org/discover/semantic-web/semantic-web-http-api	info@iplantcollaborative.org	Science	REST 		Public
+iRadeo	www.iradeo.com	http://www.iradeo.com/api	http://www.iradeo.com/api	support@iradeo.com	Music	REST 		HTTP Basic Auth
+iRefIndex	http://donaldson.uio.no/wiki/Donaldson_Group	http://psi.hupo.org/mi/psicquic	http://irefindex.uio.no/wiki/README_PSICQUIC_web_services_for_iRefIndex	ian.donaldson@biotek.uio.no 	Science	REST 		None
+iSpeech Automated Speech Recognition	http://www.ispeech.org/	api.ispeech.org/api/	http://www.ispeech.org/api	http://www.ispeech.org/commercial/contact	Tools	REST 		API Key
+iSpeech Text-To-Speech	http://www.ispeech.org/	api.ispeech.org/api/	http://www.ispeech.org/api	http://www.ispeech.org/commercial/contact	Tools	REST 		API Key
+IST Bioinformatics Web Services	http://bioinformatics.istge.it/	http://bioinformatics.istge.it:8080/axis/services/sws.getDBs	http://bioinformatics.istge.it/ibws/index.html	paolo.romano@istge.it	Science	SOAP 		None
+iWatchOnline	http://www.iwatchonline.to	http://www.iwatchonline.to/api	iWatchOnline	support@iwatchonline.to	Entertainment	XML 		API Key
+iZettle	https://www.izettle.com/	izettle://x-callback-url/payment/1.0	https://developer.izettle.com/	 api@izettle.com	Payments	REST 		API Key
+JISC Monitoring Unit	http://www.jisc.ac.uk/	http://data.jiscmu.ac.uk/rest/organisations	http://www.jiscmu.ac.uk/api/	http://www.jiscmu.ac.uk/about/email	Education	REST 		Public
+Jolkona	http://www.jolkona.org/	http://www.jolkona.org/api/	http://dev.jolkona.org/apis	dev@jolkona.org	Social	REST 		App ID
+Joomag	http://www.joomag.com/	http://www.joomag.com/Frontend/WebService/restAPI.php	http://www.joomag.com/en/api	info@joomag.com	Tools	REST 		API Key
+Joomeo	http://joomeo.com	http://api.joomeo.com/xmlrpc.php	http://www.joomeo.com/us/developer.php	api_developer@joomeo.com	Media	XML 		API Key
+Jotly	http://www.jotly.co	https://jot-ly.appspot.com/api/v1	http://www.jotly.co/api	api@jotly.co	Social	REST 		API Key or Access Token
+Judo Pay	https://www.judopay.com/	https://devpartnerapi.judopay.com	https://www.judopay.com/Docs/	developersupport@judopay.com	Payments	REST 		API Key
+JunglePay	http://www.junglepay.com	http://menable.txtnation.com/JunglePay/api/	http://www.junglepay.com/developers/	sales@txtnation.com	Payments	REST 		API Key
+Kanvaso	http://kanvaso.com	http://api.kanvaso.com/1	http://api.kanvaso.com/1/doc.php	api@kanvaso.com	Social	REST 		API Key, OAuth
+Kariru Library Search	http://calil.jp	 http://api.calil.jp/library	http://calil.jp/doc/api_ref.html	http://calil.jp/doc/co	Search	REST 		API Key
+Karmacracy	http://www.karmacracy.com	http://karmacracy.com/api/	https://karmacracy.com/sections/api/key/introduction.php	info@karmacracy.com	Social	REST 		API Key
+KAYWA QR-Code	http://kaywa.com	http://decode.kaywa.com/api/	http://faq.kaywa.com/category/api/	info@kaywa.com 	Tools	REST 		API Key
+KeyPay YourPayroll	https://www.keypay.com.au/	https://api.yourpayroll.com.au/api/v2	http://keypay.com.au/api	support@yourpayroll.com.au	Financial	REST 		HTTP Basic Authentication over SSL, API Key
+Khan Academy	http://www.khanacademy.org/	http://www.khanacademy.org/api/v1/	https://github.com/Khan/khan-api/wiki/Khan-Academy-API	info@khanacademy.org	Education	REST 		OAuth
+KickoffLabs	http://www.kickofflabs.com/	http://api.kickofflabs.com/v1/	http://api.kickofflabs.com	support@kickofflabs.com	Social	HTTP 		HTTP Basic Authentication over SSL
+Kinsey Reporter	http://www.kinseyinstitute.org/	http://kinseyreporter.org/API/	http://kinseyreporter.org/data	kinseyreporter@googlegroups.com	Social	REST 		Public
+Kiuwan	http://www.kiuwan.com	https://api.kiuwan.com/apps/kiuwan	https://www.kiuwan.com/docs/display/K5/REST+API	jelly.service@kiuwan.com	Tools	REST 		HTTP Basic Authentication
+Kngine	http://www.kngine.com	http://api.kngine.com/searchapi1	http://kngine.com/api/APIDocumentation.html	info@Kngine.com	Search	REST 		API Key
+KnotInFrame	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/knotinframe/axis/knotinframePort	http://bibiserv.techfak.uni-bielefeld.de/knotinframe/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+Koality	https://koalitycode.com	https://domain-name/api/v/0	https://koalitycode.com/documentation?view=adminApi	support@koalitycode.com	Tools	REST 		API Key
+Koemei	http://koemei.com	http://www.koemei.com/REST/	https://www.koemei.com//api/	john.dines@koemei.com	Media	REST 		API Key
+Kontagent	http://www.kontagent.com/	http://api.geo.kontagent.net/api/	http://www.upsight.com/?c=kt&amp;u=/products/	support@kontagent.com	Social	REST 		API Key
+Kounta	http://www.kounta.com	https://api.kounta.com/v1/	http://developer.kounta.com/documentation/	kounta@kounta.com	Payments	REST 		OAuth
+Kumutu	http://kumutu.com	http://api.kumutu.com/0.4	http://kumutu.com/api/methods	support@kumutu.com	Travel	REST 		API Key
+L-Vin Post	http://www.pawisda.de/	https://www.lvinpost.de/ws/services/lettershop	https://www.lvinpost.de/index.jsp?id=service#webservice	hotline@lvinpost.de	Other	SOAP 		HTTP Basic Authentication over SSL
+LabJack CloudDot	http://labjack.com/	http://cloudapi.labjack.com/	http://labjack.com/support/clouddot/rest-api	support@labjack.com	Tools	REST 		API Key, HTTP Basic Authentication
+LaunchBit	http://www.launchbit.com/	http://launchbit.com/api/v1.0	http://www.launchbit.com/api/documentation.html	hello@launchbit.com	Advertising	REST 		API Key
+LaunchRock	http://launchrock.com/	https://platform.launchrock.com	http://backstagepass.launchrock.com/	hello@launchrock.com	Social	REST 		HTTP Basic Authentication
+Leaguevine	https://www.leaguevine.com	https://api.leaguevine.com	https://www.leaguevine.com/docs/api/	mark@leaguevine.com	Sports	REST 		OAuth 2.0
+LendUp	https://www.lendup.com	https://www.lendup.com	https://www.lendup.com/developers#	press@lendup.com	Financial	REST 		Unspecified
+LetsMT	http://project.letsmt.eu/	https://{user}.letsmt.eu/ws/service.asmx	https://www.letsmt.eu/Integration.aspx	andris.karpovs@tilde.lv	Tools	SOAP 		API Key
+LevelUp	https://www.thelevelup.com/	https://api.thelevelup.com/v13	http://developer.thelevelup.com/getting-started/sign-up/	support@thelevelup.com	Payments	REST 		oAuth 2.0, API Token
+Leverage Software	http://telligent.com/	http://web.services.leveragesoftware.com/rest/service.aspx	http://community.leveragesoftware.com/wiki_entry_view.aspx?topicid=8e284ad084c24...	http://telligent.com/support/p/contact.aspx	Social	SOAP 		API Key
+Lexity Commerce Central	http://lexity.com/	https://{api_token}:{store_connection_password}@api.lexity.com/v1	http://commercecentral.lexity.com/learn/get_started	commercecentral@lexity.com	Payments	REST 		API Key
+LifePics	http://www.lifepics.com	https://api.lifepics.com/v3/LPWebService.asmx	http://www.lifepics.com/marketing/open-technical-3.2.pdf	http://www.lifepics.com/Help/ContactUs.aspx	Media	SOAP 		HTTP Basic Authentication
+Lipisha	http://www.lipisha.com	https://www.lipisha.com/payments/accounts/index.php/v2/api/	https://lipisha.com/payments/accounts/index.php/home/page/developers/api	info@lipisha.com	Payments	REST 		API Key
+Litmos	www.litmos.com	https://api.litmos.com/v1.svc	http://help.litmos.com/developer-api/	support@litmos.com	Education	REST 		API Key
+Live Scoreboards	http://livescoreboards.co.uk/	http://api.livescoreboards.co.uk/sessions/football/	http://api.livescoreboards.co.uk/	 info@livescoreboards.co.uk	Sports	HTTP 		API Key
+LiveDesigner	http://www.melco.com/	http://api.livedesigner.com/{yourusername}	http://livedesigner.com/api/install.php?profile=default	MelcoAPI@Melco.com	Advertising	REST 		API Key
+Loader.io	http://loader.io/	http://api.loader.io/v2	http://docs.loader.io	feedback@loader.io	Tools	REST 		API Key
+Loci.me	http://loci.me	http://loci.me/	http://loci.me/p/api	i-hear-you@loci.me	Social	HTTP 		None
+LogMyTime	http://www.logmytime.de/	http(s)://api.logmytime.de/V1/Api.svc	http://www.logmytime.de/Api/Index	apisupport@logmytime.de	Tools	REST 		API Key, HTTP Basic Authentication
+LucidChart	https://www.lucidchart.com/	https://www.lucidchart.com/	https://www.lucidchart.com/pages/api_documentation	support@lucidchart.com	Tools	REST 		OAuth
+Lulu Publishing	http://www.lulu.com/	http://api.lulu.com/lulupress.wsdl?20071204144218	http://developer.lulu.com	api@lulu.com	Other	REST 		API Key, Session ID
+Lymbix Sentiment Analytics	http://www.lymbix.com	https://api.lymbix.com/	http://www.lymbix.com/supportcenter/docs	http://www.lymbix.com/contact	Tools	HTTP 		API Key
+Lyricsfly	http://lyricsfly.com	http://lyricsfly.com/api/api.php	http://lyricsfly.com/api/	lyricsfly@gmail.com	Music	REST 		API Key
+LyricWiki	http://wikia.com	http://lyricwiki.org/server.php?wsdl	http://api.wikia.com/wiki/LyricWiki_API	community@wikia.com	Music	REST 		Optional username/password
+Madeline	http://eyegene.ophthy.med.umich.edu/	http://eyegene.ophthy.med.umich.edu/madeline/api/	http://eyegene.ophthy.med.umich.edu/madeline/aboutwebservice.php	madelinesoftware@umich.edu	Science	REST 		Public
+Maestro.fm	http://maestro.fm	https://api.maestro.fm/maestro_api?	https://api.maestro.fm/apidocs/	support@maestro.fm	Music	REST 		API Key
+makexyz	http://www.makexyz.com/	http://www.makexyz.com/api/	http://www.makexyz.com/developers	nathan@makexyz.com	Tools	REST 		API Key
+Mambu	http://www.mambu.com/en/	https:// {tenantid}.mambu.com/api/ 	http://developer.mambu.com/	hello@mambu.com	Payments	REST 		HTTP Basic Authentication
+Marker	http://www.markerapi.com/	http://www.markerapi.com/api	http://www.markerapi.com	support@markerapi.com	Search	REST 		Username and password
+Marvel Comics	http://marvel.com/	https://gateway.marvel.com/v1/	http://developer.marvel.com	marvel-api-help@marvel.com	Entertainment	REST 		API Key
+Mastercard MoneySend	http://www.mastercard.com/index.html	https://api.mastercard.com/moneysend/mapping/v1/card 	https://developer.mastercard.com/portal/display/api/MoneySend	https://developer.mastercard.com/portal/display/faqs/Contact+Us	Financial	REST 		API Key
+Matchbox	http://matchbox.net/	https://app.admitpad.com/api/v2	http://matchbox.net/api/	api@matchbox.net	Education	REST 		Auth via cookie
+MatchCollege	http://www.matchcollege.com/	http://api.matchcollege.com/colleges?	http://www.matchcollege.com/college-data-api	api_usage@matchcollege.com	Education	REST 		API Key
+Mates	http://www.umich.edu/	http://127.0.0.1/mates0.4/mates.php	http://grocs.dmc.dc.umich.edu/~mates/	teammates@umich.edu	Social	SOAP 		HTTP Basic Authentication over SSL
+MavaIQ Currencies	http://www.mavaiq.com	http://api.mavaiq.com/v1/MavaIQCurrencies	https://developer.mavaiq.com/v1/service-explorer-mavaiq-currencies	info@mavaiq.com	Financial	REST 		AppID & AppKey
+MdotM	http://mdotm.com/	http://ads.mdotm.com/api/1.0/	http://docs.mdotm.com/index.php/Main_Page	support@mdotm.com	Advertising	REST 		API Key, User login
+MeeMix	http://www.meemix.biz	http://ws.meemix.com/mxws/services/mxws	http://www.meemix.biz/	api@meemix.com	Music	SOAP 		API Key
+Meme Generator	http://memegenerator.net/	http://version1.api.memegenerator.net	http://version1.api.memegenerator.net/	webmaster@memegenerator.net	Tools	REST 		Basic Authentication
+Mendeley	http://www.mendeley.com	https://mix.mendeley.com	Mendeley API	api@mendeley.com	Education	REST 		OAuth 2, API Key
+Meniscus Real Time Calculator	http://www.meniscus.co.uk/	http://restdemo.meniscus.co.uk/	http://www.meniscus.co.uk/page.php?article=946&amp;name=Meniscus%20REST%20Web%20serv...	technical@meniscus.co.uk	Other	REST 		Username and password
+MenuMania	http://www.menumania.co.nz/	http://www.menumania.co.nz/api/	http://www.menumania.co.nz/developers/	accounts@menumania.co.nz 	Entertainment	REST 		API Key
+Mergent Annual Reports	http://mergent.com	http://developers.mergent.com/docs/v1/	http://www.mergent.com/solutions/data-collection-services	support@webservius.com	Financial	REST 		API Key
+Mergent Company Fundamentals	http://mergent.com	http://developers.mergent.com/fdf/v1/	http://www.mergent.com/solutions/datafeeds/overview	support@webservius.com	Financial	REST 		API Key
+Mergent Corporate Actions and Dividends	http://mergent.com	http://developers.mergent.com/ed/v1/corpActions	http://www.mergent.com/solutions/corporate-actions-pricing	support@webservius.com	Financial	REST 		API Key
+Mesagraph	http://www.mesagraph.com/	http://api.mesagraph.com/blendedtv	https://developers.mesagraph.com/	tech@mesagraph.com	Social	REST 		API Key
+Mesosphere	Mesosphere	http://mesosphere.io/	Mesosphere	support@mesosphere.io	Cloud	REST 		API Key
+Met Office WOW	http://www.metoffice.gov.uk/	http://wow.metoffice.gov.uk/automaticreading?	http://wow.metoffice.gov.uk/support?category=dataformats	enquiries@metoffice.gov.uk	Weather	HTTP 		API Key
+MetaCDN	http://www.metacdn.com	http://www.metacdn.com/api/	http://www.metacdn.com/apidocs/index.jsp	support@metacdn.com	Media	REST 		HTTP Digest access
+MetaLayer	http://www.metalayer.com	http://www.api.metalayer.com/s/	http://wiki.metalayer.com/index.php?title=API	support@metalayer.com	Other	REST 		None
+Metallizer	http://metallizer.dk/	http://metallizer.dk/api/	http://metallizer.dk/content/xml-http-api	jakabov-metallizer-2009@yahoo.dk	Music	HTTP 		None
+Meteor Solutions	http://www.meteorsolutions.com/	https://api.meteorsolutions.com/	https://api.meteorsolutions.com/docs	sales@meteorsolutions.com	Advertising	REST 		Basic Authentication over SSL, API Key
+METViewer	http://www.dtcenter.org/index.php	http://www.dtcenter.org/met/metviewer/servlet	http://www.dtcenter.org/met/metviewer/doc/web_service.html	johnsonp@ucar.edu	Weather	REST 		Public
+micropayment GmbH	https://www.micropayment.de/	http://webservices.micropayment.de/public/	http://techdoc.micropayment.de/en	support@micropayment.de	Payments	SOAP 		API Key
+Millistream Market Data	http://www.millistream.com/	http://mws.millistream.com/mws.fcgi	http://www.millistream.com/index.php/product-solutions	info@millistream.com	Financial	SOAP 		HTTP Basic Authentication
+mingle.io	https://mingle.io	https://data.mingle.io	https://mingle.io/api	team@mingle.io	Search	HTTP 		API Key
+Minus	http://minus.com/	http://minus.com/api/v2/	http://miners.github.io/MinusAPIv2/	info@min.us	Storage	REST 		OAuth 2
+miRMaid	http://www.mirmaid.org/	http://current.mirmaid.org/	http://www.mirmaid.org/doku.php?id=rest-routes	unavailable	Science	REST 		None
+MitoMiner	http://mitominer.mrc-mbu.cam.ac.uk/	http://mitominer.mrc-mbu.cam.ac.uk/release-3.0/	https://intermine.readthedocs.org/en/latest/	info@mrc-mbu.cam.ac.uk	Science	REST 		Public
+Mixcloud	http://www.mixcloud.com/	http://api.mixcloud.com/	http://www.mixcloud.com/developers/	api@mixcloud.com	Music	HTTP 		OAuth2
+MobFox	http://www.mobfox.com/	http://api.mobfox.com/api/	http://dev.mobfox.com/index.php?title=Main_Page	support@mobfox.com	Advertising	REST 		API Key
+MobileMinerApp	http://www.mobileminerapp.com	https://mobileminer.azurewebsites.net/api	http://www.mobileminerapp.com/#api	nate@mobileminerapp.com	Financial	REST 		API Key
+Mogreet Transcoding	http://mogreet.com	https://api.mogreet.com/cm/	https://developer.mogreet.com/docs/transcoding/overview	support.developer@mogreet.com	Media	REST 		API Token and Client ID
+Mondor Currency Exchange XML	http://www.mondor.org/default.aspx	http://www.mondor.org/ces/rates.asmx	http://www.mondor.org/cr.aspx	http://www.mondor.org/support.aspx	Financial	SOAP 		HTTP Basic Authentication
+Money Toolkit	http://www.moneytoolkit.com/	https://www.moneytoolkit.com/pub/authenticate	http://www.moneytoolkit.com/2012/02/personal-bank-data-api/	info@moneytoolkit.com	Financial	REST 		Basic Authentication over SSL
+MoneyScience	http://www.moneyscience.com/	http://www.MoneyScience.com/pg/api/rest/	http://www.moneyscience.com/pg/studio/	developers@moneyscience.com	Social	REST 		API Key
+Monitive	http://monitive.com/	https://rest.monitive.com	http://monitive.com/help/api/monitives-restful-api	contact@monitive.com	Tools	REST 		API Key
+Mouse Resource Browser	http://www.fleming.gr/	urn:mrbws/wsdl	http://bioit.fleming.gr/mrb/data.jsp	chandras@fleming.gr	Science	SOAP 		None
+Mouseflow	http://mouseflow.com/	http://mouseflow.com/api/	http://mouseflow.com/blog/2010/12/08/mouseflow-api-released/	info@mouseflow.com	Tools	REST 		API token
+Moves	http://moves-app.com/	https://api.moves-app.com/api/v1	https://dev.moves-app.com/	sampo@protogeo.com	Sports	REST 		OAuth 2.0, client ID
+Mozenda	http://www.mozenda.com	https://api.mozenda.com/rest? 	http://www.mozenda.com/api	support@mozenda.com	Tools	REST 		API Key
+Muselia	http://www.muselia.com/	http://www.muselia.com/apimuseums?	http://www.muselia.com/api	info@muselia.com	Education	JSONP 		None
+Museumsvokabular	http://museum.zib.de/museumsvokabular/	urn:museumvok	http://museum.zib.de/museumsvokabular/index.php?main=tech-dok&amp;ls=9&amp;co=vi&amp;ln=en	http://museum.zib.de/museumsvokabular/index.php?main=kontakt&amp;ls=9&amp;co=vi&amp;ln=en	Education	SOAP 		None
+Music Story Pro	Music Story	http://api.music-story.com/	http://developers.music-story.com/	musicstorypro@music-story.com	Music	HTTP 		OAuth, API Key
+Music Xray S2O Partner	http://www.musicxray.com/	https://api.musicxray.com/	http://docs.musicxray.com/	business@musicxray.com	Music	REST 		API Key
+Musicmetric	http://www.musicmetric.com	http://apib2.semetric.com/	http://developer.musicmetric.com/	api@musicmetric.com	Music	REST 		API Key
+Musicovery	http://musicovery.com/	http://musicovery.com/api/	http://musicovery.com/api/doc/documentation.php	b2b@musicovery.com	Music	REST 		API Key
+Musicplayr	http://www.musicplayr.com/	http://api.musicplayr.com.	http://blog.musicplayr.com/api	thorsten@musicplayr.com	Music	REST 		API Key
+Musicshake	http://eng.musicshake.com	http://developers.musicshake.com/api/	http://developers.musicshake.com/	doxmo@naver.com	Music	REST 		API Key
+Mutalyzer	http://www.lumc.nl/home/	http://mutalyzer.nl/2.0/services	https://mutalyzer.nl/webservices	mutalyzer@humgen.nl	Science	SOAP 		None
+MutualMind	http://www.mutualmind.com/	https://api.mutualmind.net/v1/	http://dev.mutualmind.com/	info@mutualmind.com	Social	REST 		API Key
+My Cycling Log	www.mycyclinglog.com	 http://www.mycyclinglog.com/api/	http://www.mycyclinglog.com/api/docs.php	http://www.mycyclinglog.com/contact.php	Sports	REST 		HTTP Basic Authentication
+MyAds	https://www.rubiconproject.com	https://api.myads.com/services/v02	http://developer.myads.com/	acolson@rubiconproject.com	Advertising	SOAP 		HTTP Basic Authentication
+Myjson	http://myjson.com/	https://api.myjson.com/	Myjson - API	support@myjson.com	Storage	REST 		Unspecified
+MyMovies	http://www.mymovies.dk	https://api.mymovies.dk/default.aspx	http://wiki.mymovies.dk/(X(1)S(r4bsnrrajzh5tj2upgrmt3nf))/Default.aspx?Page=My%2...	contact@mymovies.dk	Media	SOAP 		HTTP Basic Authentication
+MyRobots	http://myrobots.com	http://bots.myrobots.com/	http://www.myrobots.com/wiki/API	http://robotshop.helpserve.com/index.php?_m=tickets&amp;_a=submit&amp;step=1&amp;departmentid=20	Other	HTTP 		API Key
+NAC Real-time Conversion	http://www.nacgeo.com	http://mlbs.net/nacgeoservicesV5.0/Routing	http://www.nacgeo.com/nacconversion.asp	info@nacgeo.com	Tools	SOAP 		User Password
+Namba.kg	http://namba.kg	http://api.namba.kg/	http://dev.namba.kg/api_description.php	puzanov@namba.kg	Social	REST 		HTTP Basic Authenticaiton
+NameSilo	http://www.namesilo.com/	https://www.namesilo.com/api/	http://www.namesilo.com/api_reference.php	support@namesilo.com	Tools	REST 		API Key
+National Virtual Observatory	http://www.stsci.edu/portal/	ivoa.net.riws.v10	http://nvo.stsci.edu/vor10/riws.aspx	usvo-feedback@us-vo.org	Science	SOAP 		None
+Navlost NWX Weather	http://www.navlost.eu	http://navlost.eu/aero/nwx	http://www.navlost.eu/	http://www.navlost.eu/contact	Weather	REST 		Public for limited access; or HTTP Basic Authentication
+NBIC Peregrine	http://www.nbic.nl/	http://peregrine.nbiceng.net/	https://trac.nbic.nl/data-mining/	data-mining-users@trac.nbic.nl	Tools	REST 		None
+NCEP North American Mesoscale	http://his.cuahsi.org/	http://www.cuahsi.org/his/1.0/ws/	http://river.sdsc.edu/wiki/(X(1)S(4j0u3e55m4nvrlawaa5lkabo))/Default.aspx?Page=N...	http://his.cuahsi.org/contactus.html	Weather	SOAP 		None
+ncRNA fRNAdb	http://www.ncrna.org/	http://www.ncrna.org/frnadb/api/search/	http://www.ncrna.org/frnadb/doc/api_manual	http://www.ncrna.org/contact-info	Science	SOAP 		Public
+NEOS	http://discovery.wisc.edu/morgridge/	http://neos-1.chtc.wisc.edu:3332	http://www.neos-server.org/neos/NEOS-API.html	support@neos-server.org	Tools	XML 		None
+Nephoscale	http://www.nephoscale.com/	https://api.nephoscale.com/storage/	http://docs.nephoscale.com/	support@nephoscale.com	Storage	REST 		HTTP Basic Authentication
+Netaxept	http://www.nets.eu/	https://epayment.bbs.no/Netaxept/	http://www.betalingsterminal.no/Netthandel-forside/Teknisk-veiledning/API/	info@nets.no	Payments	REST 		HTTP Basic Authentication
+Netmera	http://www.netmera.com	https://api.netmera.com	http://www.netmera.com/resources/rest-api/	info@netmera.com	Tools	REST 		API Key
+New York Federal Reserve SOMA Holdings	http://www.ny.frb.org/index.html	http://markets.newyorkfed.org/api/	http://www.ny.frb.org/markets/soma/sysopen_accholdings.html	general.info@ny.frb.org	Financial	REST 		Public
+New York Public Library Digital Collections	http://www.nypl.org/	http://api.repo.nypl.org/api/v1/	http://api.repo.nypl.org	repoapi@nypl.org	Search	REST 		Authentication Tokens
+Next Big Sound	http://www.nextbigsound.com/	http://www.api3.nextbigsound.com/	http://www.api3.nextbigsound.com/	api@nextbigsound.com	Music	HTTP 		API Key, Secret Key
+Ninja Blocks	http://ninjablocks.com/	https://api.ninja.is/	http://ninjablocks.com/pages/api-docs	help@ninjablocks.com	Tools	REST 		OAuth2
+NOAA Climate Data Online	http://www.noaa.gov	http://www.ncdc.noaa.gov/cdo-services/services	http://www.ncdc.noaa.gov/cdo-web/webservices	ncdc.orders@noaa.gov	Weather	REST 		API Key
+NOAA GOES SEM	http://www.ngdc.noaa.gov/	http://www.ngdc.noaa.gov/goes/sem/	http://www.ngdc.noaa.gov/goes/sem/	sem.goes@noaa.gov	Weather	REST 		Public
+NOAA GOES Solar X-Ray Imager	http://www.ngdc.noaa.gov/	http://www.ngdc.noaa.gov/goes/sxi/	http://www.ngdc.noaa.gov/goes/sxi/index	sxi.goes@noaa.gov	Science	REST 		Public
+Nodester	http://nodester.com/	http://api.nodester.com/	http://nodester.com/api.html	chris@nodester.com	Cloud	REST 		HTTP Basic Authentication
+Norwegian Meteorological Institute	http://met.no	http://api.met.no/weatherapi/	http://api.met.no/#english	kristinl@met.no	Weather	REST 		Public
+Novasol	http://www.novasol.co.uk/	https://safe.novasol.com/api	http://www.novasol.co.uk/login/partner_solutions.html	novasol@novasol.us	Travel	REST 		API Key
+NREL Building Component Library	http://www.nrel.gov	http://bcl.nrel.gov/api/	https://bcl.nrel.gov/developer	service.center@nrel.gov	Search	REST 		API Key
+NSDL Repository Update Service	http://nsdl.org	http://nsdl.org/nsdl_dds/services/ddsupdatews1-1?	http://nsdl.org/nsdl_dds/services/ddsupdatews1-1/ddsupdatews_api_documentation.j...	http://nsdl.org/contactus/	Science	REST 		Authorization by client IP
+NYPL Digital Gallery	http://www.nypl.org	http://digitalgallery.nypl.org/feeds/dev/atom/	http://digitalgallery.nypl.org/feeds/dev/atom/docs/	digital@nypl.org	Media	REST 		Public
+OANDA FXTrade	OANDA Corporation	http://api-sandbox.oanda.com/v1/	OANDA API Suite	api@oanda.com	Financial	REST 		API Key, OAuth 2, Other/Custom
+OfficeRecovery	http://www.officerecovery.com/	https://online.officerecovery.com/oronline/api/	https://online.officerecovery.com/api/	support@officerecovery.com	Data	REST 		HTTPS
+OligoSelection	http://www.fu-berlin.de/en/	http://projects.mi.fu-berlin.de/hobit/OligoSelection.php/OligoSelection.wsdl	http://webservices.seekda.com/providers/fu-berlin.de/OligoSelection	office@bgsmcs.fu-berlin.de	Science	SOAP 		None
+OneBip	http://www.neomobilegroup.com	https://www.onebip.com/otms/	http://corporate.onebip.com/merchants-market-info/#get-started	http://my.onebip.com/support/contact	Payments	REST 		API Key
+OneMusic	http://www.onemusicapi.com/	http://api.onemusicapi.com	http://www.onemusicapi.com/	api@OneMusicAPI.com	Music	REST 		API Key
+Online-Convert.com	http://www.online-convert.com/	http://api.online-convert.com/	http://api.online-convert.com/	time2talk@online-convert.com	Tools	REST 		API Key
+Oobgolf	http://www.oobgolf.com/	https://www.oobgolf.com/api/	http://www.oobgolf.com/api/	info@oobgolf.com	Sports	REST 		API Key
+OP3Nvoice	http://www.op3nvoice.com/	https://api-beta.op3nvoice.com/	https://dev-beta.op3nvoice.com/	support@op3nvoice.com	Media	REST 		API Key, Token
+Open Access Plagiarism Search	http://www.ptb.de/	http://oaps.eu/api/ 	http://oaps.eu/project/soap/	info@oaps.eu	Search	SOAP 		Basic Authentication
+Open Archives Initiative	http://www.openarchives.org/	http://www.openarchives.org/OAI/2.0/	http://www.openarchives.org/OAI/openarchivesprotocol.html	openarchives@openarchives.org	Education	XML 		None
+Open Exchange Rates	https://openexchangerates.org/	https://openexchangerates.org/api/	https://openexchangerates.org/documentation	info@openexchangerates.org	Financial	REST 		API Key (app_id)
+Open Images	http://www.beeldengeluid.nl/en	http://www.openbeelden.nl/feeds/	http://www.openimages.eu/api/	http://www.openimages.eu/contact	Media	REST 		Public
+OpenEd	https://www.opened.io/	https://api.opened.io/	OpenEd Documentation 	support@opened.io	Education	REST 		OAuth 2
+openFDA	http://www.fda.gov/	https://api.fda.gov	openFDA	datagov@gsa.gov	Health	REST 		API Key
+OpenHazards GetEarthquakeProbability	http://www.openhazards.com	http://api.openhazards.com/GetEarthquakeProbability.xml	http://www.openhazards.com/data	http://www.openhazards.com/contact	Science	REST 		Public
+OpenSnow	http://opensnow.com/	http://opensnow.com/api/	http://opensnow.com/about/api	hello@opensnow.com	Weather	REST 		API Key
+Opinionage	http://opinionage.com/	https://opinionage.com/api	http://developer.opinionage.com/1/introduction/	info@opinionage.com	Social	REST 		OAuth
+Opuss	http://www.opuss.com	http://api100.opuss.com/	http://opuss.com/developer/	api@opuss.com	Social	REST 		API Key
+ORCID	http://about.orcid.org/	http://api.devsandbox.orcid.org	http://orcid.org/about/community/orcid-technical-community	http://about.orcid.org/contact	Education	REST 		OAuth 2
+Osmosis	https://www.getosmosis.com/	https://www.getosmosis.com/api/resource/method 	https://www.getosmosis.com/api-doc	support@getosmosis.com	Tools	REST 		API Key
+Pachube	http://www.pachube.com	http://api.cosm.com/	https://xively.com/dev/docs/api/?from_cosm=true	support@cosm.com 	Other	REST 		API Key
+Pactas	http://www.pactas.com	https://itero.pactas.com/	http://developer.pactas.com/Docs/Reference	support@pactas.com	Financial	REST 		HTTP Basic Authentication, OAuth
+Paddle	http://www.usepaddle.com/	https://merchant.paddle.to/	http://www.usepaddle.com/developers/	hello@usepaddle.com	Payments	REST 		HMAC
+PaleoDB	https://www.nescent.org/wg_evoinfo/Main_Page	http://paleodb.org/cgi-bin/bridge.pl	https://www.nescent.org/wg_evoinfo/PaleoDB	arlin.stoltzfus@nist.gov	Science	REST 		Public
+Panl	https://www.panl.com/	https://api.panl.com/	https://www.panl.com/documentation/api-guide/	support@panl.com	Tools	REST 		HTTP Basic Authentication over SSL
+ParsCit	http://wing.comp.nus.edu.sg/portal/	http://citeseerx.org/algorithms/parscit/wsdl	http://wing.comp.nus.edu.sg/parsCit/#ws	kanmy@comp.nus.edu.sg	Science	SOAP 		None
+PassDock	http://passdock.com/	https://api.passdock.com/api/v1	https://api.passdock.com/doc	questions@passdock.com	Tools	REST 		API Key
+PassSource	http://www.passsource.com/	http://www.passsource.com/apiLogin	http://www.passsource.com/apiInfo.php	support+passsource@kudit.com	Tools	REST 		API Key
+Passta	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/passta/axis/passtaPort	http://bibiserv.techfak.uni-bielefeld.de/passta/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+PassVerse	https://passverse.azurewebsites.net/	https://passverseapi.azurewebsites.net/api/v1/	http://www.passverse.com/documentation	tomas@passverse.com	Payments	REST 		API Key
+PayChoice Payment Gateway	http://www.paychoice.com.au/	https://secure.paychoice.com.au/services/V2/	http://www.paychoice.com.au/developers-merchant-api/	support@paychoice.com.au	Payments	SOAP 		User name and password, HTTP Basic Authentication SSL
+PayLeap	http://www.payleap.com	https://uat.payleap.com/transactservices.svc	http://developer.payleap.com	support@payleap.com	Payments	SOAP 		HTTP Basic over SSL
+PayPoint	http://www.paypoint.net/	https://www.secpay.com/java-bin/ValCard	http://www.paypoint.net/support/gateway/integration-guides/	support@paypoint.net	Payments	REST 		API Key
+PayTrace	http://www.paytrace.com/	https://paytrace.com/api/	https://paytrace.com/api.html?s=d&amp;m=d	support@paytrace.com	Payments	REST 		API Key
+PDF Converter	http://www.freepdfconvert.com/	http://do.convertapi.com/Pdf2Image	http://www.convertapi.com/	support@baltsoft.com	Tools	REST 		API Key
+Peachnote	http://www.peachnote.com/	http://www.peachnote.com/rest/api/v0/	http://www.peachnote.com/api.html	api@peachnote.com	Music	REST 		API Key
+Pearson FT Education	https://developer.pearson.com/	https://api.pearson.com/v2/ft/articles	https://developer.pearson.com/apis/ft-education-api/	api-developer@pearson.com	Education	HTTP 		API Key
+Pelican Climate Control	http://www.pelicanwireless.com/	https://demo.officeclimatecontrol.net/api	http://www.pelicanwireless.com/technical-briefs/climate-control-api-interface-sp...	sales@PelicanWireless.com	Tools	HTTP 		Basic Authentication over SSL
+PencePay	https://www.pencepay.com	https://service.pencepay.com/api/	http://developer.pencepay.com	support@pencepay.com	Payments	REST 		API Key
+Penguin Classics	http://www.pearson.com/	http://api.pearson.com/penguin/classics/v1	https://developer.pearson.com/apis/penguin-classics/	api-developer@pearson.com	Other	REST 		API Key
+Pervasive Data Integrator	http://www.pervasive.com/	https://datacloud2.pervasive.com/cloudrest/	http://integration.pervasive.com/Products/Connectivity.aspx	http://cloud.pervasive.com/ContactUs.aspx	Storage	SOAP 		HTTP Basic Authentication
+Petfinder	http://www.petfinder.com/index.html	http://api.petfinder.com/	http://www.petfinder.com/developers/api-docs	api-help@petfinder.com	Search	REST 		API Key
+Pfam	http://www.sanger.ac.uk/	http://pfam.sanger.ac.uk/	http://pfam.sanger.ac.uk/help#tabview=tab10	pfam-help@sanger.ac.uk	Science	REST 		None
+Phashtag	http://api.phashtag.com/	unspecified	http://api.phashtag.com/	founders@phashtag.com	Tools	REST 		HTTP Basic Auth
+PHPGraphlib Remote	http://www.ebrueggeman.com/	http://www.ebrueggeman.com/phpgraphlib/api/	http://www.ebrueggeman.com/phpgraphlib/remote-api	ebrueggeman@gmail.com	Tools	HTTP 		HTTP Basic Auth
+Pieceable	https://www.pieceable.com/	https://www.pieceable.com/view/publish.json	https://www.pieceable.com/docs	hello@pieceable.com	Tools	REST 		API Key over SSL
+Pikchur	http://www.pikchur.com	http://api.pikchur.com/simple/upload	http://www.pikchur.com/api	api@pikchur.com	Social	REST 		HTTP Basic Authentication, OAuth
+Pingar	http://www.pingar.com	http://api.pingar.net/PingarAPIService.asmx	https://pingar.3scale.net/	support@pingar.com	Search	SOAP 		API Key
+Pinnacle Sports	http://www.pinnaclesports.com/	http://api.pinnaclesports.com/v1/	http://www.pinnaclesports.com/apimanual	affiliates@pinnaclesports.com	Sports	REST 		API Key
+Pipl	http://pipl.com	http://apis.pipl.com/search/v2/	http://dev.pipl.com/docs/read/home	mail@pipl.com	Search	REST 		API Key
+pknotsRG	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/pknotsRG/axis/pknotsRGPort	http://bibiserv.techfak.uni-bielefeld.de/pknotsrg/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+PlagScan	https://www.plagscan.com/	https://www.plagscan.com	https://www.plagscan.com/api/guide	info@plagscan.com	Tools	REST 		API Key
+Plancast	http://plancast.com	http://api.plancast.com	http://plancast.com/api	support@plancast.com	Social	REST 		HTTP Basic Authentication
+Planning Center	http://planningcenteronline.com	https://www.planningcenteronline.com/	http://get.planningcenteronline.com/api	support@planningcenteronline.com	Tools	REST 		OAuth
+Playme	http://www.playme.com	http://api.playme.com/	http://lab.playme.com	api.support@playme.com	Music	REST 		API Key
+Plings	http://www.plings.net/	http://feeds.plings.net/services/plings-in.php?APIKey=	http://www.plings.info/wiki/index.php/Main_Page	api@plings.net	Entertainment	HTTP 		API Key
+PLOS Article-Level Metrics	http://www.plos.org/	http://alm.plos.org/articles	http://api.plos.org/alm/faq/	api@plos.org	Science	REST 		API Key
+POLipayments	http://www.polipayments.com/	https://merchantapi.apac.paywithpoli.com/MerchantAPIService.svc/XML/	http://www.polipaymentdeveloper.com/doku.php	helpdesk@polipayments.com	Payments	REST 		HTTP Basic Authentication
+Ponoko	http://www.ponoko.com/	https://sandbox.ponoko.com/services/api/v2	http://support.ponoko.com/forums	service@ponoko.com	Other	REST 		API Key
+Positionly	http://positionly.com	https://api.positionly.com/v1/	https://positionly.com/api	support@positionly.com	Search	REST 		API Key
+PowerFolder	http://www.powerfolder.com/en.html	https://access.powerfolder.com/api/	https://wiki.powerfolder.com/display/PFS/API+Usage	info@powerfolder.com	Storage	REST 		HTTP Basic Authentication
+Previmeteo Weather	http://previmeteo.com/	http://api.previmeteo.com/	http://en.previmeteo.com/professionals/google-weather-api.php	contact@previmeteo.com	Weather	REST 		API Key
+PrimoPay	http://www.primopay.com.au/	https://merchantdirect.ctel.com.au	http://www.primopay.com.au/	andy@primopay.com.au	Payments	SOAP 		HTTP Basic Authentication
+Pro Writing Aid	http://prowritingaid.com	http://prowritingaid.com/en/APIv1	http://prowritingaid.com/en/App/API	hello@prowritingaid.com	Tools	REST 		API Code
+ProThesaurus	http://www.bio.ifi.lmu.de/	urn:de.lmu.ifi.bio:biological-name-service	http://services.bio.ifi.lmu.de/	prothesaurus@bio.ifi.lmu.de	Science	SOAP 		None
+Psydex AG	http://www.psydex.com/	http://psydex.net/api	http://www.psydex.com/technology/api/overview.php	support@psydex.com	Tools	REST 		API Key
+Punkrock.org	http://punkrock.org	http://punkrock.org/api.php?	http://punkrock.org/apps/developer/	support@punkrock.org	Music	REST 		API Token
+Purlem	http://purlem.com/	https://purlapi.com/v1/	https://github.com/purlem/Purlem-API	support@purlem.com	Advertising	REST 		HTTP Basic Authentication
+PVOutput Service	http://pvoutput.org/	http://pvoutput.org/service/	http://pvoutput.org/help.html#api	pvoutput@gmail.com	Tools	HTTP 		API Key
+Qminder	http://www.qminderapp.com	https://api.qminderapp.com/v1/	http://www.qminderapp.com/docs/api/	info@qminderapp.com 	Tools	REST 		API Key
+Qobuz	http://www.qobuz.com	http://www.qobuz.com/api.json/0.2	https://github.com/Qobuz/api-documentation	api@qobuz.com	Music	REST 		API Key
+Qtravel	http://www.qtravel.pl	http://api.qtravel.pl/	http://www.qtravel.pl/qtravel-api	pr@qtravel.pl	Travel	HTTP 		API Key
+Quickpay	http://www.quickpay.net	https://secure.quickpay.dk/api	http://doc.quickpay.net/api.html	info@quickpay.net	Payments	HTTP 		HTTP Basic Authentication
+Quizlet Flashcards	http://quizlet.com	https://api.quizlet.com/2.0/	https://quizlet.com/api/2.0/docs	api@quizlet.com	Education	REST 		API Key, OAuth 2.0
+RadMap	http://mesonet.agron.iastate.edu/	http://mesonet.agron.iastate.edu/GIS/radmap.php?	http://mesonet.agron.iastate.edu/GIS/radmap_api.phtml	rwarritt@bruce.agron.iastate.edu	Weather	REST 		Public
+Rainforest QA	https://www.rainforestqa.com/	https://rainforestqa.com/api/1	https://docs.rainforestqa.com/ci-integration/	hello@rainforestqa.com	Tools	REST 		API Token
+Raphael Research Resource	http://www.nationalgallery.org.uk/	http://rdf.ng-london.org.uk/raphael/page/	http://rdf.ng-london.org.uk/raphael/page/	joseph.padfield@ng-london.org.uk	Education	RDF 		Public
+Ravelry	http://www.ravelry.com	https://www.ravelry.com/app/	https://www.ravelry.com/account/login	api@ravelry.com	Social	REST 		OAuth
+Rdio	http://www.rdio.com/	http://api.rdio.com/1/	http://www.rdio.com/developers/	developersupport@rd.io	Music	XML 	http://www.apihub.com/rdio/api/rdio-oembed-api?utm_source=programmableweb&amp;utm_me...	OAuth 1.0
+Readmill	http://www.readmill.com	http://www.api.readmill.com	http://developers.readmill.com/	api@readmill.com	Social	REST 		API Key, oAuth 2.0
+RealFaviconGenerator	http://realfavicongenerator.net/	http://realfavicongenerator.net/api/	http://realfavicongenerator.net/api	contact@realfavicongenerator.net	Tools	REST 		API Key
+RedLine13 Zip Code Distance	http://www.redline13.com/	http://zipcodedistanceapi.redline13.com/rest/	http://zipcodedistanceapi.redline13.com/	info@redline13.com	Tools	HTTP 		API Key
+Refinder	http://www.getrefinder.com/	http://www.getrefinder.com/things/	http://www.getrefinder.com/about/content/developers	dev@gnowsis.com	Search	REST 		OAuth
+Rental Car Manager	http://rentalcarmanager.com/index.htm	http://{dev}.rentalcarmanager.com.au/rcmagentws/	http://rentalcarmanager.host4kb.com/article/AA-00435/0/Rental-Car-Manager-Agent-...	info@rentalcarmanager.com	Travel	REST 		API Key
+Reputer	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/REPuter/axis/REPuterPort	http://bibiserv.techfak.uni-bielefeld.de/reputer/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+Research Data Australia	http://ands.org.au/index.html	https://researchdata.ands.org.au/registry/orca/services/	http://ands.org.au/resource/java-api.html	contact@ands.org.au	Search	REST 		Public
+Researchr	http://researchr.org/	http://researchr.org/api/	http://researchr.org/about/api/	info@researchr.org	Science	REST 		Public
+RestBackup	http://www.restbackup.com/	https://us.restbackup.com/	http://www.restbackup.com/api	mike@restbackup.com	Storage	REST 		HTTP Basic Authentication
+Retweet Rank	http://www.retweetrank.com/	http://api.retweetrank.com/	http://www.retweetrank.com/view/api	support@retweetrank.com	Social	HTTP 		API Key
+RightsLine	http://www.rightsline.com/	https://api.rightsline.com/	http://www.rightsline.com/RightsLine_Service_API_v2012_4_15.htm	info@rightsline.com	Media	REST 		API Key
+RIOJA Journal Repository	http://www.ucl.ac.uk/ls/rioja/	http://www.arxivjournal.org/xml/rioja-types	http://cosmologist.info/xml/APIs.html	antony@cosmologist.info	Science	XML 		None
+RiteTag	RiteTag	http://ritetag.com	RiteTag: Get your tweets found and shared with better hashtags	saul@ritetag.com	Social	REST 		OAuth 1
+RNAforester	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/RNAforester/axis/RNAforesterPort	http://bibiserv.techfak.uni-bielefeld.de/rnaforester/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+RNAhybrid	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/RNAhybrid/axis/RNAhybridPort	http://bibiserv.techfak.uni-bielefeld.de/rnahybrid/webservice.html	bibi-help@techfak.uni-bielefeld.de	Science	SOAP 		None
+RNAshapes	http://bibiserv.techfak.uni-bielefeld.de/	http://bibiwsserv.techfak.uni-bielefeld.de/RNAshapes/axis/RNAshapesPort	http://bibiserv.techfak.uni-bielefeld.de/rnashapes/webservice.html	bibi-help@techfak.uni-bielefeld.de 	Science	SOAP 		None
+Robust Links	http://www.robustlinks.com/	http://robustlinks.dyndns.org/api/	http://robustlinks.dyndns.org/api/	peyman@robustlinks.com	Tools	HTTP 		API Key
+Roomorama	roomorama.com	https://api.roomorama.com/v0.9	https://www.roomorama.com/api	api@roomorama.com	Travel	REST 		OAuth
+roondoo	http://roondoo.com/	http://roondoo.com/r/API/	http://roondoo.com/r/developer/	hello@roondoo.com	Social	HTTP 		API Key
+RunSignUp	https://runsignup.com/	https://runsignup.com/rest/	https://runsignup.com/API/	info@runsignup.com	Sports	REST 		API Key, Oauth authentication
+Sabre	http://www.sabretravelnetwork.com	https://api.sabre.com/,  https://webservices.sabre.com/websvc	Sabre Dev Studio	developer.info@sabre.com	Travel	XML 		OAuth 2, Session
+Salsa Commons	http://www.salsalabs.com/	https://{campaign-specific domain}/api/	https://help.salsalabs.com/forums/21886283-Developer-Resources	info@salsalabs.com	Social	REST 		HTTP Basic Authentication
+Samepoint Real-Time Social Media	http://www.samepoint.biz	http://apipoint.samepoint.com	https://api.samepoint.com/	learn@samepoint.com	Social	REST 		dedicated URL, API Key (optional)
+Saygent	http://www.saygent.com	https://saygent.com/api/v1/	http://saygent.com/api	api@saygent.com	Other	REST 		API Token
+SBML Validator	http://sbml.org/	http://sbml.org/validator/	http://sbml.org/Facilities/Documentation/Validator_Web_API	mhucka@caltech.edu	Science	REST 		Public
+Scalarium	http://scalarium.com	https://manage.scalarium.com/api	http://support.scalarium.com/kb/api	info@scalarium.com	Cloud	REST 		User Token
+Science Museum	http://sciencemuseum.org.uk	http://api.sciencemuseum.org.uk	http://api.sciencemuseum.org.uk/documentation/	web.team@nmsi.ac.uk	Education	REST 		Open
+ScottyLabs	http://scottylabs.org/	https://apis.scottylabs.org/v1/	https://apis.scottylabs.org/	info@scottylabs.org	Education	HTTP 		API Key
+Screach	http://screach.com	http://dev.screach.com/api-v3#	http://dev.screach.com/api-v3	hello@screenreach.com	Social	REST 		API Token
+Scup	http://www.scupsocial.com/	http://api.scup.com.br/	http://www.scupsocial.com/resources-and-help/apidocs	support@scupsocial.com	Social	REST 		API Key
+SearchBox	http://www.searchbox.com	http://api.searchbox.com/{URI}?searchbox={SEARCHBOX}	http://help.searchbox.com/category/searchbox-api/	contact@searchbox.com	Search	REST 		HTTP Basic Authentication over SSL
+SecureNet	http://www.securenet.com	https://gateway.securenet.com/payment.asmx	http://www.securenet.com/developers	support@securenet.com	Payments	SOAP 		API Key
+SeeqPod	http://seeqpod.com	http://www.seeqpod.com/api/v0.2	http://dev.seeqpod.com/error	api_support@seeqpod.com	Music	REST 		API Key, Username and password
+Sellaround	http://www.sellaround.net/	https://sellaround.net/sellaround/rest/widgetService/	http://sellaround.net/modules/media/frontEnd/uploads/Sellaround_REST_API_Documen...	info@sellaround.net	Payments	REST 		API Key
+semanticSBML	http://semanticsbml.org/	http://www.semanticsbml.org/semanticSBML/	http://www.semanticsbml.org/semanticSBML/plugin_restapidoc/	none given	Science	REST 		None
+Sen.se	http://open.sen.se/	 http://api.sen.se/	http://dev.sen.se/	api@sen.se	Tools	REST 		API Key
+Sentence Recognition	http://www.sentencerecognition.com/	http://www.sentencerecognition.com/sentencerecognition.php	http://www.SentenceRecognition.com	info@sentencerecognition.com	Tools	REST 		API Key
+Sermon Browser	http://www.sermonbrowser.com/	http://api.preachingcentral.com/bible.php?passage=	http://www.sermonbrowser.com/forum/sermon-browser-support/xml-bible-web-service-...	info@sermonbrowser.com	Search	REST 		Public
+setlist.fm	http://www.setlist.fm/	http://api.setlist.fm/rest/	http://api.setlist.fm/docs/index.html	info@setlist.fm	Music	XML 		API Key
+Shareaholic	http://shareaholic.com	http://www.shareaholic.com/api/share	https://www.shareaholic.com/api/	jay@shareaholic.com	Social	REST 		API Key
+Shared Workforce	http://www.sharedworkforce.com/	http://api.sharedworkforce.com	http://www.sharedworkforce.com/docs/rest	erica@sharedworkforce.com	Tools	REST 		API Key
+Sholarometer	http://scholarometer.indiana.edu/	http://scholarometer.indiana.edu/api/	http://scholarometer.indiana.edu/data.html	scholarometer@googlegroups.com	Search	REST 		Public
+Shuffler.fm	http://shuffler.fm/	http://api.shuffler.fm/v1/	http://shuffler.fm/developers	we@shuffler.fm	Music	REST 		API Key
+Sick Marketing	http://sickmarketing.com	http://api.sickmarketing.com/api.php	http://api.sickmarketing.com/documentation.php	info@sickmarketing.com	Search	REST 		API Key
+Sigimera	http://www.sigimera.org/	http://api.sigimera.org/v1/	https://api.sigimera.org/	support@sigimera.org	Weather	REST 		authentication token, http basic authentication, session sharing
+Similar Sites	https://developer.similarweb.com/	http://api-similargroup.apigee.com/	https://developer.similarweb.com/	info@similargroup.com 	Search	XML 		Unspecified
+Simperium	https://simperium.com/	https://api.simperium.com	https://simperium.com/docs/reference/http/#auth	contact@simperium.com	Tools	REST 		API Key, Access token
+SimpleWorker	http://www.simpleworker.com/	https://worker-aws-us-east-1.iron.io/1	http://www.simpleworker.com/	info@simpleworker.com	Tools	REST 		OAuth 2
+Singly	https://singly.com/	https://api.singly.com/oauth/authorize	https://singly.com/docs	support@singly.com	Social	REST 		OAuth 2.0
+SkyServer	http://www.sdss.org	http://skyserver.sdss.org/dr1/en/	http://skyserver.sdss.org/dr1/en/help/docs/api.asp	helpdesk@sdss3.org	Science	REST 		Public
+SlidePay	http://www.slidepay.com/	https://supervisor.getcube.com:65532/rest.svcAPI/login	https://getcube.atlassian.net/wiki/display/CDP/SlidePay+Developer+Documentation	charlie@getcube.com	Payments	REST 		Username & password
+SmartEnergy	http://smartenergygroups.com/	http://api.smartenergygroups.com/api_sites/stream	http://smartenergygroups.com/api	https://smartenergygroups.com/contact	Financial	REST 		API Key
+SnoCountry	http://snocountry.com/	http://feeds.snocountry.com/	http://feeds.snocountry.com/	andrew.davis@snocountry.org	Sports	HTTP 		API Key
+SNOTEL	http://www.nrcs.usda.gov/wps/portal/nrcs/main	http://www.cuahsi.org/his/1.0/ws/	http://www.wcc.nrcs.usda.gov/snow/	jim.marron@por.usda.gov	Science	SOAP 		None
+SOCH	http://www.ksamsok.se/	http://kulturarvsdata.se/ksamsok/api?method=	http://www.ksamsok.se/in-english/api/#sochapi	ksamsok@raa.se	Search	REST 		Public
+Social Media Pemilu	http://pemiluapi.org/	http://api.pemiluapi.org/socmedpemilu	http://docs.socmedpemilu.apiary.io/	contact@pemiluapi.org	Social	HTTP 		API Key
+Social Networks Software	http://www.socialnetworksoftware.com	http://www.socialnetworksoftware.com/socialnetwork_demo/api/	http://socialnetworksoftware.com/wiki/index.php?title=Main_Page	info@socialnetworksoftware.com	Social	REST 		API Key
+Song.ly	http://song.ly	http://song.ly/api	http://song.ly/api.sng	api@song.ly	Music	REST 		API Key
+SoundCloud	http://soundcloud.com	http://api.soundcloud.com	http://developers.soundcloud.com	api@soundcloud.com	Music	XML 		OAuth2, OAuth 1.0a
+soundtoys	http://soundtoys.net	http://soundtoys.net/api	http://soundtoys.net/contribute/api	info@toxi.co.uk	Music	REST 		None
+Space Physics Interactive Data Resource	http://spidr.ngdc.noaa.gov/spidr/home.do	http://spidr.ngdc.noaa.gov/spidr/servlet/	http://spidr.ngdc.noaa.gov/spidr/friend.do?hlink=services.jsp	spidr-support@rt.ngdc.noaa.gov	Science	REST 		Public
+Spark Devices	http://www.sparkdevices.com	http://www.sparkdevices.com/api/v1/devices	http://docs.sparkdevices.com/	hello@sparkdevices.com	Tools	REST 		None
+SpeakerText	speakertext.com	https://api.speakertext.com/v1	http://speakertext.com/api	support@speakertext.com	Tools	REST 		API Key
+Species Invaders	http://www.rhok.org/	http://silentrunning.info/si/api/	http://www.rhok.org/solutions/species-invaders-api	morgant@makkintosshu.com	Science	REST 		None
+Spendgate	http://spendgate.com/	https://spendgate-live.appspot.com/api/partner/	http://spendgate.com/developers/api/	support@spendgate.com	Financial	REST 		API Key
+Spire ITIS	http://spire.umbc.edu/	http://spire.umbc.edu/webservice/webclient/WSDL/	http://spire.umbc.edu/webservice/webclient/description.php	jsachs@cs.umbc.edu	Science	SOAP 		None
+Splitable	https://www.splitable.com/	https://www.splitable.com/split_payments/split?	https://www.splitable.com/developers	hello@splitable.com	Payments	REST 		API Key and API secret
+Splitwise	http://splitwise.com/	https://secure.splitwise.com/api/v3.0/	http://dev.splitwise.com/	developers@splitwise.com	Tools	HTTP 		OAuth
+SpringSense Meaning Detection	http://springsense.com/	http://api.springsense.com/	http://springsense.com/api/	info@springsense.com	Tools	REST 		API Key
+Srch.io	http://www.srch.io	https://api.srch.io/api/v1	http://docs.srch.io/	support@srch.io	Search	REST 		API Token
+stampr	https://stam.pr/	https://stam.pr/api/	http://stampr.github.io/stampr-api/	help@stam.pr	Tools	REST 		HTTP Basic Authentication
+StatsMix	http://www.statsmix.com	http://www.statsmix.com/api/v2/	http://www.statsmix.com/developers	info@statsmix.com	Business	REST 		API Key
+StayClassy	http://www.stayclassy.org/	http://www.stayclassy.org/api/	http://www.stayclassy.org/about	info@stayclassy.org	Financial	REST 		API Key
+StesCodes Contact Grabber	http://stescodes.com	https://www.stescodes.com/api.aspx	http://stescodes.com/grabcontacts.aspx	support@stescodes.com	Social	REST 		API Key
+StockTwits	http://stocktwits.com	https://api.stocktwits.com/api/2/	http://stocktwits.com/developers	sayem@stocktwits.com	Financial	REST 		OAuth
+Storify	http://storify.com/	http://storify.com/	http://dev.storify.com/api/summary	api@storify.com	Social	HTTP 		API Key
+Straker Translation	http://straker.ie/straker/	http://api.strakertranslations.com/api/v1/	http://straker.ie/products/translation-api/en/translation-api_home.cfm	http://straker.ie/straker/en/contact-us.cfm	Tools	REST 		User ID
+Streamio	http://streamio.com/en/home	https://streamio.com/api/	http://streamio.com/api/docs	sales@streamio.com	Media	REST 		Basic Authentication over SSL
+Stripe	stripe.com	https://api.stripe.com/	https://stripe.com/docs	support@stripe.com	Payments	REST 	http://www.apihub.com/stripe/api/stripe-api?utm_source=Programmableweb&amp;utm_mediu...	API Key
+Strongspace	https://www.strongspace.com/	https://www.strongspace.com/api/v1/	https://www.strongspace.com/	support@strongspace.com	Storage	REST 		HTTP Basic Authentication over SSL
+StudyStack	http://www.studystack.com/	http://www.studystack.com/servlet/	http://www.studystack.com	john.weidner@studystack.com	Education	REST 		API Key
+Sublight	http://www.sublight.si/	http://www.sublight.si/API/Simple/	http://www.sublight.me/help	contact@sublight.si	Entertainment	REST 		HTTP Basic Authentication
+SubscriptionBridge	http://earlyimpact.com/	https://www.subscriptionbridge.com/	http://wiki.subscriptionbridge.com/developer_guide/developer_guide	info@earlyimpact.com	Payments	REST 		Basic Authentication over SSL
+Subtitleseeker	http://www.subtitleseeker.com/	http://api.subtitleseeker.com/	http://www.api.subtitleseeker.com/	api@subtitleseeker.com 	Entertainment	REST 		API Key
+SubtitleSource	http://www.subtitlesource.org/	http://www.subtitlesource.org/api/{API KEY}/3.0/	http://www.subtitlesource.org/help/api	info@subtitlesource.org	Entertainment	REST 		API Key
+Sumnotes	http://www.sumnotes.net	http://api.sumnotes.net/v1/extract/	http://api.sumnotes.net/v1/extract/	support@sumnotes.net	Tools	JSON 		apikey
+Swellcast	http://swellcast.com.au/	http://swellcast.com.au/api/v1	http://swellcast.com.au/surf-forecast-api	info@swellca.st	Weather	REST 		API Key
+Swiftype	http://swiftype.com/	http://api.swiftype.com/api/v1/	https://swiftype.com/documentation	support@swiftype.com	Search	REST 		Basic Authentication
+SWITCHcast	http://www.switch.ch/	https://api.cast.switch.ch	http://help.switch.ch/cast/integration/api_specification.html	info@switch.ch	Education	REST 		HTTP Basic Authentication with certificate validation
+Swivel	http://www.swivel.com/	https://api.swivel.com/v1/graphs	https://business.swivel.com/developers	visnu@swivel.com	Financial	REST 		HTTP Basic Authentication over SSL
+Syllabs	http://www.syllabs.com/en/	http://api.syllabs.com/v0/	https://www.api.syllabs.com/	api-requests@syllabs.com	Tools	REST 		API Key
+Synergizer	http://llama.mshri.on.ca/index.html	http://llama.mshri.on.ca/cgi/synergizer/serv	http://llama.mshri.on.ca/synergizer/doc/	fritz.roth@utoronto.ca	Science	REST 		Public
+tagdef	http://www.tagdef.com	http://api.tagdef.com/	http://api.tagdef.com/	snokleby@gmail.com	Social	REST 		None
+take.io	http://www.take.net/en/	https://api.take.io/rest/1.0/	http://developer.take.io/	info@take.net	Entertainment	REST 		OAuth
+TakeABreak	http://www.takeabreak.com.au	http://www.takeabreak.com.au/TABWebservice/service.asmx	http://www.takeabreak.com.au/TABWebservice/service.asmx	support@takeabreak.com.au	Travel	SOAP 		HTTP Basic Authentication
+TalentBin	http://www.talentbin.com/	http://api.talentbin.com/	http://www.talentbin.com/tdn	contact@talentbin.com	Social	REST 		API Key
+TapCrowd	http://tapcrowd.com/	http://api.tapcrowd.com/	http://confluence.tapcrowd.com/display/dev/TapCrowd+API+and+SDK	info@tapcrowd.com	Tools	REST 		API Key
+TaqTiqa	http://www.taqtiqa.com/	https://taq.io	http://api.taqtiqa.com/alpha/1/1/overview.html#tabs-1-section-1	support@taqtiqa.com	Financial	REST 		HTTP Basic Authentication over SSL, API Token
+Taskbarn	http://www.taskbarn.com	http://www.taskbarn.com/api	http://www.taskbarn.com/api.html	contact@taskbarn.com	Tools	REST 		API Key
+TaskRabbit	http://www.taskrabbit.com	https://www.taskrabbit.com/api/v1/	https://www.taskrabbit.com/platform	help@taskrabbit.com	Social	REST 		OAuth
+TaxCloud	https://taxcloud.net/	https://api.taxcloud.net/1.0/TaxCloud.asmx	https://api.taxcloud.net/1.0/	service@taxcloud.net	Financial	SOAP 		API Key
+Team Cowboy	http://www.teamcowboy.com	http://api.teamcowboy.com/v1	http://www.teamcowboy.com/api	api@teamcowboy.com	Sports	REST 		API Key
+Telesocial	http://www.telesocial.com/	http://api.telesocial.com/api/rest/	https://dev.telesocial.com/	eric@telesocial.com	Social	REST 		API Key, SSL
+Testcover.com	http://testcover.com/index.php	http://testcover.com/axis2/services/TestCases	http://testcover.com/pub/wsdl_notes.php	mgmt@testcover.com	Other	SOAP 		HTTP Basic Authentication over SSL
+TEXTKING	https://www.textking.com/	https://api.textking.com	https://www.textking.com/api	sales@textking.com	Tools	REST 		OAuth, App secret
+TFmodeller	http://www.ccg.unam.mx/	http://maya.ccg.unam.mx:8080/axis/TFmodellerService.jws	http://maya.ccg.unam.mx/~tfmodell/ws.html	contrera@ccg.unam.mx	Science	SOAP 		None
+TheySay AffectR	http://theysay.io/	http://api.theysay.io/v1	http://docs.theysay.apiary.io/	contact@theysayanalytics.com	Tools	REST 		API Key
+Thrillcall	http://thrillcall.com/	http://thrillcall.com/api/v2/	https://github.com/thrillcall/thrillcall-api	bizdev@thrillcall.com	Music	REST 		API Key
+ThrustCurve	http://www.thrustcurve.org/	http://www.thrustcurve.org/servlets/	http://www.thrustcurve.org/searchapi.shtml	john@jcsw.com	Search	HTTP 		None
+Tiket	http://tiket.com	https://api.tiket.com	http://docs.tiket.com/	dev@tiket.com	Travel	REST 		API Key, HTTP Basic
+Timeanddate.com	http://www.timeanddate.com	http://api.xmltime.com/	https://services.timeanddate.com/	api@timeanddate.com	Tools	HTTP 		HTTP Basic Authentication, HMAC
+Tiny-URL Open	http://tiny-url.info/	http://tiny-url.info/api/v1	http://tiny-url.info/open_api.html	contact@tiny-url.info	Tools	REST 		API Key
+TLists	http://www.tlists.com	http://api.tlists.com/api/v2	http://apiwiki.tlists.com/w/page/3817203/FrontPage	ethan@tlists.com	Social	REST 		None
+Topspin	http://www.topspinmedia.com/	https://app.topspin.net/api/v1/	https://docs.topspin.net/tiki-index.php?page=Topspin%20APIs&amp;structure=Dev%20Cent...	info@topspinmedia.com	Music	REST 		API Key
+TourCMS Marketplace	http://www.tourcms.com	https://api.tourcms.com/	http://www.tourcms.com/support/api/mp/	support@tourcms.com	Travel	REST 		API Key
+Tout	http://www.tout.com	https://api.tout.com/api/v1	http://developer.tout.com	partnerships@tout.com	Social	REST 		API Token
+Tracesmart	http://www.tracesmart.co.uk/	https://{instance}.api.tracesmart.co.uk/v1/	http://developer.tracesmart.co.uk/	webservices@tracesmart.co.uk	Search	SOAP 		OAuth
+TrackMyPeople	https://www.trackmypeople.com/	https://secure.trackmypeople.com/api/	https://www.trackmypeople.com/api	support@trackmypeople.com	Tools	HTTP 		HTTP Basic Authentication
+Tradervue	http://www.tradervue.com	https://www.tradervue.com/api/v1	http://www.tradervue.com/	support@tradervue.com	Financial	REST 		HTTP Basic Authentication
+Tradery	http://www.tradery.com	http://www.tradery.com/api 	http://www.tradery.com/doc/index.html?page=html/webapi_overview.html	info@tradery.com 	Financial	REST 		Available by request
+Tradier	https://tradier.com/	https://api.tradier.com/v1/	https://developer.tradier.com	techsupport@tradier.com	Financial	REST 	http://www.apihub.com/tradier/api/tradier-api?utm_source=programmableweb&amp;utm_med...	OAuth 2.0
+Trafficspaces	http://www.trafficspaces.com	https://&lt;subdomain&gt;.trafficspaces.com/&lt;resource_uri&gt;	http://support.trafficspaces.com/kb/api/api-introduction	cs@trafficspaces.com	Advertising	REST 		HTTP Basic Auth over SSL
+TrakQR	http://trakqr.com/	http://trakqr.com/resources/api/	http://trakqr.com/resources/api/	info@trakqr.com	Tools	REST 		HTTP Basic Authentication over SSL, 
+Transfluent	http://www.transfluent.com/	http://api.transfluent.com/	https://umbrasoftware.com/	support@transfluent.com	Tools	REST 		Access token
+Translation Cloud	http://translationcloud.net/	http://www.translationcloud.net/api/	http://translationcloud.net/api	info@translationcloud.net	Tools	REST 		API Key
+Translution	https://www.translution.com	http://www.translution.com/translutionwebservice/translute.asmx	http://www.translution.com/translution-api.aspx	support@translution.net	Tools	SOAP 		Security Code
+Travel IQ	http://travel-iq.com	http://apiv3.travel-iq.com/	http://apiv3.travel-iq.com/	api@traveliq.net	Travel	REST 		API Key
+Travelope	http://travelope.com	http://www.travelope.com/api/	http://www.travelope.com/ApiInfo	support@travelope.com	Travel	SOAP 		API Key
+Traxo	https://www.traxo.com/	https://api.traxo.com/	https://sites.google.com/a/traxo.com/traxo-api/overview	api-support@traxo.com	Travel	REST 		API Key
+Trekksoft	http://www.trekksoft.com/	https://api.trekksoft.com/	https://developers.trekksoft.com/	support@trekksoft.com	Travel	REST 		API Key
+Trendspottr	http://trendspottr.com/welcome.php	http://trendspottr.com/api/v1.1/search.php	http://trendspottr.com/api/	api@TrendSpottr.com	Social	REST 		HTTP Basic Authentication
+Trogsoft UK Weather	http://www.trogsoft.com/	http://api.trogsoft.net/weather	http://www.trogsoft.com/APIs/Weather	support@trogsoft.com	Weather	REST 		API Key
+Trove	http://www.yourtrove.com	https://api.yourtrove.com/v2/	https://www.yourtrove.com/developers/	api@yourtrove.com	Social	REST 		OAuth 1.0a and OAuth 2
+TrueSample	https://truesample.com/mp/home/	https://panelist.api.truesample.net/pq/panelist-name-address-validation	http://help.truesample.com/	support@truesample.com	Social	REST 		HTTP Basic Authentication
+TrustCloud	https://trustcloud.com/	https://api.trustcloud.com/	https://trustcloud.com/partners/trustcloud-api	info@trustcloud.com	Social	REST 		None
+TubeMogul	http://www.tubemogul.com	http://www.partner.com/api_rest	http://www.tubemogul.com/api/v3/doc	support@tubemogul.com	Advertising	REST 		Username and password
+TurnItin iThenticate	http://www.ithenticate.com/	https://api.ithenticate.com/rpc 	http://www.ithenticate.com/	info@iThenticate.com	Education	REST 		HTTP Basic Authentication
+Tweet Marker	http://www.riverfold.com/	https://api.tweetmarker.net/v1/lastread?	http://tweetmarker.net/	manton@riverfold.com	Social	REST 		OAuth Echo
+TweetBoner	http://tweetboner.biz/	http://tweetboner.biz/	http://tweetboner.biz/api	tweetbonerapp@gmail.com	Social	REST 		None
+Tweettronics	http://www.tweettronics.com/	http://tweettronics.com/api	http://www.tweettronics.com/home/apipro	contact@tweettronics.com	Media	REST 		API Key
+Twinword Language Scoring	http://twinword.com/	https://twinword-language-scoring.p.mashape.com/	http://twinword.com/developer-api.php?view=full	feedback@twinword.com	Tools	HTTP 		API Key
+Twishort	http://twishort.com	http://api.twishort.com	http://twishort.com/page/api/	mail@twishort.com	Social	HTTP 		OAuth, OAuth Echo, API Key
+TwitchTV	http://www.twitch.tv/	https://api.twitch.tv/kraken	http://dev.twitch.tv/	help@twitch.tv	Social	REST 		OAuth 2, OAuth 2
+TwitDoc	http://twitdoc.com/	http://twitdoc.com/api/	http://twitdoc.com/apihelp.asp	support@twitdoc.com	Tools	HTTP 		API Key
+Twitter	http://twitter.com	http://twitter.com/statuses/	https://dev.twitter.com/docs	http://pbwiki.com/support.wiki?wiki=twitterapi	Social	REST 	http://www.apihub.com/twitter2/api/twitter-rest-api?utm_source=programmableweb&amp;u...	HTTP Basic Auth, OAuth
+Twtmore	http://twtmore.com	http://api.twtmore.com/	http://twtmore.com/api	dev@twtmore.com	Social	REST 		API Key
+TwTube	http://twtu.be	http://twtu.be/?	http://twtu.be/dev	http://twtu.be/contact/	Tools	REST 		None
+txtr Reaktor	http://txtr.com/	http://txtr.com/rest/rpc?service	http://us.txtr.com/reaktor/	support@txtr.com	Other	SOAP 		API Token, username and password
+Tykli	http://www.tyk.li	http://tyk.li/rs/v0/	http://tyk.li/api	info@tykli.com	Search	REST 		API Key
+TYPOGRAFFIT	http://typograffit.com	http://typograffit.com/rest_json/	http://typograffit.com/pages/api	typograffit@gmail.com	Tools	REST 		Username/Password
+uBio Namebank	http://www.ubio.org/index.php?pagename=genera	http://www.ubio.org/webservices/service.php?function=	http://www.ubio.org/index.php?pagename=xml_services	admin@ubio.org	Science	SOAP 		API Key
+uBoost	http://www.uboost.com/	http://api.uboost.com/	http://www.uboost.com/web-services-api/welcome/	info@uBoost.com	Social	REST 		HTTP Basic Authentication
+UChicago Can I Graduate?	http://www.uchicago.edu/	http://canigraduate.uchicago.edu/data/	https://canigraduate.uchicago.edu/api.php	kdwang@uchicago.edu	Education	JSON 		Unspecified
+Udemy	udemy.com	https://www.udemy.com/api-1.1/	https://developers.udemy.com/	bizdev@udemy.com	Education	REST 		Unspecified
+UN OCHA Financial Tracking System	http://fts.unocha.org/pageloader.aspx?page=ho	http://fts.unocha.org/api/v1/	http://fts.unocha.org/api/Files/APIUserdocumentation.htm	fts@un.org	Financial	REST 		Public
+Unbounce	http://www.unbounce.com	https://api.unbounce.com	https://api.unbounce.com	api-team@unbounce.com	Advertising	REST 		HTTP Basic Authentication over SSL, API Key, OAuth
+Unglue.it	https://unglue.it/	https://unglue.it/api/v1/	https://unglue.it/api/help	support@gluejar.com	Other	REST 		API Key, username
+Unified Software AddressVal	http://www.unifiedsoftware.co.uk/	http://www.unifiedsoftware.co.uk/services/addrval/	http://www.unifiedsoftware.co.uk/developers/technicaldetails/addrval.html#no2	info@unifiedsoftware.co.uk	Tools	SOAP 		Username/Password
+United Nations SWERA	http://swera.unep.net	http://na.unep.net/swera_ims/WS/index.php?	http://en.openei.org/apps/SWERA/	Daniel.Puig@unep.fr	Weather	REST 		Public
+Unofficial Heavens Above	http://brainsinjars.com/	http://api.uhaapi.com/satellites/	http://uhaapi.com/api-documentation-v2-0/	uhaapi@brainsinjars.com	Science	REST 		Public
+USA Today Sports Salaries	http://www.usatoday.com/	http://api.usatoday.com/open/salaries	http://developer.usatoday.com/docs/read/salaries	api@usatoday.com	Sports	REST 		API Key
+Usersnap	https://usersnap.com/	https://restapi.usersnap.com/v1.	https://usersnap.com/doc/provisioning	contact@usersnap.com	Tools	REST 		API Key
+USGS National Water Information System	http://www.usgs.gov/	http://qwwebservices.usgs.gov/Station	http://qwwebservices.usgs.gov/	GS-W-QWWebServicesHelp@usgs.gov	Science	REST 	http://www.apihub.com/usgs/api/usgs-water-quality-portal-api?utm_source=programm...	None
+Vast	http://vast.com	http://api.vast.com/index.php	http://www.vast.com/info/customapi	partners@vast.com	Search	REST 		None required
+Verifilter	http://www.verifilter.com/default.aspx	http://www.Verifilter.com/API/VerifilterREST.aspx	http://www.verifilter.com/IntegratedSearch.aspx	support@verifilter.com	Financial	SOAP 		API Key
+VersaPay	http://www.versapay.com/	https://secure.versapay.com/api/	http://developers.versapay.com/index.html	info@versapay.com	Payments	REST 		API Key with authorization
+Vicurex	https://vircurex.com/	https://vircurex.com/api/	https://vircurex.com/welcome/api	customerservice@vircurex.com	Financial	REST 		API token
+View	http://view.co.uk/	http://api.view.co.uk/v1	http://api.view.co.uk/	api@view.co.uk	Travel	REST 		API Key
+Viralheat	http://www.viralheat.com	http://app.viralheat.com/social/api/	https://app.viralheat.com/developer	support@viralheat.com	Social	REST 		API Key
+Virool	http://www.virool.com/	http://api.virool.com/api/v1	http://www.virool.com/docs	info@virool.com	Advertising	REST 		API Key
+Virtapay	http://www.virtapay.com	https://www.virtapay.com/api/1.0	https://www.virtapay.com/api-access.php	http://www.virtapay.com/contact.php	Payments	REST 		API Key
+VisANT	http://visant.bu.edu/	http://visant.bu.edu/ws/test/visant	http://visant.bu.edu/vmanual/sapi/index.html	VisANT@zlab.bu.edu	Science	REST 		Public
+Visitors Voice	http://visitorsvoice.com/	http://api.visitorsvoice.com/v1/	http://api.visitorsvoice.com/	contact@adeptic.com	Search	REST 		API Key
+Vocaroo	http://vocaroo.com/	 http://vocaroo.com/api/	http://vocaroo.com/?api	contact@vocaroo.com	Tools	REST 		None
+Voice RSS	http://www.voicerss.org/	http://api.voicerss.org?	http://www.voicerss.org	http://www.voicerss.org/contact.aspx	Tools	REST 		API Key
+voo2do	http://voo2do.com	http://voo2do.com/api	http://voo2do.com/help/api/	support@voo2do.com	Other	REST 		Username and password
+WalletKit	https://walletkit.com/	https://api.walletkit.com/v1	https://walletkit.com/docs#lp	kevin@walletkit.com	Payments	REST 		API Key
+Wappwolf	https://app.wappwolf.com/	https://app.wappwolf.com/WappwolfREST/rest/	http://support.wappwolf.com/knowledgebase/articles/73048-your-app-in-action-for-...	media@wappwolf.com	Media	REST 		API Key
+Wattpad	http://www.wattpad.com/	http://wattpad.com/apiv2	http://www.wattpad.com/user/api_doc	admin@wattpad.com	Social	REST 		None
+Wattvision	http://www.wattvision.com	http://www.wattvision.com/api	http://www.wattvision.com/info/api	info@wattvision.com	Other	REST 		API Key
+weather-api.net	http://historicalclimate.com	http://weather-api.net/api/query.php	http://www.weather-api.net/docs.php	sales@weather-api.net	Weather	REST 		API Key, Shared Secret
+WebKnox Jokes	http://webknox.com	http://webknox/api/	https://www.mashape.com/webknox/jokes/	feedback@webknox.com	Tools	REST 		API Key
+WebKnox Media	http://webknox.com	http://webknox/api/	http://webknox.com/api	feedback@webknox.com	Media	REST 		API Key
+WebKnox Text-Processing	http://webknox.com	http://webknox/api/	https://www.mashape.com/webknox/text-processing-1#!documentation	feedback@webknox.com	Tools	REST 		API Key
+WebKnox Words	http://webknox.com	http://webknox/api/	https://www.mashape.com/webknox/words/	feedback@webknox.com	Tools	REST 		API Key
+Webpage Analyse	http://www.webpageanalyse.com/	http://www.webpageanalyse.com/api/	http://www.webpageanalyse.com/dev/api	info@webpageanalyse.com	Tools	REST 		API Key
+Whale Wisdom	http://whalewisdom.com/	https://whalewisdom.com/shell/command	http://whalewisdom.com/shell/api_help	contact@whalewisdom.com 	Financial	REST 		HTTPS, API Key
+WhatLanguage	http://www.whatlanguage.net	http://api.whatlanguage.net/language/v1	http://www.whatlanguage.net/en/api/language_identification_documentation	info@whatlanguage.net	Tools	REST 		API Key
+Wherestand	https://www.wherestand.com/	https://wherestand.p.mashape.com/request	https://www.mashape.com/wherestand/google-rank-checker	support@wherestand.com	Search	JSON 		Secret Key
+Wibiya	http://www.wibiya.com/	https://api.wibiya.com	http://wiki.wibiya.com/Main_Page	support@wibiya.com	Tools	REST 		API Token
+WickedAPI	http://www.wickedapi.com	http://api.wickedapi.com/	http://www.wickedapi.com	info@tagginit.com	Tools	REST 		API Key
+Widen Media Collective	http://www.widen.com	http://www.widen.com/api/v2	http://www.widen.com/digital-asset-management-software/web-services-api/	marketing@widen.com	Media	SOAP 		API Key, HTTP Basic Auth
+WiseNET	http://mywisenet.com.au/	https://xxx-api.mywisenet.com.au/	http://help.mywisenet.com.au/WiseNET_API%3A_Main_Page	info@wisenet.com.au	Education	REST 		HTTP Basic Authentication over SSL
+WizIQ Virtual Classroom	http://www.wiziq.com/	http://class.api.wiziq.com/	http://developer.wiziq.com/	support@wiziq.com	Education	REST 		API Key
+Wordsfinder Search Traffic Estimator	http://www.wordsfinder.com/	http://www.wordsfinder.com/api_traffic.php	http://www.wordsfinder.com/api_traffic_estimator.php	info@wordfinder.com	Search	REST 		API Key
+WorldIP	http://www.wipmania.com/	http://api.wipmania.com/	http://www.wipmania.com/en/api/	mail@wipmania.com	Tools	HTTP 		API Key
+Wridea	http://octeth.com/	http://{subdomain}.wridea.com/api/	http://wridea.com/help/api/api-function-reference	support@wridea.com	Social	REST 		HTTP Basic Authentication
+WyzAnt ShareASale Affiliate Program	http://www.wyzant.com/	http://data.wyzant.com/api/	http://www.wyzant.com/affiliateProgram/ShareASale/API.aspx	partners@wyzant.com	Education	HTTP 		API Key
+Xbox Music Developer	http://music.xbox.com	https://music.xboxlive.com	http://music.xbox.com/developer	xboxmusicdevapi@microsoft.com	Music	XML 		Token, API Key, OAuth2
+xeno-canto	http://www.xeno-canto.org/	http://www.xeno-canto.org/csv.php	http://www.xeno-canto.org/feature-view.php?blognr=80	contact@xeno-canto.org	Science	REST 		Public
+Xero Payroll	http://www.xero.com	https://api.xero.com/payroll.xro/1.0/	http://developer.xero.com/documentation/payroll-api/overview/	api@xero.com	Financial	REST 		OAuth 1.0
+Xignite BATSLastSale	http://www.xignite.com	http://www.xignite.com/xBATSLastSale.asmx	https://www.xignite.com/product/XigniteBATSLastSale/api/	sales@xignite.com	Financial	SOAP 		API Key
+Xignite Calendar	http://xignite.com	http://www.xignite.com/xCalendar.asmx	https://www.xignite.com/product/XigniteCalendar/	sales@xignite.com	Financial	SOAP 		API Key
+Xignite Get Real Time Rate	http://www.xignite.com/forex	http://globalcurrencies.xignite.com/xGlobalCurrencies.asmx	https://www.xignite.com/forex/api/GetRealTimeRate	support@xignite.com	Financial	SOAP 		API Key
+Xignite Get Real Time Rate Table	http://www.xignite.com/	http://globalcurrencies.xignite.com/xGlobalCurrencies.asmx	https://www.xignite.com/forex/api/GetRealTimeRateTable	sales@xignite.com 	Financial	SOAP 		API Key
+Xignite Global Indices Historical	http://www.xignite.com/	http://globalindiceshistorical.xignite.com/xglobalindiceshistorical.asmx	http://www.xignite.com/product/XigniteGlobalIndicesHistorical/	info@xignite.com	Financial	SOAP 		API Key
+Xignite Global Indices Real Time	http://www.xignite.com/	http://globalindicesrealtime.xignite.com/xglobalindicesrealtime.asmx	http://www.xignite.com/product/XigniteGlobalIndicesRealTime/	info@xignite.com	Financial	SOAP 		API Key
+Xignite Global Real Time Options	http://www.xignite.com/	http://globalrealtimeoptions.xignite.com/xglobalrealtimeoptions.asmx	http://www.xignite.com/product/global-real-time-option-price-data/	sales@xignite.com	Financial	SOAP 		API Key
+Xignite List Currencies	http://www.xignite.com/	http://globalcurrencies.xignite.com/xGlobalCurrencies.asmx	https://www.xignite.com/forex/api/ListCurrencies	sales@xignite.com 	Financial	SOAP 		API Key
+Xignite Realtime	http://xignite.com	http://www.xignite.com/xRealTime.asmx	https://www.xignite.com/product/real-time-stock-quotes-data/api/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteAnalysts	http://xignite.com	http://www.xignite.com/xanalysts.asmx	https://www.xignite.com/product/XigniteAnalysts/	sales@xignite.com	Financial	SOAP 		API key
+XigniteBondMaster	http://xignite.com/	http://bondmaster.xignite.com/xBondMaster.asmx	https://www.xignite.com/product/XigniteBondMaster/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteEdgar	http://xignite.com	http://www.xignite.com/xEdgar.asmx	http://www.xignite.com/product/XigniteEdgar/api/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteEstimates	http://xignite.com	http://www.xignite.com/xestimates.asmx	https://www.xignite.com/product/XigniteEstimates/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteFinancials	http://xignite.com	http://financials.xignite.com/xFinancials.asmx	http://www.xignite.com/product/company-financials/	support@xignite.com	Financial	SOAP 		API Key
+XigniteFundamentals	http://xignite.com	http://fundamentals.xignite.com/xFundamentals.asmx	http://www.xignite.com/product/company-fundamentals/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteFunds	http://xignite.com	http://www.xignite.com/xFunds.asmx	http://www.xignite.com/product/XigniteFunds/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteFutures	http://xignite.com	http://www.xignite.com/xFutures.asmx	http://www.xignite.com/product/XigniteFutures/	sales@xignite.com	Financial	SOAP 		API key
+XigniteGlobalBondMaster	http://xignite.com/	http://globalbondmaster.xignite.com/xGlobalBondMaster.asmx	http://www.xignite.com/product/XigniteGlobalBondMaster/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteGlobalExchanges	http://www.xignite.com/	http://globalexchanges.xignite.com/xGlobalExchanges.asmx	https://www.xignite.com/product/XigniteGlobalExchanges/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteGlobalMaster	http://www.xignite.com/	http://globalmaster.xignite.com/xglobalmaster.asmx	https://www.xignite.com/product/global-security-master-data/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteGlobalMetals	http://xignite.com	http://globalmetals.xignite.com/xGlobalMetals.asmx	https://www.xignite.com/product/gold-metal/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteGlobalQuotes	http://xignite.com	http://globalquotes.xignite.com/v3/xGlobalQuotes.asmx	https://www.xignite.com/product/global-stock-quote-data/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteGlobalRealTime	http://xignite.com/	http://globalrealtime.xignite.com/v3/xGlobalRealTime.asmx	http://www.xignite.com/product/global-real-time-stock-quote-data/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteHistorical	http://www.xignite.com/	http://www.xignite.com/xGlobalHistorical.asmx	https://www.xignite.com/product/XigniteGlobalHistorical/	sales@xignite.com	Financial	REST 		API Key
+XigniteHoldings	http://www.xignite.com/	http://www.xignite.com/xHoldings.asmx	https://www.xignite.com/product/XigniteHoldings/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteInsider	http://www.xignite.com/	http://www.xignite.com/xInsider.asmx	https://www.xignite.com/product/XigniteInsider/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteInterBanks	http://xignite.com	http://www.xignite.com/xinterbanks.asmx	https://www.xignite.com/product/XigniteInterBanks/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteNASDAQLastSale	http://www.xignite.com	http://nasdaqlastsale.xignite.com/xNASDAQLastSale.asmx	http://www.xignite.com/product/NASDAQ-last-sale-stock-quotes-data/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteNews	http://www.xignite.com/	http://www.xignite.com/xNews.asmx	http://www.xignite.com/product/XigniteNews/	sales@xignite.com	Financial	REST 		API Key
+XigniteReleases	http://www.xignite.com/	http://www.xignite.com/xReleases.asmx	http://www.xignite.com/product/XigniteReleases/	sales@xignite.com	Financial	SOAP 		API Key
+XigniteVWAP	http://www.xignite.com/	ttp://www.xignite.com/xVWAP.asmx	http://www.xignite.com/product/XigniteVWAP/	sales@xignite.com	Financial	SOAP 		Api key
+XML Soccer	http://www.xmlsoccer.com	http://www.xmlsoccer.com/FootballData.asmx	http://www.xmlsoccer.com	info@xmlsoccer.com	Sports	SOAP 		API Key
+Xsolla	http://xsolla.com/	https://secure.xsolla.com/api/	https://github.com/xsolla/Xsolla-Payment-API	support@xsolla.com	Payments	REST 		User ID, MD5 checksum
+Xtify	http://www.xtify.com	http://query.xtify.com/api/1.0/	https://console.xtify.com/	support@xtify.com	Tools	REST 		API Key
+Yandex Blog Search	http://yandex.ru	http://blogs.yandex.ru/search.rss?	http://api.yandex.ru/blogs/	api@direct.yandex.ru	Search	XML 		API Key, API Key
+Yandex Direct	http://yandex.ru	http://api.yandex.com/	http://api.yandex.com/direct/	api@direct.yandex.ru	Advertising	SOAP 		API Key, OAuth 1
+Yandex Speller	http://yandex.ru	http://speller.yandex.net/services/spellservice	http://api.yandex.ru/speller/	speller-support@yandex-team.ru	Tools	XML 		API Key, API Key
+Yandex Translate	http://www.yandex.com/	http://translate.yandex.net/api/v1/	http://api.yandex.com/translate/	eng-ad@yandex-team.ru	Tools	XML 		Unspecified
+Yapta	http://www.yapta.com/	http://api.yapta.com/json/1.0/	http://developer.yapta.com	developer@yapta.com	Travel	HTTP 		API Key, OAuth
+Yebol	http://www.yebol.com	http://www.yebol.com/yebol_api?api=	http://www.yebol.com/yebol_apis.htm	ghall1958@yahoo.com	Search	REST 		None
+Yolink	http://www.yolink.com	http://index.yolink.com	https://developer.yolink.com/	yolink.support@yolink.com	Search	REST 		API Key
+Yottaa Partner	http://www.yottaa.com/	 https://api.yottaa.com/partners	https://api.yottaa.com/PartnerApi.html	sales@yottaa.com or support@yottaa.com	Tools	REST 		API Key
+Yottaa Public	http://www.yottaa.com/	https://api.yottaa.com/public	https://api.yottaa.com/PublicApi.html	sales@yottaa.com or support@yottaa.com	Tools	REST 		API Key
+Zapier Status	https://zapier.com	https://zapier.com/status/json/	https://zapier.com/status/	contact@zapier.com	Tools	REST 		None
+Zeevex Game Wallet	http://www.zeevex.com/	 http://sandbox.gamewallet.game.co.uk/	http://wiki.zeevex.com/display/DEV/Home	support@zeevex.com	Payments	REST 		API Key, HTTP Basic Authentication
+Zenbu	http://www.zenbu.co.nz	http://www.zenbu.co.nz/	http://www.zenbu.co.nz/about/xml	licensing@zenbu.co.nz	Search	REST 		API Key
+ZetaPrints	http://www.zetaprints.com/	 http://posters.example.com/api.aspx	http://www.zetaprints.com/help/category/api/	support@zetaprints.com	Tools	REST 		API Key
+Zoompf	http://zoompf.com	http://wpo.zoompf.com/api/v1/	http://zoompf.com	support@zoompf.com	Tools	REST 		API Key
+ZuluTrade	https://www.zulutrade.com/	http://tradingserver.zulutrade.com/	https://www.zulutrade.com/restapi-reference	support@zulutrade.com	Financial	REST 		HTTP Basic Authentication

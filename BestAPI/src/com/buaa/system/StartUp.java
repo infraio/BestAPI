@@ -24,7 +24,7 @@ public class StartUp extends HttpServlet {
 		FutureTask<String> task = new FutureTask<String>(new Callable<String>(){  	  
 			@Override  
 			public String call() throws Exception {  
-				startUp(); // 使用另一个线程来执行该方法，会避免占用Tomcat的启动时间  
+				//startUp(); // 使用另一个线程来执行该方法，会避免占用Tomcat的启动时间  
 				return "Collection Completed";  
 	        }  
 		});  

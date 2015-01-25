@@ -1,0 +1,26 @@
+ID,name,size,parentID,value
+0,Base Web Service,3000,,1.000
+1,Static Attribute,3000,0,0.476
+2,Dynamic Attribute,3000,0,0.524
+3,Security,3000,1,0.244
+4,fee,3000,1,0.026
+5,Robustness,3000,1,0.073
+6,Interface stability,3000,1,0.134
+7,Performance,3000,2,0.098
+8,Availability,3000,2,0.161
+9,Reputation,3000,2,0.045
+10,Reliability,3000,2,0.220
+11,Encryption algorithm,3000,3,0.031
+12,Traceability rating,3000,3,0.035
+13,Classified level,3000,3,0.033
+14,Access,3000,3,0.144
+15,Exception handling capability,3000,5,0.038
+16,Self-recovery capability,3000,5,0.035
+17,Throughput,3000,7,0.027
+18,Delay,3000,7,0.035
+19,Service run time,3000,7,0.036
+20,Response time,3000,8,0.161
+21,User satisfaction,3000,9,0.045
+22,Average Response Time,3000,10,0.037
+23,Call Success Rate,3000,10,0.041
+24,Consistency,3000,10,0.142

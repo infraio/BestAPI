@@ -1,0 +1,93 @@
+<QoSAttribute>
+	<name>Base Web Service</name>
+	<QoSAttributes>
+		<QoSAttribute>
+			<name>Static Attribute</name>
+			<QoSAttributes>
+				<QoSAttribute>
+					<name>Security</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Encryption algorithm</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Traceability rating</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Classified level</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Access</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>fee</name>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Robustness</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Exception handling capability</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Self-recovery capability</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Interface stability</name>
+				</QoSAttribute>
+			</QoSAttributes>
+		</QoSAttribute>
+		<QoSAttribute>
+			<name>Dynamic Attribute</name>
+			<QoSAttributes>
+				<QoSAttribute>
+					<name>Performance</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Throughput</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Delay</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Service run time</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Availability</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Response time</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Reputation</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>User satisfaction</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+				<QoSAttribute>
+					<name>Reliability</name>
+					<QoSAttributes>
+						<QoSAttribute>
+							<name>Average Response Time</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Call Success Rate</name>
+						</QoSAttribute>
+						<QoSAttribute>
+							<name>Consistency</name>
+						</QoSAttribute>
+					</QoSAttributes>
+				</QoSAttribute>
+			</QoSAttributes>
+		</QoSAttribute>
+	</QoSAttributes>
+</QoSAttribute>

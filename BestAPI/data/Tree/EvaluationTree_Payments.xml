@@ -1,0 +1,74 @@
+<CategoryNode>
+	<Name>Payment Service</Name>
+	<Weight>1.0</Weight>
+	<Childs>
+	<CategoryNode>
+		<Name>Static Attribute</Name>
+		<Weight>0.10958605664488018</Weight>
+		<Childs>
+		<FactorNode>
+			<Name>Interface Stability</Name>
+			<Weight>0.06727437016474</Weight>
+		</FactorNode>
+		<CategoryNode>
+			<Name>Robustness</Name>
+			<Weight>0.04231168648014017</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Exception handling capability</Name>
+				<Weight>0.01688015091416714</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Self-recovery capability</Name>
+				<Weight>0.02543153556597303</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		</Childs>
+	</CategoryNode>
+	<CategoryNode>
+		<Name>Dynamic Attribute</Name>
+		<Weight>0.30915032679738563</Weight>
+		<Childs>
+		<CategoryNode>
+			<Name>Availability</Name>
+			<Weight>0.2306383121722735</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Response time</Name>
+				<Weight>0.2306383121722735</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		<CategoryNode>
+			<Name>Performance</Name>
+			<Weight>0.0785120146251121</Weight>
+			<Childs>
+			<FactorNode>
+				<Name>Service run time</Name>
+				<Weight>0.03361738565206824</Weight>
+			</FactorNode>
+			<FactorNode>
+				<Name>Throughput</Name>
+				<Weight>0.04489462897304387</Weight>
+			</FactorNode>
+			</Childs>
+		</CategoryNode>
+		</Childs>
+	</CategoryNode>
+	<CategoryNode>
+		<Name>Domain Attribute</Name>
+		<Weight>0.5812636165577342</Weight>
+		<Childs>
+		<FactorNode>
+			<Name>User number</Name>
+			<Weight>0.22707746709590015</Weight>
+		</FactorNode>
+		<FactorNode>
+			<Name>Pay success rate</Name>
+			<Weight>0.354186149461834</Weight>
+		</FactorNode>
+		</Childs>
+	</CategoryNode>
+	</Childs>
+</CategoryNode>
